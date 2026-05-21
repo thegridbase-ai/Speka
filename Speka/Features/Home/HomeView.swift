@@ -24,8 +24,6 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 26) {
-                header
-
                 streakRow
 
                 progressRingCard
@@ -39,12 +37,11 @@ struct HomeView: View {
                 Spacer(minLength: 12)
             }
             .padding(.horizontal, 24)
-            .padding(.top, 64)
+            .padding(.top, 12)
             .padding(.bottom, 40)
         }
         .scrollIndicators(.hidden)
-        .overlay(alignment: .topLeading) { progressButton }
-        .overlay(alignment: .topTrailing) { settingsButton }
+        .safeAreaInset(edge: .top, spacing: 0) { topBar }
         .onAppear {
             refresh()
             #if DEBUG
@@ -90,16 +87,33 @@ struct HomeView: View {
         }
     }
 
+    /// Pinned top bar: progress + settings buttons flanking the SPEKA wordmark.
+    /// Lives in `safeAreaInset` so it stays put while the content scrolls under it.
+    private var topBar: some View {
+        ZStack {
+            header
+            HStack {
+                progressButton
+                Spacer(minLength: 0)
+                settingsButton
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.top, 6)
+        .padding(.bottom, 12)
+        .background {
+            SpekaColor.canvas
+                .ignoresSafeArea(edges: .top)
+                .shadow(color: SpekaColor.textPrimary.opacity(0.06), radius: 10, y: 5)
+        }
+    }
+
     private var settingsButton: some View {
         circleButton(systemImage: "gearshape.fill") { showSettings = true }
-            .padding(.trailing, 20)
-            .padding(.top, 56)
     }
 
     private var progressButton: some View {
         circleButton(systemImage: "chart.bar.fill") { showProgress = true }
-            .padding(.leading, 20)
-            .padding(.top, 56)
     }
 
     private func circleButton(systemImage: String, action: @escaping () -> Void) -> some View {
