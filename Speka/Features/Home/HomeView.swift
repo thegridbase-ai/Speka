@@ -177,7 +177,7 @@ struct HomeView: View {
             statTile(
                 value: stats.newToday,
                 label: "new today",
-                accent: .bubblegum,
+                accent: .lavender,
                 systemImage: "sparkles"
             )
         }
@@ -189,7 +189,7 @@ struct HomeView: View {
         accent: SpekaAccent,
         systemImage: String
     ) -> some View {
-        SpekaCard(cornerRadius: 18, padding: 18, accent: accent, systemImage: systemImage) {
+        SpekaCard(cornerRadius: 18, padding: 18, accent: accent, systemImage: systemImage, softFill: true) {
             VStack(alignment: .leading, spacing: 6) {
                 Text("\(value)")
                     .font(SpekaFont.font(.numberMD))
