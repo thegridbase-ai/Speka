@@ -11,6 +11,7 @@
 		119780BCD1E9F1899A2708BD /* words_a1.json in Resources */ = {isa = PBXBuildFile; fileRef = 405AF1B0BF08A8465182C49B /* words_a1.json */; };
 		12EAE1395449D67D4EE3800D /* SpekaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 44A34E6D5D950CBE73D73260 /* SpekaUI */; };
 		18A98D20661DC8E5C098E53D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A6BC6F87F526E6DACED028 /* AppRouter.swift */; };
+		1D6980925E85083BA99C4F3B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F74410EA377B57789382439 /* SignInView.swift */; };
 		2606830F7F6D2D6755585CF9 /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972B81EE042A4531BA28C6F /* OnboardingFlow.swift */; };
 		31DFC6C6AED104D29812785F /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD15B077770FF54B6FF2990 /* FlashcardView.swift */; };
 		45AD9FBEE5B518FEE77FA31E /* DemoDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CFA838F23ABAA576096AA /* DemoDriver.swift */; };
@@ -19,15 +20,20 @@
 		60AB15CB7B223F5706DFD29D /* GridBaseUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C85B237466D0ABD14E418B5 /* GridBaseUIKit */; };
 		684258D8F77262170F3A87C2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0606258B929C6E304E26E0E /* SettingsView.swift */; };
 		6C2C81A23D2D36F72D4E687D /* VocabularyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3C0FFD98D81EB372C6CFF4AB /* VocabularyKit */; };
+		6E9196934BA591F3D8A30B54 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1427A42D2416C563E168545B /* FirebaseFirestore */; };
 		7A1FE4D0F729D0F6730EB4B7 /* StatsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41ECDE76BD72019115D4595 /* StatsStore.swift */; };
 		7E1D744DA66641091EAFAF71 /* words_a2.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1CB53D0C0D1148CF87B8 /* words_a2.json */; };
 		8F5D3B9E07ACBC9E61DA4A2A /* ProgressStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA02AF405166B29277166AF /* ProgressStatsView.swift */; };
 		983A50F2BDF066C0A19A684C /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3454B77E76DD44F4AE10B51E /* WordStore.swift */; };
+		9A39B40113E473647632147D /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C520A02C057D7DA277CE4995 /* GoogleSignInSwift */; };
+		9BE6A31C9B164AA73E7AAE99 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50663BB2AB56C4968B4F56AC /* AuthStore.swift */; };
 		A44B9785D8AD2A5200FD9007 /* SpekaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5094410F59E42F59C4777B76 /* SpekaTheme.swift */; };
 		AC04563EC3453314CDAE811E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D3204532EA4F793759C5C9 /* Assets.xcassets */; };
 		AE92DD960A9B0798A4B770FB /* SpekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D026EAE252981E6822488 /* SpekaApp.swift */; };
+		AFF38F60DDCAE4F36DF84A13 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 94C70D78233AED25D987DDBD /* GoogleSignIn */; };
 		B01AAA5C23A95EF114F08745 /* TypeTranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */; };
 		B0719321556C2643A81B2995 /* MultipleChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6801C75EF6B5FACD2AFABEE /* MultipleChoiceView.swift */; };
+		B21DA1D044A0DC4A610A7BEE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEDB782332E73B7E6211CD7 /* FirebaseAuth */; };
 		B3BB54AF10F0D3C4328997D0 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8F4693937115F8F412010 /* Speaker.swift */; };
 		C6A53A2380792111239D8D86 /* LevelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A4C3DE48E614F9D84BB /* LevelPickerView.swift */; };
 		D580238596071D625BD9ED04 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857E9C676672BC93EF7F6D1B /* ProfileStore.swift */; };
@@ -49,10 +55,12 @@
 		3454B77E76DD44F4AE10B51E /* WordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
 		405AF1B0BF08A8465182C49B /* words_a1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words_a1.json; sourceTree = "<group>"; };
 		4ABB54D6E6AAC48E028817EA /* Catalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		50663BB2AB56C4968B4F56AC /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
 		5094410F59E42F59C4777B76 /* SpekaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpekaTheme.swift; sourceTree = "<group>"; };
 		50A6BC6F87F526E6DACED028 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		58D3204532EA4F793759C5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B6571507DDEB30DF3D8665A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5F74410EA377B57789382439 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		7972B81EE042A4531BA28C6F /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
 		79A53A4C3DE48E614F9D84BB /* LevelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelPickerView.swift; sourceTree = "<group>"; };
 		83C0985B87581E0AD86E83E3 /* VocabularyKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VocabularyKit; path = Packages/VocabularyKit; sourceTree = SOURCE_ROOT; };
@@ -81,6 +89,10 @@
 				6C2C81A23D2D36F72D4E687D /* VocabularyKit in Frameworks */,
 				60AB15CB7B223F5706DFD29D /* GridBaseUIKit in Frameworks */,
 				12EAE1395449D67D4EE3800D /* SpekaUI in Frameworks */,
+				B21DA1D044A0DC4A610A7BEE /* FirebaseAuth in Frameworks */,
+				6E9196934BA591F3D8A30B54 /* FirebaseFirestore in Frameworks */,
+				AFF38F60DDCAE4F36DF84A13 /* GoogleSignIn in Frameworks */,
+				9A39B40113E473647632147D /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,9 +116,19 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		215CF3CC8E975BE1A28FD281 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				50663BB2AB56C4968B4F56AC /* AuthStore.swift */,
+				5F74410EA377B57789382439 /* SignInView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		40C44B37BE8286E7158B32B5 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				215CF3CC8E975BE1A28FD281 /* Auth */,
 				1A6D89937E1C6BC36CE7A958 /* Home */,
 				F6C5174F529C6D5ADEA6D520 /* Onboarding */,
 				BCAB56E730C0F7878C8452A7 /* Progress */,
@@ -256,6 +278,10 @@
 				3C0FFD98D81EB372C6CFF4AB /* VocabularyKit */,
 				2C85B237466D0ABD14E418B5 /* GridBaseUIKit */,
 				44A34E6D5D950CBE73D73260 /* SpekaUI */,
+				2BEDB782332E73B7E6211CD7 /* FirebaseAuth */,
+				1427A42D2416C563E168545B /* FirebaseFirestore */,
+				94C70D78233AED25D987DDBD /* GoogleSignIn */,
+				C520A02C057D7DA277CE4995 /* GoogleSignInSwift */,
 			);
 			productName = Speka;
 			productReference = B977837E1F9F4C8BE90839D3 /* Speka.app */;
@@ -282,6 +308,8 @@
 			mainGroup = 59244C32741416B53081250A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				FBE1C1596AAF95B9359AD442 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9CD7F9E923324F84284AB486 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				0C2360CD6EEEF4C436DA2674 /* XCLocalSwiftPackageReference "Packages/GridBaseUIKit" */,
 				45398B268A560299D828B2A9 /* XCLocalSwiftPackageReference "Packages/SpekaUI" */,
 				0529720C8A98D0FB65500EE9 /* XCLocalSwiftPackageReference "Packages/VocabularyKit" */,
@@ -315,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A98D20661DC8E5C098E53D /* AppRouter.swift in Sources */,
+				9BE6A31C9B164AA73E7AAE99 /* AuthStore.swift in Sources */,
 				4E0B6984154A3CA9A033504B /* Catalog.swift in Sources */,
 				45AD9FBEE5B518FEE77FA31E /* DemoDriver.swift in Sources */,
 				31DFC6C6AED104D29812785F /* FlashcardView.swift in Sources */,
@@ -329,6 +358,7 @@
 				DCDB24DEF5CCE102D3C991A6 /* SeedLoader.swift in Sources */,
 				D60440A58AD9B1A7E9FD3761 /* SessionSummaryView.swift in Sources */,
 				684258D8F77262170F3A87C2 /* SettingsView.swift in Sources */,
+				1D6980925E85083BA99C4F3B /* SignInView.swift in Sources */,
 				E5B96EB797A7FCA762A7F8B8 /* SourceLanguagePickerView.swift in Sources */,
 				B3BB54AF10F0D3C4328997D0 /* Speaker.swift in Sources */,
 				AE92DD960A9B0798A4B770FB /* SpekaApp.swift in Sources */,
@@ -551,7 +581,36 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		9CD7F9E923324F84284AB486 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		FBE1C1596AAF95B9359AD442 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		1427A42D2416C563E168545B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBE1C1596AAF95B9359AD442 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2BEDB782332E73B7E6211CD7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBE1C1596AAF95B9359AD442 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		2C85B237466D0ABD14E418B5 /* GridBaseUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GridBaseUIKit;
@@ -563,6 +622,16 @@
 		44A34E6D5D950CBE73D73260 /* SpekaUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SpekaUI;
+		};
+		94C70D78233AED25D987DDBD /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CD7F9E923324F84284AB486 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		C520A02C057D7DA277CE4995 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CD7F9E923324F84284AB486 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

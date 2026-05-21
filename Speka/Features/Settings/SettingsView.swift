@@ -10,12 +10,14 @@ import SpekaUI
 /// a native part of the "Sunny Studio" app rather than a stock form.
 struct SettingsView: View {
     @EnvironmentObject private var profileStore: ProfileStore
+    @EnvironmentObject private var authStore: AuthStore
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
 
     @State private var speechRate: Double = Speaker.shared.rateMultiplier
     @State private var dailyGoal: Int = StatsStore.dailyGoal()
     @State private var showResetConfirm = false
+    @State private var showSignIn = false
 
     private var level: CEFRLevel { profileStore.level ?? .a1 }
     private var language: SourceLanguage { profileStore.nativeLanguage ?? .tr }
@@ -36,6 +38,7 @@ struct SettingsView: View {
                 ScrollViewReader { proxy in
                     ScrollView {
                         VStack(spacing: 22) {
+                            accountSection
                             levelSection
                             languageSection
                             speechSection.id("speech")
@@ -57,6 +60,10 @@ struct SettingsView: View {
                                 withAnimation { proxy.scrollTo("speech", anchor: .top) }
                             }
                         }
+                        // Test affordance: open the sign-in sheet for screenshots.
+                        if ProcessInfo.processInfo.arguments.contains("-speka-signin") {
+                            showSignIn = true
+                        }
                         #endif
                     }
                 }
@@ -67,6 +74,77 @@ struct SettingsView: View {
             Button("Reset", role: .destructive) { resetProgress() }
         } message: {
             Text("This permanently clears all review history, streaks and study sessions. Your level and language are kept. This cannot be undone.")
+        }
+        .fullScreenCover(isPresented: $showSignIn) {
+            SignInView()
+                .environmentObject(authStore)
+        }
+    }
+
+    // MARK: - Account
+
+    private var accountSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionLabel("Account")
+            SpekaCard(cornerRadius: 18, padding: 16) {
+                switch authStore.state {
+                case .signedIn(_, let email, let displayName):
+                    signedInRow(email: email, displayName: displayName)
+                case .signedOut:
+                    signedOutRow
+                }
+            }
+        }
+    }
+
+    private var signedOutRow: some View {
+        Button {
+            showSignIn = true
+            UISelection.tap()
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "person.crop.circle.badge.plus")
+                    .font(.system(size: 22, weight: .semibold))
+                    .foregroundStyle(SpekaColor.primary.base)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Sign in")
+                        .spekaFont(.headline)
+                        .foregroundStyle(SpekaColor.textPrimary)
+                    Text("Back up & sync your progress")
+                        .spekaFont(.caption)
+                        .foregroundStyle(SpekaColor.textTertiary)
+                }
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundStyle(SpekaColor.textTertiary)
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func signedInRow(email: String?, displayName: String?) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: "person.crop.circle.fill")
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundStyle(SpekaAccent.mint.base)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(displayName ?? email ?? "Signed in")
+                    .spekaFont(.headline)
+                    .foregroundStyle(SpekaColor.textPrimary)
+                if displayName != nil, let email {
+                    Text(email)
+                        .spekaFont(.caption)
+                        .foregroundStyle(SpekaColor.textTertiary)
+                }
+            }
+            Spacer()
+            Button("Sign out") {
+                authStore.signOut()
+                UISelection.tap()
+            }
+            .font(SpekaFont.font(.callout))
+            .foregroundStyle(SpekaAccent.coral.base)
         }
     }
 

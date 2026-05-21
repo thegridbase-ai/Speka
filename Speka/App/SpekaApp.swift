@@ -13,6 +13,7 @@ struct SpekaApp: App {
     let modelContainer: ModelContainer
 
     @StateObject private var profileStore = ProfileStore()
+    @StateObject private var authStore = AuthStore()
 
     init() {
         // Register the bundled Fredoka display font (graceful fallback if absent).
@@ -79,6 +80,7 @@ struct SpekaApp: App {
         WindowGroup {
             AppRouter()
                 .environmentObject(profileStore)
+                .environmentObject(authStore)
                 .preferredColorScheme(.light)
         }
         .modelContainer(modelContainer)
