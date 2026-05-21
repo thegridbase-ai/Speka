@@ -11,6 +11,7 @@ import SpekaUI
 struct SettingsView: View {
     @EnvironmentObject private var profileStore: ProfileStore
     @EnvironmentObject private var authStore: AuthStore
+    @EnvironmentObject private var syncService: SyncService
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
 
@@ -209,6 +210,7 @@ struct SettingsView: View {
         return Button {
             guard available, !isSelected else { return }
             profileStore.setLevel(lvl)
+            syncService.schedulePush()
             UISelection.tap()
         } label: {
             HStack(spacing: 12) {
@@ -271,6 +273,7 @@ struct SettingsView: View {
         return Button {
             guard available, !isSelected else { return }
             profileStore.setLanguage(lang)
+            syncService.schedulePush()
             UISelection.tap()
         } label: {
             HStack(spacing: 12) {
@@ -374,6 +377,7 @@ struct SettingsView: View {
                     .tint(SpekaColor.primary.base)
                     .onChange(of: dailyGoal) { _, newValue in
                         StatsStore.setDailyGoal(newValue)
+                        syncService.schedulePush()
                     }
                 }
             }

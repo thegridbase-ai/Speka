@@ -16,6 +16,7 @@ struct StudySessionView: View {
 
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var syncService: SyncService
 
     @State private var queue: [Word] = []
     @State private var index = 0
@@ -158,6 +159,9 @@ struct StudySessionView: View {
             correctCount: correctCount,
             in: modelContext
         )
+        // Mirror the just-updated review states + stats upstream (no-op when
+        // signed out / sync unavailable; debounced + non-blocking).
+        syncService.schedulePush()
     }
 
     private var currentWord: Word? {

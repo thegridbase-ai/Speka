@@ -7,6 +7,8 @@ import SpekaUI
 /// counts, and the "Start studying" CTA.
 struct HomeView: View {
     @EnvironmentObject private var profileStore: ProfileStore
+    @EnvironmentObject private var authStore: AuthStore
+    @EnvironmentObject private var syncService: SyncService
     @Environment(\.modelContext) private var modelContext
 
     @State private var stats = WordStore.LevelStats(total: 0, known: 0, dueToday: 0, newToday: 0)
@@ -69,14 +71,20 @@ struct HomeView: View {
         .fullScreenCover(isPresented: $isStudying, onDismiss: refresh) {
             StudySessionView(level: level, language: language, mode: selectedMode)
                 .environmentObject(profileStore)
+                .environmentObject(authStore)
+                .environmentObject(syncService)
         }
         .fullScreenCover(isPresented: $showSettings, onDismiss: refresh) {
             SettingsView()
                 .environmentObject(profileStore)
+                .environmentObject(authStore)
+                .environmentObject(syncService)
         }
         .fullScreenCover(isPresented: $showProgress, onDismiss: refresh) {
             ProgressStatsView()
                 .environmentObject(profileStore)
+                .environmentObject(authStore)
+                .environmentObject(syncService)
         }
     }
 

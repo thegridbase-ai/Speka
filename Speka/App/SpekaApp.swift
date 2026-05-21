@@ -12,13 +12,15 @@ struct SpekaApp: App {
     /// Shared SwiftData container for all VocabularyKit persistent models.
     let modelContainer: ModelContainer
 
-    @StateObject private var profileStore = ProfileStore()
+    @StateObject private var profileStore: ProfileStore
     @StateObject private var authStore = AuthStore()
+    @StateObject private var syncService: SyncService
 
     init() {
         // Register the bundled Fredoka display font (graceful fallback if absent).
         SpekaFont.registerFonts()
 
+        let container: ModelContainer
         do {
             let schema = Schema([
                 Word.self,
@@ -31,7 +33,7 @@ struct SpekaApp: App {
                 schema: schema,
                 isStoredInMemoryOnly: false
             )
-            modelContainer = try ModelContainer(
+            container = try ModelContainer(
                 for: schema,
                 configurations: [configuration]
             )
@@ -40,6 +42,16 @@ struct SpekaApp: App {
             // debug rather than limping along with a half-initialised stack.
             fatalError("Failed to create SwiftData ModelContainer: \(error)")
         }
+        modelContainer = container
+
+        // Build the stores so the sync service shares the same ProfileStore
+        // instance the rest of the app sees (single source of truth).
+        let profile = ProfileStore()
+        _profileStore = StateObject(wrappedValue: profile)
+        _syncService = StateObject(wrappedValue: SyncService(
+            modelContext: container.mainContext,
+            profileStore: profile
+        ))
 
         // Seed the A1 vocabulary on first launch (idempotent, version-guarded).
         SeedLoader.seedIfNeeded(into: modelContainer.mainContext)
@@ -81,6 +93,7 @@ struct SpekaApp: App {
             AppRouter()
                 .environmentObject(profileStore)
                 .environmentObject(authStore)
+                .environmentObject(syncService)
                 .preferredColorScheme(.light)
         }
         .modelContainer(modelContainer)

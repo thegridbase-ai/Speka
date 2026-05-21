@@ -7,6 +7,8 @@ import GoogleSignIn
 /// Top-level router: onboarding until a profile exists, then the main app.
 struct AppRouter: View {
     @EnvironmentObject private var profileStore: ProfileStore
+    @EnvironmentObject private var authStore: AuthStore
+    @EnvironmentObject private var syncService: SyncService
 
     var body: some View {
         ZStack {
@@ -29,6 +31,17 @@ struct AppRouter: View {
             #if canImport(GoogleSignIn)
             _ = GIDSignIn.sharedInstance.handle(url)
             #endif
+        }
+        // Bridge auth → sync. Signed-in starts a pull-then-push; signed-out
+        // stops syncing (local data is left intact). Fires for the initial
+        // state too, so an already-signed-in user resumes sync on launch.
+        .onChange(of: authStore.state, initial: true) { _, newState in
+            switch newState {
+            case .signedIn(let uid, _, _):
+                syncService.start(uid: uid)
+            case .signedOut:
+                syncService.stop()
+            }
         }
     }
 }
