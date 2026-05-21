@@ -50,6 +50,7 @@
 		040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTranslationView.swift; sourceTree = "<group>"; };
 		13F57B18F6832795CDCC8D01 /* SessionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryView.swift; sourceTree = "<group>"; };
 		15B8F4693937115F8F412010 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		1ADD0B608F99DE62CCE9454D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2FD15B077770FF54B6FF2990 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
 		317D026EAE252981E6822488 /* SpekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpekaApp.swift; sourceTree = "<group>"; };
 		333288B6F95E2F05CCEF4794 /* SourceLanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLanguagePickerView.swift; sourceTree = "<group>"; };
@@ -163,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				550CAE1DBCC1E8AA16500541 /* GoogleService-Info.plist */,
+				1ADD0B608F99DE62CCE9454D /* Info.plist */,
 				7A153D51A82A332ADF3D4083 /* App */,
 				821F9FA810FBAF37E7182296 /* Data */,
 				40C44B37BE8286E7158B32B5 /* Features */,
@@ -512,10 +514,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_KEY_CFBundleDisplayName = Speka;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Speka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,10 +532,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_KEY_CFBundleDisplayName = Speka;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Speka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
