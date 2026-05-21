@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/icon.png" width="132" alt="SPEKA app icon">
+
 # SPEKA
 
 **Learn English vocabulary — one confident word at a time.**
