@@ -63,6 +63,80 @@ enum StatsStore {
         return (try? context.fetch(descriptor)) ?? []
     }
 
+    // MARK: - Progress report
+
+    /// Aggregate stats for the İlerleme / progress screen. Every field is
+    /// derived honestly from recorded `StudySession`s — a fresh user with no
+    /// sessions sees zeros and an empty week, which is correct.
+    struct ProgressReport {
+        /// Cards reviewed per weekday for the current week, Monday → Sunday.
+        var weeklyCounts: [Int]
+        /// Sum of `weeklyCounts`.
+        var weeklyTotal: Int
+        /// Overall accuracy across all completed sessions, 0–100, or `nil` when
+        /// nothing has been reviewed yet.
+        var accuracy: Int?
+        /// Consecutive-day study streak (mirrors ``Summary/streak``).
+        var streak: Int
+
+        /// Short Turkish weekday labels aligned to ``weeklyCounts`` (Mon-first).
+        static let weekdayLabels = ["Pt", "Sa", "Ça", "Pe", "Cu", "Ct", "Pz"]
+    }
+
+    /// Build the weekly bar data + overall accuracy + streak for the progress
+    /// screen. `weeklyCounts` is indexed Monday(0) … Sunday(6) for the calendar
+    /// week containing `now`.
+    static func progress(
+        now: Date = Date(),
+        calendar: Calendar = .current,
+        in context: ModelContext
+    ) -> ProgressReport {
+        let sessions = completedSessions(in: context)
+
+        // Monday-anchored week. `firstWeekday` is locale-dependent (Sun=1 in
+        // en_US), so derive the Monday of the current week explicitly.
+        let today = calendar.startOfDay(for: now)
+        let weekdayIndex = mondayBasedIndex(of: today, calendar: calendar) // 0=Mon
+        let monday = calendar.date(byAdding: .day, value: -weekdayIndex, to: today) ?? today
+
+        var weeklyCounts = Array(repeating: 0, count: 7)
+        var totalReviewed = 0
+        var totalCorrect = 0
+
+        for session in sessions {
+            totalReviewed += session.cardsReviewed
+            totalCorrect += session.correctCount
+
+            guard let ended = session.endedAt else { continue }
+            let day = calendar.startOfDay(for: ended)
+            let offset = calendar.dateComponents([.day], from: monday, to: day).day ?? -1
+            if offset >= 0 && offset < 7 {
+                weeklyCounts[offset] += session.cardsReviewed
+            }
+        }
+
+        let accuracy: Int? = totalReviewed > 0
+            ? Int((Double(totalCorrect) / Double(totalReviewed) * 100).rounded())
+            : nil
+
+        let summary = summary(now: now, calendar: calendar, in: context)
+
+        return ProgressReport(
+            weeklyCounts: weeklyCounts,
+            weeklyTotal: weeklyCounts.reduce(0, +),
+            accuracy: accuracy,
+            streak: summary.streak
+        )
+    }
+
+    /// Monday-based weekday index (0=Mon … 6=Sun) for a date, independent of the
+    /// calendar's locale `firstWeekday`.
+    private static func mondayBasedIndex(of date: Date, calendar: Calendar) -> Int {
+        // `weekday`: 1=Sun … 7=Sat. Map to 0=Mon … 6=Sun.
+        let weekday = calendar.component(.weekday, from: date)
+        return (weekday + 5) % 7
+    }
+
     /// Compute the streak + today's progress.
     static func summary(
         now: Date = Date(),

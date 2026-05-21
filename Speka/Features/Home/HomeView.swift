@@ -13,6 +13,7 @@ struct HomeView: View {
     @State private var summary = StatsStore.Summary(streak: 0, cardsToday: 0, goal: StatsStore.defaultDailyGoal)
     @State private var isStudying = false
     @State private var showSettings = false
+    @State private var showProgress = false
     @State private var selectedMode: StudyMode = .flashcard
 
     private var level: CEFRLevel { profileStore.level ?? .a1 }
@@ -42,6 +43,7 @@ struct HomeView: View {
             .padding(.bottom, 40)
         }
         .scrollIndicators(.hidden)
+        .overlay(alignment: .topLeading) { progressButton }
         .overlay(alignment: .topTrailing) { settingsButton }
         .onAppear {
             refresh()
@@ -62,6 +64,9 @@ struct HomeView: View {
             if args.contains("-speka-settings") {
                 showSettings = true
             }
+            if args.contains("-speka-progress") {
+                showProgress = true
+            }
             #endif
         }
         .fullScreenCover(isPresented: $isStudying, onDismiss: refresh) {
@@ -70,6 +75,10 @@ struct HomeView: View {
         }
         .fullScreenCover(isPresented: $showSettings, onDismiss: refresh) {
             SettingsView()
+                .environmentObject(profileStore)
+        }
+        .fullScreenCover(isPresented: $showProgress, onDismiss: refresh) {
+            ProgressStatsView()
                 .environmentObject(profileStore)
         }
     }
@@ -82,10 +91,20 @@ struct HomeView: View {
     }
 
     private var settingsButton: some View {
-        Button {
-            showSettings = true
-        } label: {
-            Image(systemName: "gearshape.fill")
+        circleButton(systemImage: "gearshape.fill") { showSettings = true }
+            .padding(.trailing, 20)
+            .padding(.top, 56)
+    }
+
+    private var progressButton: some View {
+        circleButton(systemImage: "chart.bar.fill") { showProgress = true }
+            .padding(.leading, 20)
+            .padding(.top, 56)
+    }
+
+    private func circleButton(systemImage: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: systemImage)
                 .font(.system(size: 18, weight: .semibold))
                 .foregroundStyle(SpekaColor.textSecondary)
                 .frame(width: 44, height: 44)
@@ -96,8 +115,6 @@ struct HomeView: View {
                 .shadow(color: SpekaColor.textPrimary.opacity(0.06), radius: 8, y: 3)
         }
         .buttonStyle(.plain)
-        .padding(.trailing, 20)
-        .padding(.top, 56)
     }
 
     private var header: some View {

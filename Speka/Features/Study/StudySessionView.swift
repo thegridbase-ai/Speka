@@ -24,6 +24,7 @@ struct StudySessionView: View {
     @State private var correctCount = 0
     @State private var didFinish = false
     @State private var startedAt = Date()
+    @State private var endedAt: Date?
     @State private var didRecord = false
 
     /// Celebration state: bumped on a correct grade to fire confetti + Pip.
@@ -63,7 +64,8 @@ struct StudySessionView: View {
                 SessionSummaryView(
                     reviewed: reviewedCount,
                     correct: correctCount,
-                    accent: level.accent,
+                    durationSeconds: (endedAt ?? Date()).timeIntervalSince(startedAt),
+                    streak: StatsStore.summary(in: modelContext).streak,
                     onDone: { dismiss() }
                 )
             } else if queue.isEmpty {
@@ -86,8 +88,10 @@ struct StudySessionView: View {
         .onAppear {
             // Deterministic QA: jump straight to the end-of-session summary.
             if ProcessInfo.processInfo.arguments.contains("-speka-summary") {
-                reviewedCount = 12
-                correctCount = 9
+                reviewedCount = 20
+                correctCount = 18
+                startedAt = Date().addingTimeInterval(-240) // ~4 min elapsed
+                endedAt = Date()
                 didFinish = true
                 return
             }
@@ -409,6 +413,7 @@ struct StudySessionView: View {
             // summary's opaque background.
             feedback = nil
             showConfetti = false
+            endedAt = Date()
             didFinish = true
         } else {
             // Reset the flip state, then move to the next card on the next runloop

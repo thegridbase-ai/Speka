@@ -21,6 +21,7 @@
 		6C2C81A23D2D36F72D4E687D /* VocabularyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3C0FFD98D81EB372C6CFF4AB /* VocabularyKit */; };
 		7A1FE4D0F729D0F6730EB4B7 /* StatsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41ECDE76BD72019115D4595 /* StatsStore.swift */; };
 		7E1D744DA66641091EAFAF71 /* words_a2.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1CB53D0C0D1148CF87B8 /* words_a2.json */; };
+		8F5D3B9E07ACBC9E61DA4A2A /* ProgressStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA02AF405166B29277166AF /* ProgressStatsView.swift */; };
 		983A50F2BDF066C0A19A684C /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3454B77E76DD44F4AE10B51E /* WordStore.swift */; };
 		A44B9785D8AD2A5200FD9007 /* SpekaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5094410F59E42F59C4777B76 /* SpekaTheme.swift */; };
 		AC04563EC3453314CDAE811E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D3204532EA4F793759C5C9 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		83C0985B87581E0AD86E83E3 /* VocabularyKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VocabularyKit; path = Packages/VocabularyKit; sourceTree = SOURCE_ROOT; };
 		857E9C676672BC93EF7F6D1B /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
 		A75948B6A4A6A461DD575209 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		ACA02AF405166B29277166AF /* ProgressStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStatsView.swift; sourceTree = "<group>"; };
 		B0606258B929C6E304E26E0E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B6801C75EF6B5FACD2AFABEE /* MultipleChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceView.swift; sourceTree = "<group>"; };
 		B977837E1F9F4C8BE90839D3 /* Speka.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Speka.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			children = (
 				1A6D89937E1C6BC36CE7A958 /* Home */,
 				F6C5174F529C6D5ADEA6D520 /* Onboarding */,
+				BCAB56E730C0F7878C8452A7 /* Progress */,
 				F2236EB481723E3957213410 /* Settings */,
 				BAE9718E81F763592314014A /* Study */,
 			);
@@ -196,6 +199,14 @@
 				040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */,
 			);
 			path = Study;
+			sourceTree = "<group>";
+		};
+		BCAB56E730C0F7878C8452A7 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				ACA02AF405166B29277166AF /* ProgressStatsView.swift */,
+			);
+			path = Progress;
 			sourceTree = "<group>";
 		};
 		EDE88D6DDA881A962F378203 /* Resources */ = {
@@ -314,6 +325,7 @@
 				B0719321556C2643A81B2995 /* MultipleChoiceView.swift in Sources */,
 				2606830F7F6D2D6755585CF9 /* OnboardingFlow.swift in Sources */,
 				D580238596071D625BD9ED04 /* ProfileStore.swift in Sources */,
+				8F5D3B9E07ACBC9E61DA4A2A /* ProgressStatsView.swift in Sources */,
 				DCDB24DEF5CCE102D3C991A6 /* SeedLoader.swift in Sources */,
 				D60440A58AD9B1A7E9FD3761 /* SessionSummaryView.swift in Sources */,
 				684258D8F77262170F3A87C2 /* SettingsView.swift in Sources */,
