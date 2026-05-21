@@ -4,17 +4,22 @@ import SwiftUI
 
 /// A rounded, candy-style horizontal progress bar.
 ///
-/// A fully-rounded `surfaceSunken` track holds a solid accent fill; the fill
-/// carries a lighter top-highlight stripe for a soft 3D "gel" read. Animates
-/// smoothly as `progress` changes (honors Reduce Motion).
+/// A fully-rounded `surfaceSunken` track holds the fill; the fill carries a
+/// lighter top-highlight stripe for a soft 3D "gel" read. The fill is a solid
+/// accent by default, or a gradient when `gradientStops` is supplied (e.g.
+/// ``SpekaColor/brandStops`` for the in-session header bars). Animates smoothly
+/// as `progress` changes (honors Reduce Motion).
 ///
 /// ```swift
 /// SpekaProgressBar(progress: 0.6, accent: .sunflower)
+/// SpekaProgressBar(progress: 0.6, gradientStops: SpekaColor.brandStops)
 /// ```
 public struct SpekaProgressBar: View {
     /// Completion fraction, clamped to `0...1`.
     public var progress: Double
     public var accent: SpekaAccent
+    /// Optional gradient stops; when non-nil the fill is this gradient.
+    public var gradientStops: [Color]?
     public var height: CGFloat
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -22,10 +27,12 @@ public struct SpekaProgressBar: View {
     public init(
         progress: Double,
         accent: SpekaAccent = .coral,
+        gradientStops: [Color]? = nil,
         height: CGFloat = 14
     ) {
         self.progress = min(max(progress, 0), 1)
         self.accent = accent
+        self.gradientStops = gradientStops
         self.height = height
     }
 
@@ -37,9 +44,9 @@ public struct SpekaProgressBar: View {
                 Capsule(style: .continuous)
                     .fill(SpekaColor.surfaceSunken)
 
-                // Accent fill + lighter top highlight stripe.
+                // Accent (or gradient) fill + lighter top highlight stripe.
                 Capsule(style: .continuous)
-                    .fill(accent.base)
+                    .fill(fillStyle)
                     .overlay(alignment: .top) {
                         Capsule(style: .continuous)
                             .fill(Color.white.opacity(0.28))
@@ -57,14 +64,25 @@ public struct SpekaProgressBar: View {
         }
         .frame(height: height)
     }
+
+    /// The fill: a horizontal gradient when `gradientStops` is supplied,
+    /// otherwise the solid `accent.base`.
+    private var fillStyle: AnyShapeStyle {
+        guard let stops = gradientStops, stops.count >= 2 else {
+            return AnyShapeStyle(accent.base)
+        }
+        return AnyShapeStyle(
+            LinearGradient(colors: stops, startPoint: .leading, endPoint: .trailing)
+        )
+    }
 }
 
 #Preview("SpekaProgressBar") {
     ZStack {
         SpekaBackground()
         VStack(spacing: 18) {
-            SpekaProgressBar(progress: 0.3, accent: .coral)
-            SpekaProgressBar(progress: 0.6, accent: .sunflower)
+            SpekaProgressBar(progress: 0.4, gradientStops: SpekaColor.brandStops)
+            SpekaProgressBar(progress: 0.6, accent: .sky)
             SpekaProgressBar(progress: 0.9, accent: .mint, height: 18)
         }
         .padding(.horizontal, 32)

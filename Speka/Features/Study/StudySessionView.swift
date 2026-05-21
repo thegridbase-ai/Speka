@@ -169,7 +169,7 @@ struct StudySessionView: View {
 
             SpekaProgressBar(
                 progress: Double(index) / Double(max(queue.count, 1)),
-                accent: accent
+                gradientStops: SpekaColor.brandStops
             )
             .padding(.horizontal, 24)
             .padding(.top, 4)

@@ -4,8 +4,11 @@ import SwiftUI
 
 /// The visual variant of a ``SpekaButton`` / ``SpekaButtonStyle``.
 public enum SpekaButtonVariant: Equatable, Sendable {
-    /// Solid accent face on a darker `edge` lip (the default 3D button).
+    /// Accent-gradient face (`base → partner`) on a darker `edge` lip — the
+    /// default 3D button. Per-mode CTAs use their mode accent here.
     case filled(SpekaAccent)
+    /// The hero CTA: the three-stop **brand gradient** face on a darkened lip.
+    case brand
     /// White face with an accent (or border) outline and `textPrimary` label.
     case ghost(SpekaAccent)
     /// Inert sunken look: `surfaceSunken` face, `textTertiary` label, no lip.
@@ -95,7 +98,7 @@ public struct SpekaButtonStyle: ButtonStyle {
 
     private var hasLip: Bool {
         switch variant {
-        case .filled, .ghost: return true
+        case .filled, .brand, .ghost: return true
         case .disabled: return false
         }
     }
@@ -104,7 +107,9 @@ public struct SpekaButtonStyle: ButtonStyle {
     private var faceBackground: some View {
         switch variant {
         case .filled(let accent):
-            accent.base
+            accent.gradient
+        case .brand:
+            SpekaColor.brandGradient
         case .ghost:
             SpekaColor.surface
         case .disabled:
@@ -115,6 +120,7 @@ public struct SpekaButtonStyle: ButtonStyle {
     private var lipColor: Color {
         switch variant {
         case .filled(let accent): return accent.edge
+        case .brand: return SpekaColor.brandEdge
         case .ghost: return SpekaColor.borderStrong
         case .disabled: return .clear
         }
@@ -129,7 +135,7 @@ public struct SpekaButtonStyle: ButtonStyle {
 
     private var faceTextColor: Color {
         switch variant {
-        case .filled: return SpekaColor.onColor
+        case .filled, .brand: return SpekaColor.onColor
         case .ghost: return SpekaColor.textPrimary
         case .disabled: return SpekaColor.textTertiary
         }
@@ -207,8 +213,10 @@ public struct SpekaButton: View {
     ZStack {
         SpekaBackground()
         VStack(spacing: 22) {
+            SpekaButton("Continue", systemImage: "play.fill", variant: .brand, fullWidth: true) {}
+                .padding(.horizontal, 32)
             SpekaButton("Check", systemImage: "checkmark", variant: .filled(.mint)) {}
-            SpekaButton("Continue", variant: .filled(.coral), fullWidth: true) {}
+            SpekaButton("Kontrol et", variant: .filled(.sky), fullWidth: true) {}
                 .padding(.horizontal, 32)
             SpekaButton("Skip", variant: .ghost(.sky)) {}
             SpekaButton("Locked", systemImage: "lock.fill", variant: .disabled) {}

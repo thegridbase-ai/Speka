@@ -60,19 +60,20 @@ public struct SpekaCard<Content: View>: View {
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
-        // Soft warm shadow: textPrimary @ 8%, radius 16, y6.
-        .shadow(color: SpekaColor.textPrimary.opacity(0.08), radius: 16, x: 0, y: 6)
+        // Soft, slightly magenta-tinted shadow: ~12%, blur 30, y14.
+        .shadow(color: SpekaColor.textPrimary.opacity(0.12), radius: 30, x: 0, y: 14)
     }
 
     private func iconChip(accent: SpekaAccent, systemImage: String) -> some View {
         Image(systemName: systemImage)
             .font(.system(size: 18, weight: .bold))
-            .foregroundStyle(accent.base)
+            .foregroundStyle(SpekaColor.onColor)
             .frame(width: 40, height: 40)
             .background {
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(accent.soft)
+                    .fill(accent.gradient)
             }
+            .shadow(color: accent.base.opacity(0.35), radius: 8, x: 0, y: 4)
     }
 }
 

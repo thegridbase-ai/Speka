@@ -17,7 +17,6 @@ struct HomeView: View {
 
     private var level: CEFRLevel { profileStore.level ?? .a1 }
     private var language: SourceLanguage { profileStore.nativeLanguage ?? .tr }
-    private var levelAccent: SpekaAccent { level.accent }
 
     private var hasWork: Bool { stats.dueToday + stats.newToday > 0 }
 
@@ -145,11 +144,11 @@ struct HomeView: View {
     private var progressRingCard: some View {
         SpekaCard(cornerRadius: 24, padding: 24) {
             VStack(spacing: 18) {
-                SpekaRing(progress: stats.progress, accent: levelAccent) {
+                SpekaRing(progress: stats.progress, gradientStops: SpekaColor.brandStops) {
                     VStack(spacing: 4) {
                         Text(level.displayName)
                             .font(SpekaFont.display(size: 34))
-                            .foregroundStyle(levelAccent.base)
+                            .foregroundStyle(SpekaColor.primary.partner)
                         Text("\(Int(stats.progress * 100))%")
                             .spekaFont(.subhead)
                             .foregroundStyle(SpekaColor.textSecondary)
@@ -232,7 +231,13 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Image(systemName: mode.systemImage)
                     .font(.system(size: 18, weight: .bold))
-                    .foregroundStyle(isSelected ? accent.base : SpekaColor.textTertiary)
+                    .foregroundStyle(SpekaColor.onColor)
+                    .frame(width: 44, height: 44)
+                    .background {
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .fill(accent.gradient)
+                    }
+                    .shadow(color: accent.base.opacity(0.35), radius: 8, x: 0, y: 4)
                 Text(mode.title)
                     .spekaFont(.headline)
                     .foregroundStyle(SpekaColor.textPrimary)
@@ -272,7 +277,7 @@ struct HomeView: View {
             SpekaButton(
                 hasWork ? "Start studying" : "All caught up",
                 systemImage: hasWork ? "play.fill" : "checkmark.circle.fill",
-                variant: hasWork ? .filled(levelAccent) : .disabled,
+                variant: hasWork ? .brand : .disabled,
                 fullWidth: true
             ) {
                 guard hasWork else { return }

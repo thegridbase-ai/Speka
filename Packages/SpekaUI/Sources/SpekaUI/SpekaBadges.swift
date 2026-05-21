@@ -95,19 +95,24 @@ public struct LevelBadge: View {
     public var isLocked: Bool
     public var shape: BadgeShape
     public var size: CGFloat
+    /// Optional gradient stops; when non-nil the tile fills with this gradient
+    /// (e.g. ``SpekaColor/brandStops`` for the on-level CEFR chip).
+    public var gradientStops: [Color]?
 
     public init(
         letter: String,
         accent: SpekaAccent = .coral,
         isLocked: Bool = false,
         shape: BadgeShape = .roundedSquare,
-        size: CGFloat = 56
+        size: CGFloat = 56,
+        gradientStops: [Color]? = nil
     ) {
         self.letter = letter
         self.accent = accent
         self.isLocked = isLocked
         self.shape = shape
         self.size = size
+        self.gradientStops = gradientStops
     }
 
     public var body: some View {
@@ -129,15 +134,28 @@ public struct LevelBadge: View {
 
     @ViewBuilder
     private var tile: some View {
-        let fill = isLocked ? SpekaColor.surfaceSunken : accent.base
         switch shape {
         case .roundedSquare:
             RoundedRectangle(cornerRadius: size * 0.28, style: .continuous)
-                .fill(fill)
+                .fill(tileFill)
         case .hexagon:
             HexagonShape()
-                .fill(fill)
+                .fill(tileFill)
         }
+    }
+
+    /// The tile fill: sunken when locked, a gradient when `gradientStops` is
+    /// supplied, otherwise the solid `accent.base`.
+    private var tileFill: AnyShapeStyle {
+        if isLocked {
+            return AnyShapeStyle(SpekaColor.surfaceSunken)
+        }
+        if let stops = gradientStops, stops.count >= 2 {
+            return AnyShapeStyle(
+                LinearGradient(colors: stops, startPoint: .topLeading, endPoint: .bottomTrailing)
+            )
+        }
+        return AnyShapeStyle(accent.base)
     }
 }
 

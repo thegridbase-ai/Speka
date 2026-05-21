@@ -2,12 +2,14 @@ import SwiftUI
 
 // MARK: - SpekaBackground
 
-/// "Sunny Studio" canvas background. A soft cream vertical gradient
-/// (`canvas → canvasBottom`) with an optional, very faint dot-grid.
+/// "Palette C" canvas background. A clean near-white vertical gradient
+/// (`canvas → canvasBottom`) with a very subtle brand-tinted radial blob for
+/// depth and an optional, barely-there dot-grid.
 ///
 /// This replaces GridBaseUIKit's `CyberpunkBackground` — **no** scan lines,
-/// **no** vignette, **no** circuit traces. Drop it at the back of a `ZStack`;
-/// it ignores the safe area.
+/// **no** vignette, **no** circuit traces. White stays dominant; the brand
+/// blob is low-opacity so surfaces still read crisp. Drop it at the back of a
+/// `ZStack`; it ignores the safe area.
 ///
 /// ```swift
 /// ZStack {
@@ -40,6 +42,21 @@ public struct SpekaBackground: View {
                 startPoint: .top,
                 endPoint: .bottom
             )
+
+            // Very subtle brand-tinted radial blob, top-trailing, for depth.
+            // Kept low-opacity so the canvas stays white-dominant and clean.
+            GeometryReader { geo in
+                RadialGradient(
+                    colors: [
+                        Color(hex: "F4495D").opacity(0.07),
+                        Color(hex: "8B2FE0").opacity(0.04),
+                        .clear
+                    ],
+                    center: .init(x: 0.92, y: 0.06),
+                    startRadius: 0,
+                    endRadius: max(geo.size.width, geo.size.height) * 0.85
+                )
+            }
 
             if showDotGrid {
                 DotGridView(spacing: dotSpacing, radius: dotRadius)
