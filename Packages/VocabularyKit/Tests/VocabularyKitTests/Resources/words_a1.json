@@ -1,0 +1,2513 @@
+[
+  {
+    "id": "en:i",
+    "headword": "I",
+    "pos": "pronoun",
+    "phonetic": "/aɪ/",
+    "exampleEN": "I live in a small town.",
+    "level": "a1",
+    "tr": "ben"
+  },
+  {
+    "id": "en:you",
+    "headword": "you",
+    "pos": "pronoun",
+    "phonetic": "/ju/",
+    "exampleEN": "You are my best friend.",
+    "level": "a1",
+    "tr": "sen"
+  },
+  {
+    "id": "en:he",
+    "headword": "he",
+    "pos": "pronoun",
+    "phonetic": "/hi/",
+    "exampleEN": "He works at a hospital.",
+    "level": "a1",
+    "tr": "o (erkek)"
+  },
+  {
+    "id": "en:she",
+    "headword": "she",
+    "pos": "pronoun",
+    "phonetic": "/ʃi/",
+    "exampleEN": "She reads a book every night.",
+    "level": "a1",
+    "tr": "o (kadın)"
+  },
+  {
+    "id": "en:it",
+    "headword": "it",
+    "pos": "pronoun",
+    "phonetic": "/ɪt/",
+    "exampleEN": "It is a beautiful day.",
+    "level": "a1",
+    "tr": "o (cansız)"
+  },
+  {
+    "id": "en:we",
+    "headword": "we",
+    "pos": "pronoun",
+    "phonetic": "/wi/",
+    "exampleEN": "We play soccer on Saturdays.",
+    "level": "a1",
+    "tr": "biz"
+  },
+  {
+    "id": "en:they",
+    "headword": "they",
+    "pos": "pronoun",
+    "phonetic": "/ðeɪ/",
+    "exampleEN": "They live next door.",
+    "level": "a1",
+    "tr": "onlar"
+  },
+  {
+    "id": "en:me",
+    "headword": "me",
+    "pos": "pronoun",
+    "phonetic": "/mi/",
+    "exampleEN": "Can you help me, please?",
+    "level": "a1",
+    "tr": "beni / bana"
+  },
+  {
+    "id": "en:him",
+    "headword": "him",
+    "pos": "pronoun",
+    "phonetic": "/hɪm/",
+    "exampleEN": "I saw him at the store.",
+    "level": "a1",
+    "tr": "onu (erkek)"
+  },
+  {
+    "id": "en:her",
+    "headword": "her",
+    "pos": "pronoun",
+    "phonetic": "/hɜr/",
+    "exampleEN": "I gave her a gift.",
+    "level": "a1",
+    "tr": "onu / ona (kadın)"
+  },
+  {
+    "id": "en:us",
+    "headword": "us",
+    "pos": "pronoun",
+    "phonetic": "/ʌs/",
+    "exampleEN": "Please come with us.",
+    "level": "a1",
+    "tr": "bizi / bize"
+  },
+  {
+    "id": "en:them",
+    "headword": "them",
+    "pos": "pronoun",
+    "phonetic": "/ðɛm/",
+    "exampleEN": "I called them this morning.",
+    "level": "a1",
+    "tr": "onları / onlara"
+  },
+  {
+    "id": "en:this",
+    "headword": "this",
+    "pos": "determiner",
+    "phonetic": "/ðɪs/",
+    "exampleEN": "This phone is mine.",
+    "level": "a1",
+    "tr": "bu"
+  },
+  {
+    "id": "en:that",
+    "headword": "that",
+    "pos": "determiner",
+    "phonetic": "/ðæt/",
+    "exampleEN": "That car is very fast.",
+    "level": "a1",
+    "tr": "şu / o"
+  },
+  {
+    "id": "en:these",
+    "headword": "these",
+    "pos": "determiner",
+    "phonetic": "/ðiz/",
+    "exampleEN": "These shoes are new.",
+    "level": "a1",
+    "tr": "bunlar"
+  },
+  {
+    "id": "en:those",
+    "headword": "those",
+    "pos": "determiner",
+    "phonetic": "/ðoʊz/",
+    "exampleEN": "Those houses are old.",
+    "level": "a1",
+    "tr": "şunlar / onlar"
+  },
+  {
+    "id": "en:my",
+    "headword": "my",
+    "pos": "determiner",
+    "phonetic": "/maɪ/",
+    "exampleEN": "My name is Anna.",
+    "level": "a1",
+    "tr": "benim"
+  },
+  {
+    "id": "en:your",
+    "headword": "your",
+    "pos": "determiner",
+    "phonetic": "/jʊr/",
+    "exampleEN": "Is this your bag?",
+    "level": "a1",
+    "tr": "senin"
+  },
+  {
+    "id": "en:his",
+    "headword": "his",
+    "pos": "determiner",
+    "phonetic": "/hɪz/",
+    "exampleEN": "His office is on the third floor.",
+    "level": "a1",
+    "tr": "onun (erkek)"
+  },
+  {
+    "id": "en:our",
+    "headword": "our",
+    "pos": "determiner",
+    "phonetic": "/aʊr/",
+    "exampleEN": "Our team won the game.",
+    "level": "a1",
+    "tr": "bizim"
+  },
+  {
+    "id": "en:their",
+    "headword": "their",
+    "pos": "determiner",
+    "phonetic": "/ðɛr/",
+    "exampleEN": "Their dog is very friendly.",
+    "level": "a1",
+    "tr": "onların"
+  },
+  {
+    "id": "en:what",
+    "headword": "what",
+    "pos": "pronoun",
+    "phonetic": "/wʌt/",
+    "exampleEN": "What is your name?",
+    "level": "a1",
+    "tr": "ne"
+  },
+  {
+    "id": "en:who",
+    "headword": "who",
+    "pos": "pronoun",
+    "phonetic": "/hu/",
+    "exampleEN": "Who is at the door?",
+    "level": "a1",
+    "tr": "kim"
+  },
+  {
+    "id": "en:where",
+    "headword": "where",
+    "pos": "adverb",
+    "phonetic": "/wɛr/",
+    "exampleEN": "Where do you live?",
+    "level": "a1",
+    "tr": "nerede"
+  },
+  {
+    "id": "en:when",
+    "headword": "when",
+    "pos": "adverb",
+    "phonetic": "/wɛn/",
+    "exampleEN": "When does the movie start?",
+    "level": "a1",
+    "tr": "ne zaman"
+  },
+  {
+    "id": "en:why",
+    "headword": "why",
+    "pos": "adverb",
+    "phonetic": "/waɪ/",
+    "exampleEN": "Why are you late?",
+    "level": "a1",
+    "tr": "neden"
+  },
+  {
+    "id": "en:how",
+    "headword": "how",
+    "pos": "adverb",
+    "phonetic": "/haʊ/",
+    "exampleEN": "How are you today?",
+    "level": "a1",
+    "tr": "nasıl"
+  },
+  {
+    "id": "en:which",
+    "headword": "which",
+    "pos": "determiner",
+    "phonetic": "/wɪtʃ/",
+    "exampleEN": "Which color do you like?",
+    "level": "a1",
+    "tr": "hangi"
+  },
+  {
+    "id": "en:a",
+    "headword": "a",
+    "pos": "determiner",
+    "phonetic": "/ə/",
+    "exampleEN": "I have a question.",
+    "level": "a1",
+    "tr": "bir"
+  },
+  {
+    "id": "en:an",
+    "headword": "an",
+    "pos": "determiner",
+    "phonetic": "/ən/",
+    "exampleEN": "She is an artist.",
+    "level": "a1",
+    "tr": "bir"
+  },
+  {
+    "id": "en:the",
+    "headword": "the",
+    "pos": "determiner",
+    "phonetic": "/ðə/",
+    "exampleEN": "The sun is bright.",
+    "level": "a1",
+    "tr": "(belirli artikel)"
+  },
+  {
+    "id": "en:some",
+    "headword": "some",
+    "pos": "determiner",
+    "phonetic": "/sʌm/",
+    "exampleEN": "I need some water.",
+    "level": "a1",
+    "tr": "biraz / bazı"
+  },
+  {
+    "id": "en:any",
+    "headword": "any",
+    "pos": "determiner",
+    "phonetic": "/ˈɛni/",
+    "exampleEN": "Do you have any money?",
+    "level": "a1",
+    "tr": "hiç / herhangi"
+  },
+  {
+    "id": "en:all",
+    "headword": "all",
+    "pos": "determiner",
+    "phonetic": "/ɔl/",
+    "exampleEN": "All the seats are taken.",
+    "level": "a1",
+    "tr": "hepsi / bütün"
+  },
+  {
+    "id": "en:many",
+    "headword": "many",
+    "pos": "determiner",
+    "phonetic": "/ˈmɛni/",
+    "exampleEN": "There are many people here.",
+    "level": "a1",
+    "tr": "çok (sayılabilir)"
+  },
+  {
+    "id": "en:much",
+    "headword": "much",
+    "pos": "determiner",
+    "phonetic": "/mʌtʃ/",
+    "exampleEN": "How much does it cost?",
+    "level": "a1",
+    "tr": "çok (sayılamaz)"
+  },
+  {
+    "id": "en:more",
+    "headword": "more",
+    "pos": "determiner",
+    "phonetic": "/mɔr/",
+    "exampleEN": "I want more coffee.",
+    "level": "a1",
+    "tr": "daha fazla"
+  },
+  {
+    "id": "en:no",
+    "headword": "no",
+    "pos": "determiner",
+    "phonetic": "/noʊ/",
+    "exampleEN": "There is no time left.",
+    "level": "a1",
+    "tr": "hiç / hayır"
+  },
+  {
+    "id": "en:every",
+    "headword": "every",
+    "pos": "determiner",
+    "phonetic": "/ˈɛvri/",
+    "exampleEN": "I go to school every day.",
+    "level": "a1",
+    "tr": "her"
+  },
+  {
+    "id": "en:be",
+    "headword": "be",
+    "pos": "verb",
+    "phonetic": "/bi/",
+    "exampleEN": "I want to be a teacher.",
+    "level": "a1",
+    "tr": "olmak"
+  },
+  {
+    "id": "en:am",
+    "headword": "am",
+    "pos": "auxiliary",
+    "phonetic": "/æm/",
+    "exampleEN": "I am very happy.",
+    "level": "a1",
+    "tr": "-im (ben)"
+  },
+  {
+    "id": "en:is",
+    "headword": "is",
+    "pos": "auxiliary",
+    "phonetic": "/ɪz/",
+    "exampleEN": "She is at home.",
+    "level": "a1",
+    "tr": "-dir (o)"
+  },
+  {
+    "id": "en:are",
+    "headword": "are",
+    "pos": "auxiliary",
+    "phonetic": "/ɑr/",
+    "exampleEN": "They are ready.",
+    "level": "a1",
+    "tr": "-siniz / -ler"
+  },
+  {
+    "id": "en:was",
+    "headword": "was",
+    "pos": "auxiliary",
+    "phonetic": "/wʌz/",
+    "exampleEN": "I was tired yesterday.",
+    "level": "a1",
+    "tr": "-di (tekil geçmiş)"
+  },
+  {
+    "id": "en:were",
+    "headword": "were",
+    "pos": "auxiliary",
+    "phonetic": "/wɜr/",
+    "exampleEN": "We were at the park.",
+    "level": "a1",
+    "tr": "-diler (çoğul geçmiş)"
+  },
+  {
+    "id": "en:have",
+    "headword": "have",
+    "pos": "verb",
+    "phonetic": "/hæv/",
+    "exampleEN": "I have two brothers.",
+    "level": "a1",
+    "tr": "sahip olmak"
+  },
+  {
+    "id": "en:has",
+    "headword": "has",
+    "pos": "verb",
+    "phonetic": "/hæz/",
+    "exampleEN": "She has a new car.",
+    "level": "a1",
+    "tr": "sahip (o)"
+  },
+  {
+    "id": "en:do",
+    "headword": "do",
+    "pos": "verb",
+    "phonetic": "/du/",
+    "exampleEN": "I do my homework after dinner.",
+    "level": "a1",
+    "tr": "yapmak"
+  },
+  {
+    "id": "en:does",
+    "headword": "does",
+    "pos": "auxiliary",
+    "phonetic": "/dʌz/",
+    "exampleEN": "Does he speak English?",
+    "level": "a1",
+    "tr": "yapar (o)"
+  },
+  {
+    "id": "en:did",
+    "headword": "did",
+    "pos": "auxiliary",
+    "phonetic": "/dɪd/",
+    "exampleEN": "Did you call her?",
+    "level": "a1",
+    "tr": "yaptı (geçmiş)"
+  },
+  {
+    "id": "en:can",
+    "headword": "can",
+    "pos": "modal",
+    "phonetic": "/kæn/",
+    "exampleEN": "I can swim very well.",
+    "level": "a1",
+    "tr": "-ebilmek"
+  },
+  {
+    "id": "en:could",
+    "headword": "could",
+    "pos": "modal",
+    "phonetic": "/kʊd/",
+    "exampleEN": "Could you open the window?",
+    "level": "a1",
+    "tr": "-ebilirdi (kibar rica)"
+  },
+  {
+    "id": "en:will",
+    "headword": "will",
+    "pos": "modal",
+    "phonetic": "/wɪl/",
+    "exampleEN": "I will see you tomorrow.",
+    "level": "a1",
+    "tr": "-ecek (gelecek)"
+  },
+  {
+    "id": "en:would",
+    "headword": "would",
+    "pos": "modal",
+    "phonetic": "/wʊd/",
+    "exampleEN": "I would like a coffee.",
+    "level": "a1",
+    "tr": "-erdi / isterdim"
+  },
+  {
+    "id": "en:should",
+    "headword": "should",
+    "pos": "modal",
+    "phonetic": "/ʃʊd/",
+    "exampleEN": "You should rest now.",
+    "level": "a1",
+    "tr": "-meli"
+  },
+  {
+    "id": "en:must",
+    "headword": "must",
+    "pos": "modal",
+    "phonetic": "/mʌst/",
+    "exampleEN": "You must wear a seatbelt.",
+    "level": "a1",
+    "tr": "-meli / zorunda"
+  },
+  {
+    "id": "en:may",
+    "headword": "may",
+    "pos": "modal",
+    "phonetic": "/meɪ/",
+    "exampleEN": "May I come in?",
+    "level": "a1",
+    "tr": "-ebilir (izin)"
+  },
+  {
+    "id": "en:go",
+    "headword": "go",
+    "pos": "verb",
+    "phonetic": "/ɡoʊ/",
+    "exampleEN": "I go to work by bus.",
+    "level": "a1",
+    "tr": "gitmek"
+  },
+  {
+    "id": "en:come",
+    "headword": "come",
+    "pos": "verb",
+    "phonetic": "/kʌm/",
+    "exampleEN": "Please come to my party.",
+    "level": "a1",
+    "tr": "gelmek"
+  },
+  {
+    "id": "en:get",
+    "headword": "get",
+    "pos": "verb",
+    "phonetic": "/ɡɛt/",
+    "exampleEN": "I get up at seven.",
+    "level": "a1",
+    "tr": "almak / olmak"
+  },
+  {
+    "id": "en:make",
+    "headword": "make",
+    "pos": "verb",
+    "phonetic": "/meɪk/",
+    "exampleEN": "She can make a great cake.",
+    "level": "a1",
+    "tr": "yapmak"
+  },
+  {
+    "id": "en:take",
+    "headword": "take",
+    "pos": "verb",
+    "phonetic": "/teɪk/",
+    "exampleEN": "Take an umbrella with you.",
+    "level": "a1",
+    "tr": "almak / götürmek"
+  },
+  {
+    "id": "en:see",
+    "headword": "see",
+    "pos": "verb",
+    "phonetic": "/si/",
+    "exampleEN": "I can see the ocean.",
+    "level": "a1",
+    "tr": "görmek"
+  },
+  {
+    "id": "en:know",
+    "headword": "know",
+    "pos": "verb",
+    "phonetic": "/noʊ/",
+    "exampleEN": "I know the answer.",
+    "level": "a1",
+    "tr": "bilmek"
+  },
+  {
+    "id": "en:think",
+    "headword": "think",
+    "pos": "verb",
+    "phonetic": "/θɪŋk/",
+    "exampleEN": "I think you are right.",
+    "level": "a1",
+    "tr": "düşünmek"
+  },
+  {
+    "id": "en:want",
+    "headword": "want",
+    "pos": "verb",
+    "phonetic": "/wɑnt/",
+    "exampleEN": "I want a glass of water.",
+    "level": "a1",
+    "tr": "istemek"
+  },
+  {
+    "id": "en:need",
+    "headword": "need",
+    "pos": "verb",
+    "phonetic": "/nid/",
+    "exampleEN": "I need your help.",
+    "level": "a1",
+    "tr": "ihtiyaç duymak"
+  },
+  {
+    "id": "en:like",
+    "headword": "like",
+    "pos": "verb",
+    "phonetic": "/laɪk/",
+    "exampleEN": "I like cold weather.",
+    "level": "a1",
+    "tr": "hoşlanmak / sevmek"
+  },
+  {
+    "id": "en:love",
+    "headword": "love",
+    "pos": "verb",
+    "phonetic": "/lʌv/",
+    "exampleEN": "I love my family.",
+    "level": "a1",
+    "tr": "sevmek"
+  },
+  {
+    "id": "en:say",
+    "headword": "say",
+    "pos": "verb",
+    "phonetic": "/seɪ/",
+    "exampleEN": "Say it one more time.",
+    "level": "a1",
+    "tr": "söylemek"
+  },
+  {
+    "id": "en:tell",
+    "headword": "tell",
+    "pos": "verb",
+    "phonetic": "/tɛl/",
+    "exampleEN": "Tell me the truth.",
+    "level": "a1",
+    "tr": "anlatmak / söylemek"
+  },
+  {
+    "id": "en:ask",
+    "headword": "ask",
+    "pos": "verb",
+    "phonetic": "/æsk/",
+    "exampleEN": "I want to ask a question.",
+    "level": "a1",
+    "tr": "sormak"
+  },
+  {
+    "id": "en:work:verb",
+    "headword": "work",
+    "pos": "verb",
+    "phonetic": "/wɜrk/",
+    "exampleEN": "I work in an office.",
+    "level": "a1",
+    "tr": "çalışmak"
+  },
+  {
+    "id": "en:play",
+    "headword": "play",
+    "pos": "verb",
+    "phonetic": "/pleɪ/",
+    "exampleEN": "The kids play in the yard.",
+    "level": "a1",
+    "tr": "oynamak"
+  },
+  {
+    "id": "en:eat",
+    "headword": "eat",
+    "pos": "verb",
+    "phonetic": "/it/",
+    "exampleEN": "We eat dinner at eight.",
+    "level": "a1",
+    "tr": "yemek (yemek yemek)"
+  },
+  {
+    "id": "en:drink",
+    "headword": "drink",
+    "pos": "verb",
+    "phonetic": "/drɪŋk/",
+    "exampleEN": "I drink coffee every morning.",
+    "level": "a1",
+    "tr": "içmek"
+  },
+  {
+    "id": "en:sleep",
+    "headword": "sleep",
+    "pos": "verb",
+    "phonetic": "/slip/",
+    "exampleEN": "I sleep eight hours a night.",
+    "level": "a1",
+    "tr": "uyumak"
+  },
+  {
+    "id": "en:read",
+    "headword": "read",
+    "pos": "verb",
+    "phonetic": "/rid/",
+    "exampleEN": "I read the news online.",
+    "level": "a1",
+    "tr": "okumak"
+  },
+  {
+    "id": "en:write",
+    "headword": "write",
+    "pos": "verb",
+    "phonetic": "/raɪt/",
+    "exampleEN": "Please write your name here.",
+    "level": "a1",
+    "tr": "yazmak"
+  },
+  {
+    "id": "en:speak",
+    "headword": "speak",
+    "pos": "verb",
+    "phonetic": "/spik/",
+    "exampleEN": "Do you speak English?",
+    "level": "a1",
+    "tr": "konuşmak"
+  },
+  {
+    "id": "en:listen",
+    "headword": "listen",
+    "pos": "verb",
+    "phonetic": "/ˈlɪsən/",
+    "exampleEN": "Listen to this song.",
+    "level": "a1",
+    "tr": "dinlemek"
+  },
+  {
+    "id": "en:look",
+    "headword": "look",
+    "pos": "verb",
+    "phonetic": "/lʊk/",
+    "exampleEN": "Look at the sky.",
+    "level": "a1",
+    "tr": "bakmak"
+  },
+  {
+    "id": "en:find",
+    "headword": "find",
+    "pos": "verb",
+    "phonetic": "/faɪnd/",
+    "exampleEN": "I can't find my keys.",
+    "level": "a1",
+    "tr": "bulmak"
+  },
+  {
+    "id": "en:give",
+    "headword": "give",
+    "pos": "verb",
+    "phonetic": "/ɡɪv/",
+    "exampleEN": "Give me a minute.",
+    "level": "a1",
+    "tr": "vermek"
+  },
+  {
+    "id": "en:buy",
+    "headword": "buy",
+    "pos": "verb",
+    "phonetic": "/baɪ/",
+    "exampleEN": "I want to buy a new phone.",
+    "level": "a1",
+    "tr": "satın almak"
+  },
+  {
+    "id": "en:open",
+    "headword": "open",
+    "pos": "verb",
+    "phonetic": "/ˈoʊpən/",
+    "exampleEN": "Please open the door.",
+    "level": "a1",
+    "tr": "açmak"
+  },
+  {
+    "id": "en:close",
+    "headword": "close",
+    "pos": "verb",
+    "phonetic": "/kloʊz/",
+    "exampleEN": "Close the window, please.",
+    "level": "a1",
+    "tr": "kapatmak"
+  },
+  {
+    "id": "en:start",
+    "headword": "start",
+    "pos": "verb",
+    "phonetic": "/stɑrt/",
+    "exampleEN": "The class starts at nine.",
+    "level": "a1",
+    "tr": "başlamak"
+  },
+  {
+    "id": "en:stop",
+    "headword": "stop",
+    "pos": "verb",
+    "phonetic": "/stɑp/",
+    "exampleEN": "The bus stops here.",
+    "level": "a1",
+    "tr": "durmak"
+  },
+  {
+    "id": "en:help",
+    "headword": "help",
+    "pos": "verb",
+    "phonetic": "/hɛlp/",
+    "exampleEN": "Can you help me?",
+    "level": "a1",
+    "tr": "yardım etmek"
+  },
+  {
+    "id": "en:live",
+    "headword": "live",
+    "pos": "verb",
+    "phonetic": "/lɪv/",
+    "exampleEN": "I live in a big city.",
+    "level": "a1",
+    "tr": "yaşamak"
+  },
+  {
+    "id": "en:walk",
+    "headword": "walk",
+    "pos": "verb",
+    "phonetic": "/wɔk/",
+    "exampleEN": "I walk to school.",
+    "level": "a1",
+    "tr": "yürümek"
+  },
+  {
+    "id": "en:run",
+    "headword": "run",
+    "pos": "verb",
+    "phonetic": "/rʌn/",
+    "exampleEN": "I run in the park.",
+    "level": "a1",
+    "tr": "koşmak"
+  },
+  {
+    "id": "en:sit",
+    "headword": "sit",
+    "pos": "verb",
+    "phonetic": "/sɪt/",
+    "exampleEN": "Please sit down.",
+    "level": "a1",
+    "tr": "oturmak"
+  },
+  {
+    "id": "en:stand",
+    "headword": "stand",
+    "pos": "verb",
+    "phonetic": "/stænd/",
+    "exampleEN": "Stand up, please.",
+    "level": "a1",
+    "tr": "ayakta durmak"
+  },
+  {
+    "id": "en:wait",
+    "headword": "wait",
+    "pos": "verb",
+    "phonetic": "/weɪt/",
+    "exampleEN": "Please wait here.",
+    "level": "a1",
+    "tr": "beklemek"
+  },
+  {
+    "id": "en:call",
+    "headword": "call",
+    "pos": "verb",
+    "phonetic": "/kɔl/",
+    "exampleEN": "Call me tonight.",
+    "level": "a1",
+    "tr": "aramak / seslenmek"
+  },
+  {
+    "id": "en:use",
+    "headword": "use",
+    "pos": "verb",
+    "phonetic": "/juz/",
+    "exampleEN": "I use my phone a lot.",
+    "level": "a1",
+    "tr": "kullanmak"
+  },
+  {
+    "id": "en:put",
+    "headword": "put",
+    "pos": "verb",
+    "phonetic": "/pʊt/",
+    "exampleEN": "Put the book on the table.",
+    "level": "a1",
+    "tr": "koymak"
+  },
+  {
+    "id": "en:turn",
+    "headword": "turn",
+    "pos": "verb",
+    "phonetic": "/tɜrn/",
+    "exampleEN": "Turn left at the corner.",
+    "level": "a1",
+    "tr": "dönmek"
+  },
+  {
+    "id": "en:learn",
+    "headword": "learn",
+    "pos": "verb",
+    "phonetic": "/lɜrn/",
+    "exampleEN": "I want to learn English.",
+    "level": "a1",
+    "tr": "öğrenmek"
+  },
+  {
+    "id": "en:study",
+    "headword": "study",
+    "pos": "verb",
+    "phonetic": "/ˈstʌdi/",
+    "exampleEN": "I study every evening.",
+    "level": "a1",
+    "tr": "çalışmak (ders)"
+  },
+  {
+    "id": "en:understand",
+    "headword": "understand",
+    "pos": "verb",
+    "phonetic": "/ˌʌndərˈstænd/",
+    "exampleEN": "I understand the lesson.",
+    "level": "a1",
+    "tr": "anlamak"
+  },
+  {
+    "id": "en:remember",
+    "headword": "remember",
+    "pos": "verb",
+    "phonetic": "/rɪˈmɛmbər/",
+    "exampleEN": "I remember your name.",
+    "level": "a1",
+    "tr": "hatırlamak"
+  },
+  {
+    "id": "en:feel",
+    "headword": "feel",
+    "pos": "verb",
+    "phonetic": "/fil/",
+    "exampleEN": "I feel happy today.",
+    "level": "a1",
+    "tr": "hissetmek"
+  },
+  {
+    "id": "en:meet",
+    "headword": "meet",
+    "pos": "verb",
+    "phonetic": "/mit/",
+    "exampleEN": "Nice to meet you.",
+    "level": "a1",
+    "tr": "tanışmak / buluşmak"
+  },
+  {
+    "id": "en:man",
+    "headword": "man",
+    "pos": "noun",
+    "phonetic": "/mæn/",
+    "exampleEN": "The man is reading a newspaper.",
+    "level": "a1",
+    "tr": "adam"
+  },
+  {
+    "id": "en:woman",
+    "headword": "woman",
+    "pos": "noun",
+    "phonetic": "/ˈwʊmən/",
+    "exampleEN": "The woman is a doctor.",
+    "level": "a1",
+    "tr": "kadın"
+  },
+  {
+    "id": "en:child",
+    "headword": "child",
+    "pos": "noun",
+    "phonetic": "/tʃaɪld/",
+    "exampleEN": "The child is playing.",
+    "level": "a1",
+    "tr": "çocuk"
+  },
+  {
+    "id": "en:boy",
+    "headword": "boy",
+    "pos": "noun",
+    "phonetic": "/bɔɪ/",
+    "exampleEN": "The boy is six years old.",
+    "level": "a1",
+    "tr": "erkek çocuk"
+  },
+  {
+    "id": "en:girl",
+    "headword": "girl",
+    "pos": "noun",
+    "phonetic": "/ɡɜrl/",
+    "exampleEN": "The girl likes to draw.",
+    "level": "a1",
+    "tr": "kız çocuk"
+  },
+  {
+    "id": "en:people",
+    "headword": "people",
+    "pos": "noun",
+    "phonetic": "/ˈpipəl/",
+    "exampleEN": "Many people live in this city.",
+    "level": "a1",
+    "tr": "insanlar"
+  },
+  {
+    "id": "en:friend",
+    "headword": "friend",
+    "pos": "noun",
+    "phonetic": "/frɛnd/",
+    "exampleEN": "She is my best friend.",
+    "level": "a1",
+    "tr": "arkadaş"
+  },
+  {
+    "id": "en:family",
+    "headword": "family",
+    "pos": "noun",
+    "phonetic": "/ˈfæməli/",
+    "exampleEN": "I love my family.",
+    "level": "a1",
+    "tr": "aile"
+  },
+  {
+    "id": "en:mother",
+    "headword": "mother",
+    "pos": "noun",
+    "phonetic": "/ˈmʌðər/",
+    "exampleEN": "My mother cooks very well.",
+    "level": "a1",
+    "tr": "anne"
+  },
+  {
+    "id": "en:father",
+    "headword": "father",
+    "pos": "noun",
+    "phonetic": "/ˈfɑðər/",
+    "exampleEN": "My father drives a truck.",
+    "level": "a1",
+    "tr": "baba"
+  },
+  {
+    "id": "en:baby",
+    "headword": "baby",
+    "pos": "noun",
+    "phonetic": "/ˈbeɪbi/",
+    "exampleEN": "The baby is sleeping.",
+    "level": "a1",
+    "tr": "bebek"
+  },
+  {
+    "id": "en:teacher",
+    "headword": "teacher",
+    "pos": "noun",
+    "phonetic": "/ˈtitʃər/",
+    "exampleEN": "Our teacher is very kind.",
+    "level": "a1",
+    "tr": "öğretmen"
+  },
+  {
+    "id": "en:student",
+    "headword": "student",
+    "pos": "noun",
+    "phonetic": "/ˈstudənt/",
+    "exampleEN": "She is a good student.",
+    "level": "a1",
+    "tr": "öğrenci"
+  },
+  {
+    "id": "en:house",
+    "headword": "house",
+    "pos": "noun",
+    "phonetic": "/haʊs/",
+    "exampleEN": "Their house is near the river.",
+    "level": "a1",
+    "tr": "ev"
+  },
+  {
+    "id": "en:home",
+    "headword": "home",
+    "pos": "noun",
+    "phonetic": "/hoʊm/",
+    "exampleEN": "I am at home now.",
+    "level": "a1",
+    "tr": "ev / yuva"
+  },
+  {
+    "id": "en:school",
+    "headword": "school",
+    "pos": "noun",
+    "phonetic": "/skul/",
+    "exampleEN": "The school is closed today.",
+    "level": "a1",
+    "tr": "okul"
+  },
+  {
+    "id": "en:city",
+    "headword": "city",
+    "pos": "noun",
+    "phonetic": "/ˈsɪti/",
+    "exampleEN": "New York is a big city.",
+    "level": "a1",
+    "tr": "şehir"
+  },
+  {
+    "id": "en:country",
+    "headword": "country",
+    "pos": "noun",
+    "phonetic": "/ˈkʌntri/",
+    "exampleEN": "Spain is a beautiful country.",
+    "level": "a1",
+    "tr": "ülke"
+  },
+  {
+    "id": "en:room",
+    "headword": "room",
+    "pos": "noun",
+    "phonetic": "/rum/",
+    "exampleEN": "My room is very small.",
+    "level": "a1",
+    "tr": "oda"
+  },
+  {
+    "id": "en:door",
+    "headword": "door",
+    "pos": "noun",
+    "phonetic": "/dɔr/",
+    "exampleEN": "Please close the door.",
+    "level": "a1",
+    "tr": "kapı"
+  },
+  {
+    "id": "en:window",
+    "headword": "window",
+    "pos": "noun",
+    "phonetic": "/ˈwɪndoʊ/",
+    "exampleEN": "Open the window for some air.",
+    "level": "a1",
+    "tr": "pencere"
+  },
+  {
+    "id": "en:table",
+    "headword": "table",
+    "pos": "noun",
+    "phonetic": "/ˈteɪbəl/",
+    "exampleEN": "The food is on the table.",
+    "level": "a1",
+    "tr": "masa"
+  },
+  {
+    "id": "en:chair",
+    "headword": "chair",
+    "pos": "noun",
+    "phonetic": "/tʃɛr/",
+    "exampleEN": "Take a chair and sit down.",
+    "level": "a1",
+    "tr": "sandalye"
+  },
+  {
+    "id": "en:bed",
+    "headword": "bed",
+    "pos": "noun",
+    "phonetic": "/bɛd/",
+    "exampleEN": "The cat is on the bed.",
+    "level": "a1",
+    "tr": "yatak"
+  },
+  {
+    "id": "en:car",
+    "headword": "car",
+    "pos": "noun",
+    "phonetic": "/kɑr/",
+    "exampleEN": "My car is red.",
+    "level": "a1",
+    "tr": "araba"
+  },
+  {
+    "id": "en:bus",
+    "headword": "bus",
+    "pos": "noun",
+    "phonetic": "/bʌs/",
+    "exampleEN": "I take the bus to work.",
+    "level": "a1",
+    "tr": "otobüs"
+  },
+  {
+    "id": "en:street",
+    "headword": "street",
+    "pos": "noun",
+    "phonetic": "/strit/",
+    "exampleEN": "The street is very busy.",
+    "level": "a1",
+    "tr": "sokak / cadde"
+  },
+  {
+    "id": "en:store",
+    "headword": "store",
+    "pos": "noun",
+    "phonetic": "/stɔr/",
+    "exampleEN": "The store opens at nine.",
+    "level": "a1",
+    "tr": "mağaza / dükkan"
+  },
+  {
+    "id": "en:food",
+    "headword": "food",
+    "pos": "noun",
+    "phonetic": "/fud/",
+    "exampleEN": "The food here is delicious.",
+    "level": "a1",
+    "tr": "yemek / yiyecek"
+  },
+  {
+    "id": "en:water",
+    "headword": "water",
+    "pos": "noun",
+    "phonetic": "/ˈwɔtər/",
+    "exampleEN": "I drink a lot of water.",
+    "level": "a1",
+    "tr": "su"
+  },
+  {
+    "id": "en:coffee",
+    "headword": "coffee",
+    "pos": "noun",
+    "phonetic": "/ˈkɔfi/",
+    "exampleEN": "I need a cup of coffee.",
+    "level": "a1",
+    "tr": "kahve"
+  },
+  {
+    "id": "en:bread",
+    "headword": "bread",
+    "pos": "noun",
+    "phonetic": "/brɛd/",
+    "exampleEN": "I buy fresh bread every day.",
+    "level": "a1",
+    "tr": "ekmek"
+  },
+  {
+    "id": "en:book",
+    "headword": "book",
+    "pos": "noun",
+    "phonetic": "/bʊk/",
+    "exampleEN": "This book is very interesting.",
+    "level": "a1",
+    "tr": "kitap"
+  },
+  {
+    "id": "en:phone",
+    "headword": "phone",
+    "pos": "noun",
+    "phonetic": "/foʊn/",
+    "exampleEN": "My phone is on the desk.",
+    "level": "a1",
+    "tr": "telefon"
+  },
+  {
+    "id": "en:money",
+    "headword": "money",
+    "pos": "noun",
+    "phonetic": "/ˈmʌni/",
+    "exampleEN": "I don't have any money.",
+    "level": "a1",
+    "tr": "para"
+  },
+  {
+    "id": "en:job",
+    "headword": "job",
+    "pos": "noun",
+    "phonetic": "/dʒɑb/",
+    "exampleEN": "She has a new job.",
+    "level": "a1",
+    "tr": "iş"
+  },
+  {
+    "id": "en:work:noun",
+    "headword": "work",
+    "pos": "noun",
+    "phonetic": "/wɜrk/",
+    "exampleEN": "I have a lot of work today.",
+    "level": "a1",
+    "tr": "iş / çalışma"
+  },
+  {
+    "id": "en:name",
+    "headword": "name",
+    "pos": "noun",
+    "phonetic": "/neɪm/",
+    "exampleEN": "What is your name?",
+    "level": "a1",
+    "tr": "isim / ad"
+  },
+  {
+    "id": "en:word",
+    "headword": "word",
+    "pos": "noun",
+    "phonetic": "/wɜrd/",
+    "exampleEN": "I learn ten words a day.",
+    "level": "a1",
+    "tr": "kelime"
+  },
+  {
+    "id": "en:question",
+    "headword": "question",
+    "pos": "noun",
+    "phonetic": "/ˈkwɛstʃən/",
+    "exampleEN": "I have a question for you.",
+    "level": "a1",
+    "tr": "soru"
+  },
+  {
+    "id": "en:day",
+    "headword": "day",
+    "pos": "noun",
+    "phonetic": "/deɪ/",
+    "exampleEN": "Have a nice day.",
+    "level": "a1",
+    "tr": "gün"
+  },
+  {
+    "id": "en:night",
+    "headword": "night",
+    "pos": "noun",
+    "phonetic": "/naɪt/",
+    "exampleEN": "Good night and sleep well.",
+    "level": "a1",
+    "tr": "gece"
+  },
+  {
+    "id": "en:week",
+    "headword": "week",
+    "pos": "noun",
+    "phonetic": "/wik/",
+    "exampleEN": "I work five days a week.",
+    "level": "a1",
+    "tr": "hafta"
+  },
+  {
+    "id": "en:month",
+    "headword": "month",
+    "pos": "noun",
+    "phonetic": "/mʌnθ/",
+    "exampleEN": "There are twelve months in a year.",
+    "level": "a1",
+    "tr": "ay"
+  },
+  {
+    "id": "en:year",
+    "headword": "year",
+    "pos": "noun",
+    "phonetic": "/jɪr/",
+    "exampleEN": "I will travel next year.",
+    "level": "a1",
+    "tr": "yıl"
+  },
+  {
+    "id": "en:time",
+    "headword": "time",
+    "pos": "noun",
+    "phonetic": "/taɪm/",
+    "exampleEN": "What time is it?",
+    "level": "a1",
+    "tr": "zaman / saat"
+  },
+  {
+    "id": "en:hour",
+    "headword": "hour",
+    "pos": "noun",
+    "phonetic": "/ˈaʊər/",
+    "exampleEN": "The trip takes one hour.",
+    "level": "a1",
+    "tr": "saat (süre)"
+  },
+  {
+    "id": "en:minute",
+    "headword": "minute",
+    "pos": "noun",
+    "phonetic": "/ˈmɪnɪt/",
+    "exampleEN": "Wait a minute, please.",
+    "level": "a1",
+    "tr": "dakika"
+  },
+  {
+    "id": "en:morning",
+    "headword": "morning",
+    "pos": "noun",
+    "phonetic": "/ˈmɔrnɪŋ/",
+    "exampleEN": "I drink tea in the morning.",
+    "level": "a1",
+    "tr": "sabah"
+  },
+  {
+    "id": "en:good",
+    "headword": "good",
+    "pos": "adjective",
+    "phonetic": "/ɡʊd/",
+    "exampleEN": "This is a good idea.",
+    "level": "a1",
+    "tr": "iyi"
+  },
+  {
+    "id": "en:bad",
+    "headword": "bad",
+    "pos": "adjective",
+    "phonetic": "/bæd/",
+    "exampleEN": "The weather is bad today.",
+    "level": "a1",
+    "tr": "kötü"
+  },
+  {
+    "id": "en:big",
+    "headword": "big",
+    "pos": "adjective",
+    "phonetic": "/bɪɡ/",
+    "exampleEN": "They have a big dog.",
+    "level": "a1",
+    "tr": "büyük"
+  },
+  {
+    "id": "en:small",
+    "headword": "small",
+    "pos": "adjective",
+    "phonetic": "/smɔl/",
+    "exampleEN": "I live in a small apartment.",
+    "level": "a1",
+    "tr": "küçük"
+  },
+  {
+    "id": "en:new",
+    "headword": "new",
+    "pos": "adjective",
+    "phonetic": "/nu/",
+    "exampleEN": "I bought a new car.",
+    "level": "a1",
+    "tr": "yeni"
+  },
+  {
+    "id": "en:old",
+    "headword": "old",
+    "pos": "adjective",
+    "phonetic": "/oʊld/",
+    "exampleEN": "This is an old house.",
+    "level": "a1",
+    "tr": "eski / yaşlı"
+  },
+  {
+    "id": "en:hot",
+    "headword": "hot",
+    "pos": "adjective",
+    "phonetic": "/hɑt/",
+    "exampleEN": "The coffee is very hot.",
+    "level": "a1",
+    "tr": "sıcak"
+  },
+  {
+    "id": "en:cold",
+    "headword": "cold",
+    "pos": "adjective",
+    "phonetic": "/koʊld/",
+    "exampleEN": "The water is cold.",
+    "level": "a1",
+    "tr": "soğuk"
+  },
+  {
+    "id": "en:happy",
+    "headword": "happy",
+    "pos": "adjective",
+    "phonetic": "/ˈhæpi/",
+    "exampleEN": "I am happy to see you.",
+    "level": "a1",
+    "tr": "mutlu"
+  },
+  {
+    "id": "en:sad",
+    "headword": "sad",
+    "pos": "adjective",
+    "phonetic": "/sæd/",
+    "exampleEN": "She looks sad today.",
+    "level": "a1",
+    "tr": "üzgün"
+  },
+  {
+    "id": "en:easy",
+    "headword": "easy",
+    "pos": "adjective",
+    "phonetic": "/ˈizi/",
+    "exampleEN": "This test is easy.",
+    "level": "a1",
+    "tr": "kolay"
+  },
+  {
+    "id": "en:hard",
+    "headword": "hard",
+    "pos": "adjective",
+    "phonetic": "/hɑrd/",
+    "exampleEN": "The work is very hard.",
+    "level": "a1",
+    "tr": "zor / sert"
+  },
+  {
+    "id": "en:fast",
+    "headword": "fast",
+    "pos": "adjective",
+    "phonetic": "/fæst/",
+    "exampleEN": "This is a fast train.",
+    "level": "a1",
+    "tr": "hızlı"
+  },
+  {
+    "id": "en:slow",
+    "headword": "slow",
+    "pos": "adjective",
+    "phonetic": "/sloʊ/",
+    "exampleEN": "The internet is slow today.",
+    "level": "a1",
+    "tr": "yavaş"
+  },
+  {
+    "id": "en:long",
+    "headword": "long",
+    "pos": "adjective",
+    "phonetic": "/lɔŋ/",
+    "exampleEN": "It was a long day.",
+    "level": "a1",
+    "tr": "uzun"
+  },
+  {
+    "id": "en:short",
+    "headword": "short",
+    "pos": "adjective",
+    "phonetic": "/ʃɔrt/",
+    "exampleEN": "The movie is short.",
+    "level": "a1",
+    "tr": "kısa"
+  },
+  {
+    "id": "en:high",
+    "headword": "high",
+    "pos": "adjective",
+    "phonetic": "/haɪ/",
+    "exampleEN": "The mountain is very high.",
+    "level": "a1",
+    "tr": "yüksek"
+  },
+  {
+    "id": "en:low",
+    "headword": "low",
+    "pos": "adjective",
+    "phonetic": "/loʊ/",
+    "exampleEN": "The prices are low here.",
+    "level": "a1",
+    "tr": "alçak / düşük"
+  },
+  {
+    "id": "en:right",
+    "headword": "right",
+    "pos": "adjective",
+    "phonetic": "/raɪt/",
+    "exampleEN": "You gave the right answer.",
+    "level": "a1",
+    "tr": "doğru / sağ"
+  },
+  {
+    "id": "en:wrong",
+    "headword": "wrong",
+    "pos": "adjective",
+    "phonetic": "/rɔŋ/",
+    "exampleEN": "I think this is the wrong street.",
+    "level": "a1",
+    "tr": "yanlış"
+  },
+  {
+    "id": "en:beautiful",
+    "headword": "beautiful",
+    "pos": "adjective",
+    "phonetic": "/ˈbjutəfəl/",
+    "exampleEN": "The garden is beautiful.",
+    "level": "a1",
+    "tr": "güzel"
+  },
+  {
+    "id": "en:nice",
+    "headword": "nice",
+    "pos": "adjective",
+    "phonetic": "/naɪs/",
+    "exampleEN": "He is a nice person.",
+    "level": "a1",
+    "tr": "hoş / iyi"
+  },
+  {
+    "id": "en:young",
+    "headword": "young",
+    "pos": "adjective",
+    "phonetic": "/jʌŋ/",
+    "exampleEN": "She is a young doctor.",
+    "level": "a1",
+    "tr": "genç"
+  },
+  {
+    "id": "en:ready",
+    "headword": "ready",
+    "pos": "adjective",
+    "phonetic": "/ˈrɛdi/",
+    "exampleEN": "Are you ready to go?",
+    "level": "a1",
+    "tr": "hazır"
+  },
+  {
+    "id": "en:clean:adjective",
+    "headword": "clean",
+    "pos": "adjective",
+    "phonetic": "/klin/",
+    "exampleEN": "The kitchen is clean.",
+    "level": "a1",
+    "tr": "temiz"
+  },
+  {
+    "id": "en:free",
+    "headword": "free",
+    "pos": "adjective",
+    "phonetic": "/fri/",
+    "exampleEN": "Are you free tonight?",
+    "level": "a1",
+    "tr": "özgür / boş"
+  },
+  {
+    "id": "en:same",
+    "headword": "same",
+    "pos": "adjective",
+    "phonetic": "/seɪm/",
+    "exampleEN": "We have the same phone.",
+    "level": "a1",
+    "tr": "aynı"
+  },
+  {
+    "id": "en:different",
+    "headword": "different",
+    "pos": "adjective",
+    "phonetic": "/ˈdɪfərənt/",
+    "exampleEN": "Our ideas are different.",
+    "level": "a1",
+    "tr": "farklı"
+  },
+  {
+    "id": "en:now",
+    "headword": "now",
+    "pos": "adverb",
+    "phonetic": "/naʊ/",
+    "exampleEN": "I have to leave now.",
+    "level": "a1",
+    "tr": "şimdi"
+  },
+  {
+    "id": "en:here",
+    "headword": "here",
+    "pos": "adverb",
+    "phonetic": "/hɪr/",
+    "exampleEN": "Please sit here.",
+    "level": "a1",
+    "tr": "burada"
+  },
+  {
+    "id": "en:there",
+    "headword": "there",
+    "pos": "adverb",
+    "phonetic": "/ðɛr/",
+    "exampleEN": "The keys are over there.",
+    "level": "a1",
+    "tr": "orada"
+  },
+  {
+    "id": "en:today",
+    "headword": "today",
+    "pos": "adverb",
+    "phonetic": "/təˈdeɪ/",
+    "exampleEN": "I am very busy today.",
+    "level": "a1",
+    "tr": "bugün"
+  },
+  {
+    "id": "en:tomorrow",
+    "headword": "tomorrow",
+    "pos": "adverb",
+    "phonetic": "/təˈmɑroʊ/",
+    "exampleEN": "See you tomorrow.",
+    "level": "a1",
+    "tr": "yarın"
+  },
+  {
+    "id": "en:yesterday",
+    "headword": "yesterday",
+    "pos": "adverb",
+    "phonetic": "/ˈjɛstərdeɪ/",
+    "exampleEN": "I called you yesterday.",
+    "level": "a1",
+    "tr": "dün"
+  },
+  {
+    "id": "en:very",
+    "headword": "very",
+    "pos": "adverb",
+    "phonetic": "/ˈvɛri/",
+    "exampleEN": "The soup is very hot.",
+    "level": "a1",
+    "tr": "çok"
+  },
+  {
+    "id": "en:too",
+    "headword": "too",
+    "pos": "adverb",
+    "phonetic": "/tu/",
+    "exampleEN": "This bag is too heavy.",
+    "level": "a1",
+    "tr": "çok / de/da"
+  },
+  {
+    "id": "en:also",
+    "headword": "also",
+    "pos": "adverb",
+    "phonetic": "/ˈɔlsoʊ/",
+    "exampleEN": "I also speak French.",
+    "level": "a1",
+    "tr": "ayrıca / de"
+  },
+  {
+    "id": "en:always",
+    "headword": "always",
+    "pos": "adverb",
+    "phonetic": "/ˈɔlweɪz/",
+    "exampleEN": "I always wake up early.",
+    "level": "a1",
+    "tr": "her zaman"
+  },
+  {
+    "id": "en:never",
+    "headword": "never",
+    "pos": "adverb",
+    "phonetic": "/ˈnɛvər/",
+    "exampleEN": "I never drink soda.",
+    "level": "a1",
+    "tr": "asla"
+  },
+  {
+    "id": "en:often",
+    "headword": "often",
+    "pos": "adverb",
+    "phonetic": "/ˈɔfən/",
+    "exampleEN": "We often go to the beach.",
+    "level": "a1",
+    "tr": "sık sık"
+  },
+  {
+    "id": "en:sometimes",
+    "headword": "sometimes",
+    "pos": "adverb",
+    "phonetic": "/ˈsʌmtaɪmz/",
+    "exampleEN": "I sometimes work late.",
+    "level": "a1",
+    "tr": "bazen"
+  },
+  {
+    "id": "en:again",
+    "headword": "again",
+    "pos": "adverb",
+    "phonetic": "/əˈɡɛn/",
+    "exampleEN": "Please say that again.",
+    "level": "a1",
+    "tr": "tekrar"
+  },
+  {
+    "id": "en:well",
+    "headword": "well",
+    "pos": "adverb",
+    "phonetic": "/wɛl/",
+    "exampleEN": "She sings very well.",
+    "level": "a1",
+    "tr": "iyi (şekilde)"
+  },
+  {
+    "id": "en:just",
+    "headword": "just",
+    "pos": "adverb",
+    "phonetic": "/dʒʌst/",
+    "exampleEN": "I just arrived home.",
+    "level": "a1",
+    "tr": "az önce / sadece"
+  },
+  {
+    "id": "en:only",
+    "headword": "only",
+    "pos": "adverb",
+    "phonetic": "/ˈoʊnli/",
+    "exampleEN": "I have only one dollar.",
+    "level": "a1",
+    "tr": "sadece"
+  },
+  {
+    "id": "en:maybe",
+    "headword": "maybe",
+    "pos": "adverb",
+    "phonetic": "/ˈmeɪbi/",
+    "exampleEN": "Maybe we can meet later.",
+    "level": "a1",
+    "tr": "belki"
+  },
+  {
+    "id": "en:together",
+    "headword": "together",
+    "pos": "adverb",
+    "phonetic": "/təˈɡɛðər/",
+    "exampleEN": "We work better together.",
+    "level": "a1",
+    "tr": "birlikte"
+  },
+  {
+    "id": "en:in",
+    "headword": "in",
+    "pos": "preposition",
+    "phonetic": "/ɪn/",
+    "exampleEN": "The cat is in the box.",
+    "level": "a1",
+    "tr": "içinde / -de"
+  },
+  {
+    "id": "en:on",
+    "headword": "on",
+    "pos": "preposition",
+    "phonetic": "/ɑn/",
+    "exampleEN": "The book is on the shelf.",
+    "level": "a1",
+    "tr": "üstünde / -de"
+  },
+  {
+    "id": "en:at",
+    "headword": "at",
+    "pos": "preposition",
+    "phonetic": "/æt/",
+    "exampleEN": "I am at the office.",
+    "level": "a1",
+    "tr": "-de / -da (nokta)"
+  },
+  {
+    "id": "en:to",
+    "headword": "to",
+    "pos": "preposition",
+    "phonetic": "/tu/",
+    "exampleEN": "I am going to the store.",
+    "level": "a1",
+    "tr": "-e / -a"
+  },
+  {
+    "id": "en:from",
+    "headword": "from",
+    "pos": "preposition",
+    "phonetic": "/frʌm/",
+    "exampleEN": "I am from Turkey.",
+    "level": "a1",
+    "tr": "-den / -dan"
+  },
+  {
+    "id": "en:with",
+    "headword": "with",
+    "pos": "preposition",
+    "phonetic": "/wɪð/",
+    "exampleEN": "Come with me.",
+    "level": "a1",
+    "tr": "ile / -le"
+  },
+  {
+    "id": "en:for",
+    "headword": "for",
+    "pos": "preposition",
+    "phonetic": "/fɔr/",
+    "exampleEN": "This gift is for you.",
+    "level": "a1",
+    "tr": "için"
+  },
+  {
+    "id": "en:of",
+    "headword": "of",
+    "pos": "preposition",
+    "phonetic": "/ʌv/",
+    "exampleEN": "A cup of tea, please.",
+    "level": "a1",
+    "tr": "-in / -nın"
+  },
+  {
+    "id": "en:about",
+    "headword": "about",
+    "pos": "preposition",
+    "phonetic": "/əˈbaʊt/",
+    "exampleEN": "We talked about the trip.",
+    "level": "a1",
+    "tr": "hakkında"
+  },
+  {
+    "id": "en:by",
+    "headword": "by",
+    "pos": "preposition",
+    "phonetic": "/baɪ/",
+    "exampleEN": "I travel by train.",
+    "level": "a1",
+    "tr": "ile / yanında"
+  },
+  {
+    "id": "en:under",
+    "headword": "under",
+    "pos": "preposition",
+    "phonetic": "/ˈʌndər/",
+    "exampleEN": "The shoes are under the bed.",
+    "level": "a1",
+    "tr": "altında"
+  },
+  {
+    "id": "en:over",
+    "headword": "over",
+    "pos": "preposition",
+    "phonetic": "/ˈoʊvər/",
+    "exampleEN": "The plane flew over the city.",
+    "level": "a1",
+    "tr": "üstünde / üzerinden"
+  },
+  {
+    "id": "en:near",
+    "headword": "near",
+    "pos": "preposition",
+    "phonetic": "/nɪr/",
+    "exampleEN": "The bank is near the park.",
+    "level": "a1",
+    "tr": "yakınında"
+  },
+  {
+    "id": "en:between",
+    "headword": "between",
+    "pos": "preposition",
+    "phonetic": "/bɪˈtwin/",
+    "exampleEN": "The store is between two banks.",
+    "level": "a1",
+    "tr": "arasında"
+  },
+  {
+    "id": "en:and",
+    "headword": "and",
+    "pos": "conjunction",
+    "phonetic": "/ænd/",
+    "exampleEN": "I like tea and coffee.",
+    "level": "a1",
+    "tr": "ve"
+  },
+  {
+    "id": "en:but",
+    "headword": "but",
+    "pos": "conjunction",
+    "phonetic": "/bʌt/",
+    "exampleEN": "I am tired, but happy.",
+    "level": "a1",
+    "tr": "ama / fakat"
+  },
+  {
+    "id": "en:or",
+    "headword": "or",
+    "pos": "conjunction",
+    "phonetic": "/ɔr/",
+    "exampleEN": "Do you want tea or coffee?",
+    "level": "a1",
+    "tr": "veya / ya da"
+  },
+  {
+    "id": "en:because",
+    "headword": "because",
+    "pos": "conjunction",
+    "phonetic": "/bɪˈkɔz/",
+    "exampleEN": "I stayed home because I was sick.",
+    "level": "a1",
+    "tr": "çünkü"
+  },
+  {
+    "id": "en:so",
+    "headword": "so",
+    "pos": "conjunction",
+    "phonetic": "/soʊ/",
+    "exampleEN": "It was raining, so we stayed in.",
+    "level": "a1",
+    "tr": "bu yüzden / öyle"
+  },
+  {
+    "id": "en:if",
+    "headword": "if",
+    "pos": "conjunction",
+    "phonetic": "/ɪf/",
+    "exampleEN": "Call me if you need help.",
+    "level": "a1",
+    "tr": "eğer"
+  },
+  {
+    "id": "en:one",
+    "headword": "one",
+    "pos": "number",
+    "phonetic": "/wʌn/",
+    "exampleEN": "I have one sister.",
+    "level": "a1",
+    "tr": "bir"
+  },
+  {
+    "id": "en:two",
+    "headword": "two",
+    "pos": "number",
+    "phonetic": "/tu/",
+    "exampleEN": "There are two cats.",
+    "level": "a1",
+    "tr": "iki"
+  },
+  {
+    "id": "en:three",
+    "headword": "three",
+    "pos": "number",
+    "phonetic": "/θri/",
+    "exampleEN": "I read three books last month.",
+    "level": "a1",
+    "tr": "üç"
+  },
+  {
+    "id": "en:four",
+    "headword": "four",
+    "pos": "number",
+    "phonetic": "/fɔr/",
+    "exampleEN": "The table has four legs.",
+    "level": "a1",
+    "tr": "dört"
+  },
+  {
+    "id": "en:five",
+    "headword": "five",
+    "pos": "number",
+    "phonetic": "/faɪv/",
+    "exampleEN": "I work five days a week.",
+    "level": "a1",
+    "tr": "beş"
+  },
+  {
+    "id": "en:six",
+    "headword": "six",
+    "pos": "number",
+    "phonetic": "/sɪks/",
+    "exampleEN": "The meeting is at six.",
+    "level": "a1",
+    "tr": "altı"
+  },
+  {
+    "id": "en:seven",
+    "headword": "seven",
+    "pos": "number",
+    "phonetic": "/ˈsɛvən/",
+    "exampleEN": "There are seven days in a week.",
+    "level": "a1",
+    "tr": "yedi"
+  },
+  {
+    "id": "en:eight",
+    "headword": "eight",
+    "pos": "number",
+    "phonetic": "/eɪt/",
+    "exampleEN": "I sleep eight hours.",
+    "level": "a1",
+    "tr": "sekiz"
+  },
+  {
+    "id": "en:nine",
+    "headword": "nine",
+    "pos": "number",
+    "phonetic": "/naɪn/",
+    "exampleEN": "The store opens at nine.",
+    "level": "a1",
+    "tr": "dokuz"
+  },
+  {
+    "id": "en:ten",
+    "headword": "ten",
+    "pos": "number",
+    "phonetic": "/tɛn/",
+    "exampleEN": "I have ten dollars.",
+    "level": "a1",
+    "tr": "on"
+  },
+  {
+    "id": "en:hundred",
+    "headword": "hundred",
+    "pos": "number",
+    "phonetic": "/ˈhʌndrəd/",
+    "exampleEN": "The book has a hundred pages.",
+    "level": "a1",
+    "tr": "yüz"
+  },
+  {
+    "id": "en:monday",
+    "headword": "Monday",
+    "pos": "noun",
+    "phonetic": "/ˈmʌndeɪ/",
+    "exampleEN": "The class is on Monday.",
+    "level": "a1",
+    "tr": "Pazartesi"
+  },
+  {
+    "id": "en:friday",
+    "headword": "Friday",
+    "pos": "noun",
+    "phonetic": "/ˈfraɪdeɪ/",
+    "exampleEN": "We leave on Friday.",
+    "level": "a1",
+    "tr": "Cuma"
+  },
+  {
+    "id": "en:yes",
+    "headword": "yes",
+    "pos": "interjection",
+    "phonetic": "/jɛs/",
+    "exampleEN": "Yes, I agree with you.",
+    "level": "a1",
+    "tr": "evet"
+  },
+  {
+    "id": "en:hello",
+    "headword": "hello",
+    "pos": "interjection",
+    "phonetic": "/həˈloʊ/",
+    "exampleEN": "Hello, how are you?",
+    "level": "a1",
+    "tr": "merhaba"
+  },
+  {
+    "id": "en:goodbye",
+    "headword": "goodbye",
+    "pos": "interjection",
+    "phonetic": "/ɡʊdˈbaɪ/",
+    "exampleEN": "Goodbye, see you soon.",
+    "level": "a1",
+    "tr": "hoşça kal"
+  },
+  {
+    "id": "en:please",
+    "headword": "please",
+    "pos": "interjection",
+    "phonetic": "/pliz/",
+    "exampleEN": "Please sit down.",
+    "level": "a1",
+    "tr": "lütfen"
+  },
+  {
+    "id": "en:thanks",
+    "headword": "thanks",
+    "pos": "interjection",
+    "phonetic": "/θæŋks/",
+    "exampleEN": "Thanks for your help.",
+    "level": "a1",
+    "tr": "teşekkürler"
+  },
+  {
+    "id": "en:sorry",
+    "headword": "sorry",
+    "pos": "interjection",
+    "phonetic": "/ˈsɑri/",
+    "exampleEN": "Sorry, I am late.",
+    "level": "a1",
+    "tr": "üzgünüm / pardon"
+  },
+  {
+    "id": "en:okay",
+    "headword": "okay",
+    "pos": "interjection",
+    "phonetic": "/oʊˈkeɪ/",
+    "exampleEN": "Okay, let's go.",
+    "level": "a1",
+    "tr": "tamam"
+  },
+  {
+    "id": "en:weather",
+    "headword": "weather",
+    "pos": "noun",
+    "phonetic": "/ˈwɛðər/",
+    "exampleEN": "The weather is nice today.",
+    "level": "a1",
+    "tr": "hava (durumu)"
+  },
+  {
+    "id": "en:music",
+    "headword": "music",
+    "pos": "noun",
+    "phonetic": "/ˈmjuzɪk/",
+    "exampleEN": "I listen to music every day.",
+    "level": "a1",
+    "tr": "müzik"
+  },
+  {
+    "id": "en:movie",
+    "headword": "movie",
+    "pos": "noun",
+    "phonetic": "/ˈmuvi/",
+    "exampleEN": "We watched a movie last night.",
+    "level": "a1",
+    "tr": "film"
+  },
+  {
+    "id": "en:game",
+    "headword": "game",
+    "pos": "noun",
+    "phonetic": "/ɡeɪm/",
+    "exampleEN": "The game starts at noon.",
+    "level": "a1",
+    "tr": "oyun / maç"
+  },
+  {
+    "id": "en:class",
+    "headword": "class",
+    "pos": "noun",
+    "phonetic": "/klæs/",
+    "exampleEN": "The English class is fun.",
+    "level": "a1",
+    "tr": "sınıf / ders"
+  },
+  {
+    "id": "en:office",
+    "headword": "office",
+    "pos": "noun",
+    "phonetic": "/ˈɔfɪs/",
+    "exampleEN": "My office is downtown.",
+    "level": "a1",
+    "tr": "ofis"
+  },
+  {
+    "id": "en:hospital",
+    "headword": "hospital",
+    "pos": "noun",
+    "phonetic": "/ˈhɑspɪtəl/",
+    "exampleEN": "The hospital is very large.",
+    "level": "a1",
+    "tr": "hastane"
+  },
+  {
+    "id": "en:restaurant",
+    "headword": "restaurant",
+    "pos": "noun",
+    "phonetic": "/ˈrɛstərɑnt/",
+    "exampleEN": "This restaurant is famous.",
+    "level": "a1",
+    "tr": "restoran"
+  },
+  {
+    "id": "en:airport",
+    "headword": "airport",
+    "pos": "noun",
+    "phonetic": "/ˈɛrpɔrt/",
+    "exampleEN": "The airport is far from here.",
+    "level": "a1",
+    "tr": "havalimanı"
+  },
+  {
+    "id": "en:train",
+    "headword": "train",
+    "pos": "noun",
+    "phonetic": "/treɪn/",
+    "exampleEN": "The train is late again.",
+    "level": "a1",
+    "tr": "tren"
+  },
+  {
+    "id": "en:ticket",
+    "headword": "ticket",
+    "pos": "noun",
+    "phonetic": "/ˈtɪkɪt/",
+    "exampleEN": "I bought a ticket online.",
+    "level": "a1",
+    "tr": "bilet"
+  },
+  {
+    "id": "en:key",
+    "headword": "key",
+    "pos": "noun",
+    "phonetic": "/ki/",
+    "exampleEN": "I lost my house key.",
+    "level": "a1",
+    "tr": "anahtar"
+  },
+  {
+    "id": "en:bag",
+    "headword": "bag",
+    "pos": "noun",
+    "phonetic": "/bæɡ/",
+    "exampleEN": "My bag is very heavy.",
+    "level": "a1",
+    "tr": "çanta"
+  },
+  {
+    "id": "en:clothes",
+    "headword": "clothes",
+    "pos": "noun",
+    "phonetic": "/kloʊz/",
+    "exampleEN": "I need to wash my clothes.",
+    "level": "a1",
+    "tr": "giysiler"
+  },
+  {
+    "id": "en:shoe",
+    "headword": "shoe",
+    "pos": "noun",
+    "phonetic": "/ʃu/",
+    "exampleEN": "My left shoe is wet.",
+    "level": "a1",
+    "tr": "ayakkabı"
+  },
+  {
+    "id": "en:hand",
+    "headword": "hand",
+    "pos": "noun",
+    "phonetic": "/hænd/",
+    "exampleEN": "Raise your hand to ask.",
+    "level": "a1",
+    "tr": "el"
+  },
+  {
+    "id": "en:eye",
+    "headword": "eye",
+    "pos": "noun",
+    "phonetic": "/aɪ/",
+    "exampleEN": "She has blue eyes.",
+    "level": "a1",
+    "tr": "göz"
+  },
+  {
+    "id": "en:head",
+    "headword": "head",
+    "pos": "noun",
+    "phonetic": "/hɛd/",
+    "exampleEN": "My head hurts a little.",
+    "level": "a1",
+    "tr": "kafa / baş"
+  },
+  {
+    "id": "en:drive",
+    "headword": "drive",
+    "pos": "verb",
+    "phonetic": "/draɪv/",
+    "exampleEN": "I drive to work every day.",
+    "level": "a1",
+    "tr": "sürmek (araba)"
+  },
+  {
+    "id": "en:travel",
+    "headword": "travel",
+    "pos": "verb",
+    "phonetic": "/ˈtrævəl/",
+    "exampleEN": "I love to travel in summer.",
+    "level": "a1",
+    "tr": "seyahat etmek"
+  },
+  {
+    "id": "en:cook",
+    "headword": "cook",
+    "pos": "verb",
+    "phonetic": "/kʊk/",
+    "exampleEN": "I cook dinner for my family.",
+    "level": "a1",
+    "tr": "yemek pişirmek"
+  },
+  {
+    "id": "en:watch",
+    "headword": "watch",
+    "pos": "verb",
+    "phonetic": "/wɑtʃ/",
+    "exampleEN": "We watch TV after dinner.",
+    "level": "a1",
+    "tr": "izlemek"
+  },
+  {
+    "id": "en:wash",
+    "headword": "wash",
+    "pos": "verb",
+    "phonetic": "/wɑʃ/",
+    "exampleEN": "Please wash your hands.",
+    "level": "a1",
+    "tr": "yıkamak"
+  },
+  {
+    "id": "en:clean:verb",
+    "headword": "clean",
+    "pos": "verb",
+    "phonetic": "/klin/",
+    "exampleEN": "I clean my room on Sundays.",
+    "level": "a1",
+    "tr": "temizlemek"
+  },
+  {
+    "id": "en:pay",
+    "headword": "pay",
+    "pos": "verb",
+    "phonetic": "/peɪ/",
+    "exampleEN": "I will pay by card.",
+    "level": "a1",
+    "tr": "ödemek"
+  },
+  {
+    "id": "en:bring",
+    "headword": "bring",
+    "pos": "verb",
+    "phonetic": "/brɪŋ/",
+    "exampleEN": "Please bring your book.",
+    "level": "a1",
+    "tr": "getirmek"
+  },
+  {
+    "id": "en:send",
+    "headword": "send",
+    "pos": "verb",
+    "phonetic": "/sɛnd/",
+    "exampleEN": "I will send you an email.",
+    "level": "a1",
+    "tr": "göndermek"
+  },
+  {
+    "id": "en:show",
+    "headword": "show",
+    "pos": "verb",
+    "phonetic": "/ʃoʊ/",
+    "exampleEN": "Show me your new phone.",
+    "level": "a1",
+    "tr": "göstermek"
+  },
+  {
+    "id": "en:keep",
+    "headword": "keep",
+    "pos": "verb",
+    "phonetic": "/kip/",
+    "exampleEN": "Keep your ticket safe.",
+    "level": "a1",
+    "tr": "saklamak / tutmak"
+  },
+  {
+    "id": "en:leave",
+    "headword": "leave",
+    "pos": "verb",
+    "phonetic": "/liv/",
+    "exampleEN": "We leave at six tomorrow.",
+    "level": "a1",
+    "tr": "ayrılmak / bırakmak"
+  },
+  {
+    "id": "en:arrive",
+    "headword": "arrive",
+    "pos": "verb",
+    "phonetic": "/əˈraɪv/",
+    "exampleEN": "We arrive at noon.",
+    "level": "a1",
+    "tr": "varmak"
+  },
+  {
+    "id": "en:visit",
+    "headword": "visit",
+    "pos": "verb",
+    "phonetic": "/ˈvɪzɪt/",
+    "exampleEN": "I visit my parents on weekends.",
+    "level": "a1",
+    "tr": "ziyaret etmek"
+  },
+  {
+    "id": "en:change",
+    "headword": "change",
+    "pos": "verb",
+    "phonetic": "/tʃeɪndʒ/",
+    "exampleEN": "I want to change my seat.",
+    "level": "a1",
+    "tr": "değiştirmek"
+  },
+  {
+    "id": "en:try",
+    "headword": "try",
+    "pos": "verb",
+    "phonetic": "/traɪ/",
+    "exampleEN": "Try this new coffee.",
+    "level": "a1",
+    "tr": "denemek"
+  },
+  {
+    "id": "en:believe",
+    "headword": "believe",
+    "pos": "verb",
+    "phonetic": "/bɪˈliv/",
+    "exampleEN": "I believe you.",
+    "level": "a1",
+    "tr": "inanmak"
+  },
+  {
+    "id": "en:hope",
+    "headword": "hope",
+    "pos": "verb",
+    "phonetic": "/hoʊp/",
+    "exampleEN": "I hope you feel better.",
+    "level": "a1",
+    "tr": "ummak"
+  },
+  {
+    "id": "en:mean",
+    "headword": "mean",
+    "pos": "verb",
+    "phonetic": "/min/",
+    "exampleEN": "What does this word mean?",
+    "level": "a1",
+    "tr": "anlamına gelmek"
+  }
+]

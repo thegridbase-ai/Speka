@@ -1,0 +1,502 @@
+# SPEKA A2 word source — American English headwords (NGSL / CEFR-J / high-frequency basis)
+# Creative content (phonetic, exampleEN, tr) is original, authored for SPEKA. License-clean.
+# Format (TAB-separated): headword <TAB> pos <TAB> phonetic <TAB> exampleEN <TAB> tr
+# Lines starting with # are comments. Blank lines ignored.
+# pos vocabulary: noun, verb, adjective, adverb, pronoun, preposition,
+#                 conjunction, determiner, number, interjection, modal, auxiliary
+# A2 level: words a learner meets AFTER A1 — more abstract nouns, useful verbs,
+#           connectors, and everyday-but-less-basic vocabulary. No A1 headwords.
+#
+# ---- Connectors & function words ----
+although	conjunction	/ɔlˈðoʊ/	Although it was raining, we went for a walk.	-e rağmen
+however	adverb	/haʊˈɛvər/	The plan was good; however, it failed.	ancak / yine de
+therefore	adverb	/ˈðɛrfɔr/	He was late; therefore, he missed the train.	bu yüzden
+while	conjunction	/waɪl/	She read a book while she waited.	-iken
+unless	conjunction	/ʌnˈlɛs/	I won't go unless you come with me.	-medikçe
+until	preposition	/ʌnˈtɪl/	We waited until the rain stopped.	-e kadar
+since	conjunction	/sɪns/	I have lived here since 2010.	-den beri
+during	preposition	/ˈdʊrɪŋ/	He fell asleep during the movie.	sırasında / boyunca
+without	preposition	/wɪˈðaʊt/	I can't read without my glasses.	-siz / -meden
+through	preposition	/θru/	We drove through a long tunnel.	içinden / boyunca
+across	preposition	/əˈkrɔs/	The dog ran across the street.	karşıdan karşıya
+along	preposition	/əˈlɔŋ/	We walked along the beach.	boyunca
+toward	preposition	/tɔrd/	She walked toward the door.	-e doğru
+against	preposition	/əˈɡɛnst/	He leaned against the wall.	-e karşı / -e dayalı
+among	preposition	/əˈmʌŋ/	She felt safe among her friends.	arasında (çoğul)
+behind	preposition	/bɪˈhaɪnd/	The car is parked behind the house.	arkasında
+beside	preposition	/bɪˈsaɪd/	Come and sit beside me.	yanında
+inside	preposition	/ɪnˈsaɪd/	The keys are inside the drawer.	içinde
+outside	preposition	/ˌaʊtˈsaɪd/	The children are playing outside.	dışında / dışarıda
+instead	adverb	/ɪnˈstɛd/	I drank tea instead of coffee.	yerine
+besides	adverb	/bɪˈsaɪdz/	I'm tired; besides, it's getting late.	ayrıca / üstelik
+otherwise	adverb	/ˈʌðərwaɪz/	Hurry up, otherwise we'll be late.	aksi takdirde
+anyway	adverb	/ˈɛniweɪ/	It was expensive, but I bought it anyway.	yine de / her neyse
+#
+# ---- Adverbs of degree, time, manner ----
+already	adverb	/ɔlˈrɛdi/	I have already finished my homework.	çoktan / zaten
+yet	adverb	/jɛt/	She hasn't arrived yet.	henüz
+still	adverb	/stɪl/	He is still waiting for the bus.	hâlâ
+soon	adverb	/sun/	The meeting will start soon.	yakında
+later	adverb	/ˈleɪtər/	I will call you later.	daha sonra
+early	adverb	/ˈɜrli/	We arrived early for the show.	erken
+late	adverb	/leɪt/	He came home late last night.	geç
+almost	adverb	/ˈɔlmoʊst/	I am almost ready to leave.	neredeyse
+quite	adverb	/kwaɪt/	The exam was quite difficult.	oldukça
+really	adverb	/ˈrɪli/	I really enjoyed the concert.	gerçekten
+probably	adverb	/ˈprɑbəbli/	It will probably rain tomorrow.	muhtemelen
+certainly	adverb	/ˈsɜrtənli/	I will certainly help you.	kesinlikle
+suddenly	adverb	/ˈsʌdənli/	Suddenly, the lights went out.	aniden
+slowly	adverb	/ˈsloʊli/	Please speak more slowly.	yavaşça
+quickly	adverb	/ˈkwɪkli/	She quickly answered the phone.	çabucak
+carefully	adverb	/ˈkɛrfəli/	He drove carefully in the rain.	dikkatlice
+quietly	adverb	/ˈkwaɪətli/	The baby slept quietly.	sessizce
+loudly	adverb	/ˈlaʊdli/	They laughed loudly at the joke.	yüksek sesle
+hardly	adverb	/ˈhɑrdli/	I could hardly hear the music.	neredeyse hiç
+nearly	adverb	/ˈnɪrli/	The bottle is nearly empty.	neredeyse
+exactly	adverb	/ɪɡˈzæktli/	That is exactly what I meant.	tam olarak
+finally	adverb	/ˈfaɪnəli/	We finally found the right house.	sonunda
+recently	adverb	/ˈrisəntli/	I recently started a new job.	son zamanlarda
+usually	adverb	/ˈjuʒəwəli/	I usually wake up at seven.	genellikle
+#
+# ---- Useful everyday verbs ----
+explain	verb	/ɪkˈspleɪn/	Can you explain this rule to me?	açıklamak
+describe	verb	/dɪˈskraɪb/	Please describe the man you saw.	tarif etmek
+decide	verb	/dɪˈsaɪd/	We need to decide where to eat.	karar vermek
+choose	verb	/tʃuz/	You can choose any color you like.	seçmek
+agree	verb	/əˈɡri/	I agree with your idea.	hemfikir olmak
+suggest	verb	/səˈdʒɛst/	She suggested a new restaurant.	önermek
+prefer	verb	/prɪˈfɜr/	I prefer tea to coffee.	tercih etmek
+hate	verb	/heɪt/	I hate waiting in long lines.	nefret etmek
+enjoy	verb	/ɪnˈdʒɔɪ/	We enjoy walking in the park.	keyif almak
+forget	verb	/fərˈɡɛt/	Don't forget to lock the door.	unutmak
+worry	verb	/ˈwɜri/	Don't worry about the test.	endişelenmek
+relax	verb	/rɪˈlæks/	I relax by listening to music.	rahatlamak
+imagine	verb	/ɪˈmædʒən/	Imagine living by the ocean.	hayal etmek
+realize	verb	/ˈriəlaɪz/	I didn't realize it was so late.	fark etmek
+notice	verb	/ˈnoʊtɪs/	Did you notice the new sign?	fark etmek / dikkat etmek
+recognize	verb	/ˈrɛkəɡnaɪz/	I didn't recognize you with short hair.	tanımak
+appear	verb	/əˈpɪr/	A rainbow appeared after the rain.	görünmek / belirmek
+seem	verb	/sim/	You seem tired this morning.	görünmek / -e benzemek
+happen	verb	/ˈhæpən/	What happened at the meeting?	olmak / meydana gelmek
+exist	verb	/ɪɡˈzɪst/	Many old customs still exist today.	var olmak
+continue	verb	/kənˈtɪnju/	Please continue with your story.	devam etmek
+finish	verb	/ˈfɪnɪʃ/	I need to finish this report today.	bitirmek
+return	verb	/rɪˈtɜrn/	Please return the book by Friday.	geri dönmek / iade etmek
+follow	verb	/ˈfɑloʊ/	Follow this road to the bridge.	takip etmek
+join	verb	/dʒɔɪn/	Would you like to join us for lunch?	katılmak
+share	verb	/ʃɛr/	The children share their toys.	paylaşmak
+borrow	verb	/ˈbɑroʊ/	Can I borrow your pen?	ödünç almak
+lend	verb	/lɛnd/	I can lend you some money.	ödünç vermek
+spend	verb	/spɛnd/	We spend the weekend at home.	harcamak / geçirmek
+save	verb	/seɪv/	I save money for vacation.	tasarruf etmek / kurtarmak
+cost	verb	/kɔst/	How much does this jacket cost?	maliyeti olmak
+earn	verb	/ɜrn/	She earns a good salary.	kazanmak
+win	verb	/wɪn/	Our team hopes to win the match.	kazanmak (maç)
+lose	verb	/luz/	Be careful not to lose your ticket.	kaybetmek
+break	verb	/breɪk/	Be careful, you might break the glass.	kırmak
+fix	verb	/fɪks/	Can you fix my broken chair?	tamir etmek
+build	verb	/bɪld/	They want to build a new school.	inşa etmek
+grow	verb	/ɡroʊ/	These plants grow very fast.	büyümek / yetiştirmek
+cut	verb	/kʌt/	Please cut the bread into slices.	kesmek
+carry	verb	/ˈkæri/	He helped me carry the heavy box.	taşımak
+catch	verb	/kætʃ/	Run, or you'll miss the bus to catch.	yakalamak
+throw	verb	/θroʊ/	Don't throw trash on the ground.	atmak / fırlatmak
+pull	verb	/pʊl/	Pull the door to open it.	çekmek
+push	verb	/pʊʃ/	Push the button to start.	itmek
+fall	verb	/fɔl/	Be careful not to fall on the ice.	düşmek
+rise	verb	/raɪz/	The sun will rise at six.	yükselmek / doğmak
+fly	verb	/flaɪ/	We will fly to Paris next week.	uçmak
+ride	verb	/raɪd/	I ride my bike to work.	binmek (bisiklet/at)
+climb	verb	/klaɪm/	They want to climb the mountain.	tırmanmak
+jump	verb	/dʒʌmp/	The cat can jump very high.	zıplamak
+swim	verb	/swɪm/	I learned to swim as a child.	yüzmek
+dance	verb	/dæns/	They love to dance at parties.	dans etmek
+sing	verb	/sɪŋ/	She likes to sing in the shower.	şarkı söylemek
+draw	verb	/drɔ/	My son loves to draw animals.	çizmek
+paint	verb	/peɪnt/	We will paint the kitchen white.	boyamak
+plan	verb	/plæn/	We plan to travel this summer.	planlamak
+prepare	verb	/prɪˈpɛr/	I need to prepare for the exam.	hazırlanmak
+practice	verb	/ˈpræktɪs/	You should practice every day.	pratik yapmak
+improve	verb	/ɪmˈpruv/	I want to improve my English.	geliştirmek
+teach	verb	/titʃ/	She will teach us how to cook.	öğretmek
+discuss	verb	/dɪˈskʌs/	Let's discuss this after lunch.	tartışmak / görüşmek
+mention	verb	/ˈmɛnʃən/	She mentioned your name at dinner.	bahsetmek
+answer	verb	/ˈænsər/	Please answer my question.	cevap vermek
+repeat	verb	/rɪˈpit/	Could you repeat that, please?	tekrar etmek
+report	verb	/rɪˈpɔrt/	He reported the accident to the police.	bildirmek / rapor etmek
+accept	verb	/əkˈsɛpt/	She accepted the job offer.	kabul etmek
+refuse	verb	/rɪˈfjuz/	He refused to answer the question.	reddetmek
+allow	verb	/əˈlaʊ/	They don't allow dogs in the park.	izin vermek
+offer	verb	/ˈɔfər/	They offered me a better price.	teklif etmek / sunmak
+invite	verb	/ɪnˈvaɪt/	I want to invite you to dinner.	davet etmek
+introduce	verb	/ˌɪntrəˈdus/	Let me introduce my brother.	tanıştırmak
+order	verb	/ˈɔrdər/	I ordered a pizza online.	sipariş vermek
+serve	verb	/sɜrv/	They serve breakfast until ten.	servis etmek / hizmet etmek
+collect	verb	/kəˈlɛkt/	My daughter collects old coins.	toplamak / koleksiyon yapmak
+hold	verb	/hoʊld/	Can you hold this bag for me?	tutmak
+drop	verb	/drɑp/	Be careful not to drop your phone.	düşürmek
+move	verb	/muv/	We will move to a new house soon.	taşınmak / hareket etmek
+touch	verb	/tʌtʃ/	Please don't touch the paintings.	dokunmak
+hear	verb	/hɪr/	I can hear music from next door.	duymak
+smell	verb	/smɛl/	The flowers smell wonderful.	koklamak / kokmak
+taste	verb	/teɪst/	This soup tastes delicious.	tatmak / tadı olmak
+wear	verb	/wɛr/	She likes to wear bright colors.	giymek
+become	verb	/bɪˈkʌm/	He wants to become a pilot.	-mek olmak
+belong	verb	/bɪˈlɔŋ/	This book belongs to the library.	ait olmak
+matter	verb	/ˈmætər/	It doesn't matter if we're late.	önemli olmak
+care	verb	/kɛr/	I really care about my friends.	önemsemek / bakmak
+expect	verb	/ɪkˈspɛkt/	We expect good weather tomorrow.	beklemek (ummak)
+wish	verb	/wɪʃ/	I wish you a happy birthday.	dilemek
+promise	verb	/ˈprɑməs/	I promise to call you tonight.	söz vermek
+#
+# ---- Abstract & everyday nouns ----
+idea	noun	/aɪˈdiə/	That is a really good idea.	fikir
+problem	noun	/ˈprɑbləm/	We solved the problem together.	sorun / problem
+reason	noun	/ˈrizən/	There is no reason to worry.	sebep / neden
+answer	noun	/ˈænsər/	I don't know the answer.	cevap
+example	noun	/ɪɡˈzæmpəl/	Can you give me an example?	örnek
+information	noun	/ˌɪnfərˈmeɪʃən/	I need more information about the trip.	bilgi
+news	noun	/nuz/	I watch the news every evening.	haber
+story	noun	/ˈstɔri/	She told us a funny story.	hikâye
+fact	noun	/fækt/	That is an interesting fact.	gerçek / olgu
+truth	noun	/truθ/	Please tell me the truth.	gerçek / hakikat
+meaning	noun	/ˈminɪŋ/	What is the meaning of this word?	anlam
+language	noun	/ˈlæŋɡwɪdʒ/	English is a global language.	dil
+sentence	noun	/ˈsɛntəns/	Write a sentence with this word.	cümle
+page	noun	/peɪdʒ/	Open your book to page ten.	sayfa
+letter	noun	/ˈlɛtər/	I wrote a letter to my friend.	mektup / harf
+list	noun	/lɪst/	I made a list of things to buy.	liste
+plan	noun	/plæn/	Do you have a plan for the weekend?	plan
+chance	noun	/tʃæns/	This is a great chance to learn.	şans / fırsat
+choice	noun	/tʃɔɪs/	You made the right choice.	seçim
+difference	noun	/ˈdɪfərəns/	There is a big difference between them.	fark
+result	noun	/rɪˈzʌlt/	We are waiting for the test results.	sonuç
+mistake	noun	/mɪˈsteɪk/	Everyone makes mistakes sometimes.	hata
+trouble	noun	/ˈtrʌbəl/	He is in trouble with his boss.	sorun / başı belada
+danger	noun	/ˈdeɪndʒər/	The sign warns of danger ahead.	tehlike
+safety	noun	/ˈseɪfti/	Please wear a helmet for safety.	güvenlik
+health	noun	/hɛlθ/	Good food is important for health.	sağlık
+nature	noun	/ˈneɪtʃər/	We love spending time in nature.	doğa
+season	noun	/ˈsizən/	Spring is my favorite season.	mevsim
+moment	noun	/ˈmoʊmənt/	Please wait a moment.	an
+future	noun	/ˈfjutʃər/	I have big plans for the future.	gelecek
+past	noun	/pæst/	We should learn from the past.	geçmiş
+present	noun	/ˈprɛzənt/	She gave me a lovely present.	hediye / şimdiki zaman
+holiday	noun	/ˈhɑlədeɪ/	We are going on holiday next month.	tatil
+trip	noun	/trɪp/	We took a short trip to the lake.	gezi / yolculuk
+journey	noun	/ˈdʒɜrni/	The journey took three days.	yolculuk
+distance	noun	/ˈdɪstəns/	The distance to the city is far.	mesafe
+direction	noun	/dɪˈrɛkʃən/	He asked me for directions.	yön
+view	noun	/vju/	The hotel has a beautiful view.	manzara / görüş
+area	noun	/ˈɛriə/	This is a quiet area of the city.	bölge / alan
+space	noun	/speɪs/	There isn't enough space in the car.	yer / boşluk / uzay
+place	noun	/pleɪs/	This is my favorite place in town.	yer
+ground	noun	/ɡraʊnd/	The keys fell on the ground.	yer / zemin
+field	noun	/fild/	The cows are in the field.	tarla / alan
+forest	noun	/ˈfɔrəst/	We went hiking in the forest.	orman
+river	noun	/ˈrɪvər/	The river flows through the town.	nehir
+mountain	noun	/ˈmaʊntən/	The mountain is covered with snow.	dağ
+beach	noun	/bitʃ/	We spent the day at the beach.	plaj / kumsal
+sky	noun	/skaɪ/	The sky is clear and blue today.	gökyüzü
+sun	noun	/sʌn/	The sun is very strong at noon.	güneş
+moon	noun	/mun/	The moon is bright tonight.	ay (gökyüzü)
+star	noun	/stɑr/	We watched the stars from the roof.	yıldız
+fire	noun	/ˈfaɪər/	They sat around the fire.	ateş / yangın
+light	noun	/laɪt/	Please turn off the light.	ışık
+sound	noun	/saʊnd/	I heard a strange sound outside.	ses
+voice	noun	/vɔɪs/	She has a beautiful singing voice.	ses (insan)
+color	noun	/ˈkʌlər/	Blue is my favorite color.	renk
+shape	noun	/ʃeɪp/	The cake has a round shape.	şekil
+size	noun	/saɪz/	What size of shoes do you wear?	beden / boyut
+weight	noun	/weɪt/	The doctor checked my weight.	ağırlık / kilo
+price	noun	/praɪs/	The price of gas is rising.	fiyat
+cost	noun	/kɔst/	The cost of the trip was high.	maliyet
+bill	noun	/bɪl/	Can I have the bill, please?	hesap / fatura
+account	noun	/əˈkaʊnt/	I opened a new bank account.	hesap (banka)
+business	noun	/ˈbɪznəs/	He runs a small business.	iş / ticaret
+company	noun	/ˈkʌmpəni/	She works for a big company.	şirket
+meeting	noun	/ˈmitɪŋ/	The meeting starts at nine.	toplantı
+manager	noun	/ˈmænɪdʒər/	The manager will see you now.	yönetici / müdür
+customer	noun	/ˈkʌstəmər/	The customer wanted a refund.	müşteri
+service	noun	/ˈsɜrvəs/	The service at the hotel was great.	hizmet / servis
+project	noun	/ˈprɑdʒɛkt/	We finished the project on time.	proje
+event	noun	/ɪˈvɛnt/	The event was a great success.	etkinlik / olay
+activity	noun	/ækˈtɪvəti/	Swimming is my favorite activity.	aktivite / etkinlik
+hobby	noun	/ˈhɑbi/	Painting is her favorite hobby.	hobi
+sport	noun	/spɔrt/	Soccer is a popular sport.	spor
+team	noun	/tim/	Our team won the championship.	takım
+member	noun	/ˈmɛmbər/	She is a member of the club.	üye
+group	noun	/ɡrup/	We work in small groups.	grup
+society	noun	/səˈsaɪəti/	Technology has changed society.	toplum
+government	noun	/ˈɡʌvərmənt/	The government built a new road.	hükümet
+law	noun	/lɔ/	Everyone must follow the law.	kanun / yasa
+police	noun	/pəˈlis/	Call the police if you need help.	polis
+doctor	noun	/ˈdɑktər/	The doctor gave me some medicine.	doktor
+nurse	noun	/nɜrs/	The nurse checked my temperature.	hemşire
+medicine	noun	/ˈmɛdəsən/	Take this medicine twice a day.	ilaç
+illness	noun	/ˈɪlnəs/	He missed work because of illness.	hastalık
+pain	noun	/peɪn/	I have a pain in my back.	ağrı / acı
+body	noun	/ˈbɑdi/	Exercise is good for your body.	vücut / beden
+face	noun	/feɪs/	She washed her face with cold water.	yüz
+hair	noun	/hɛr/	She has long brown hair.	saç
+arm	noun	/ɑrm/	He broke his arm playing soccer.	kol
+leg	noun	/lɛɡ/	My legs are tired after the hike.	bacak
+foot	noun	/fʊt/	My left foot hurts a little.	ayak
+heart	noun	/hɑrt/	The runner has a strong heart.	kalp
+mind	noun	/maɪnd/	I changed my mind about the trip.	akıl / fikir
+feeling	noun	/ˈfilɪŋ/	I have a good feeling about this.	his / duygu
+dream	noun	/drim/	Her dream is to become a singer.	hayal / rüya
+fear	noun	/fɪr/	He has a fear of high places.	korku
+joy	noun	/dʒɔɪ/	The good news filled her with joy.	sevinç / neşe
+friendship	noun	/ˈfrɛndʃɪp/	Their friendship lasted a lifetime.	arkadaşlık / dostluk
+marriage	noun	/ˈmærɪdʒ/	They have a happy marriage.	evlilik
+husband	noun	/ˈhʌzbənd/	Her husband is a teacher.	koca / eş
+wife	noun	/waɪf/	His wife works at the bank.	karı / eş
+parent	noun	/ˈpɛrənt/	Every parent worries about their kids.	ebeveyn
+son	noun	/sʌn/	Their son is studying medicine.	oğul
+daughter	noun	/ˈdɔtər/	My daughter loves to read.	kız evlat
+brother	noun	/ˈbrʌðər/	My brother lives in another city.	erkek kardeş
+sister	noun	/ˈsɪstər/	My sister is a nurse.	kız kardeş
+neighbor	noun	/ˈneɪbər/	Our neighbor is very friendly.	komşu
+guest	noun	/ɡɛst/	We have guests coming for dinner.	misafir
+stranger	noun	/ˈstreɪndʒər/	A stranger asked me for directions.	yabancı
+#
+# ---- Everyday objects, food, places ----
+kitchen	noun	/ˈkɪtʃən/	She is cooking in the kitchen.	mutfak
+bathroom	noun	/ˈbæθrum/	The bathroom is down the hall.	banyo
+garden	noun	/ˈɡɑrdən/	We grow vegetables in the garden.	bahçe
+wall	noun	/wɔl/	There is a painting on the wall.	duvar
+floor	noun	/flɔr/	The office is on the fifth floor.	zemin / kat
+roof	noun	/ruf/	The cat is sitting on the roof.	çatı
+bridge	noun	/brɪdʒ/	We crossed the old stone bridge.	köprü
+road	noun	/roʊd/	This road leads to the village.	yol
+corner	noun	/ˈkɔrnər/	The shop is on the corner.	köşe
+center	noun	/ˈsɛntər/	The hotel is in the city center.	merkez
+market	noun	/ˈmɑrkət/	I buy fruit at the local market.	pazar / market
+bank	noun	/bæŋk/	I need to go to the bank today.	banka
+library	noun	/ˈlaɪbrɛri/	I borrowed three books from the library.	kütüphane
+museum	noun	/mjuˈziəm/	The museum is free on Sundays.	müze
+church	noun	/tʃɜrtʃ/	The old church is near the square.	kilise
+hotel	noun	/hoʊˈtɛl/	We stayed at a small hotel.	otel
+factory	noun	/ˈfæktəri/	He works at a car factory.	fabrika
+farm	noun	/fɑrm/	My grandparents live on a farm.	çiftlik
+village	noun	/ˈvɪlɪdʒ/	She grew up in a small village.	köy
+apartment	noun	/əˈpɑrtmənt/	They rent a small apartment.	daire / apartman
+furniture	noun	/ˈfɜrnɪtʃər/	We bought new furniture for the living room.	mobilya
+desk	noun	/dɛsk/	My laptop is on the desk.	masa (çalışma)
+shelf	noun	/ʃɛlf/	Put the books on the shelf.	raf
+drawer	noun	/drɔr/	The forks are in the top drawer.	çekmece
+mirror	noun	/ˈmɪrər/	She looked at herself in the mirror.	ayna
+clock	noun	/klɑk/	The clock on the wall is slow.	saat (duvar)
+lamp	noun	/læmp/	Turn on the lamp, please.	lamba
+cup	noun	/kʌp/	She poured tea into the cup.	fincan / kupa
+glass	noun	/ɡlæs/	Can I have a glass of water?	bardak / cam
+plate	noun	/pleɪt/	He filled his plate with rice.	tabak
+bottle	noun	/ˈbɑtəl/	I bought a bottle of juice.	şişe
+box	noun	/bɑks/	The gift is in a small box.	kutu
+basket	noun	/ˈbæskət/	She put the apples in the basket.	sepet
+knife	noun	/naɪf/	Be careful with the sharp knife.	bıçak
+spoon	noun	/spun/	Stir the soup with a spoon.	kaşık
+fork	noun	/fɔrk/	Eat your salad with a fork.	çatal
+towel	noun	/ˈtaʊəl/	Dry your hands with this towel.	havlu
+soap	noun	/soʊp/	Wash your hands with soap.	sabun
+brush	noun	/brʌʃ/	He cleaned his teeth with a brush.	fırça
+camera	noun	/ˈkæmrə/	I forgot my camera at home.	kamera / fotoğraf makinesi
+computer	noun	/kəmˈpjutər/	My computer is very slow today.	bilgisayar
+internet	noun	/ˈɪntərnɛt/	The internet is down again.	internet
+website	noun	/ˈwɛbsaɪt/	I found the recipe on a website.	web sitesi
+message	noun	/ˈmɛsɪdʒ/	I sent you a message this morning.	mesaj
+email	noun	/ˈimeɪl/	Please reply to my email soon.	e-posta
+machine	noun	/məˈʃin/	The washing machine is broken.	makine
+engine	noun	/ˈɛndʒən/	The car engine made a strange noise.	motor
+wheel	noun	/wil/	The front wheel needs air.	tekerlek / direksiyon
+gas	noun	/ɡæs/	We need to buy gas for the car.	benzin / gaz
+bicycle	noun	/ˈbaɪsɪkəl/	She rides her bicycle to school.	bisiklet
+flight	noun	/flaɪt/	Our flight was delayed by an hour.	uçuş
+airplane	noun	/ˈɛrpleɪn/	The airplane landed safely.	uçak
+boat	noun	/boʊt/	We took a boat across the lake.	tekne / kayık
+ship	noun	/ʃɪp/	The ship sailed at dawn.	gemi
+fruit	noun	/frut/	I eat fresh fruit every day.	meyve
+vegetable	noun	/ˈvɛdʒtəbəl/	Eat more vegetables for good health.	sebze
+meat	noun	/mit/	He doesn't eat meat anymore.	et
+fish	noun	/fɪʃ/	We had fish for dinner.	balık
+egg	noun	/ɛɡ/	I had two eggs for breakfast.	yumurta
+milk	noun	/mɪlk/	Add some milk to your coffee.	süt
+cheese	noun	/tʃiz/	I love bread with cheese.	peynir
+sugar	noun	/ˈʃʊɡər/	I don't take sugar in my tea.	şeker
+salt	noun	/sɔlt/	The soup needs more salt.	tuz
+rice	noun	/raɪs/	We had rice with the chicken.	pirinç / pilav
+soup	noun	/sup/	The soup is too hot to eat.	çorba
+cake	noun	/keɪk/	She baked a chocolate cake.	pasta / kek
+apple	noun	/ˈæpəl/	An apple a day keeps you healthy.	elma
+orange	noun	/ˈɔrɪndʒ/	I drink orange juice every morning.	portakal
+banana	noun	/bəˈnænə/	The monkey ate a banana.	muz
+tea	noun	/ti/	I drink green tea in the afternoon.	çay
+juice	noun	/dʒus/	Would you like some apple juice?	meyve suyu
+breakfast	noun	/ˈbrɛkfəst/	I never skip breakfast.	kahvaltı
+lunch	noun	/lʌntʃ/	Let's have lunch together.	öğle yemeği
+dinner	noun	/ˈdɪnər/	We had dinner at a nice restaurant.	akşam yemeği
+meal	noun	/mil/	Dinner is the biggest meal of the day.	öğün / yemek
+menu	noun	/ˈmɛnju/	Can I see the menu, please?	menü
+#
+# ---- Adjectives ----
+important	adjective	/ɪmˈpɔrtənt/	This is an important meeting.	önemli
+interesting	adjective	/ˈɪntrəstɪŋ/	The book was very interesting.	ilginç
+difficult	adjective	/ˈdɪfɪkəlt/	The exam was quite difficult.	zor
+possible	adjective	/ˈpɑsəbəl/	Is it possible to change my seat?	mümkün
+impossible	adjective	/ɪmˈpɑsəbəl/	It is impossible to finish today.	imkânsız
+necessary	adjective	/ˈnɛsəsɛri/	A passport is necessary for travel.	gerekli
+useful	adjective	/ˈjusfəl/	This app is really useful.	yararlı / kullanışlı
+famous	adjective	/ˈfeɪməs/	She is a famous actress.	ünlü
+popular	adjective	/ˈpɑpjələr/	This song is very popular now.	popüler
+strong	adjective	/strɔŋ/	He is strong enough to lift it.	güçlü
+weak	adjective	/wik/	I feel weak after the flu.	zayıf / güçsüz
+heavy	adjective	/ˈhɛvi/	This suitcase is too heavy.	ağır
+light	adjective	/laɪt/	The bag is light and easy to carry.	hafif
+empty	adjective	/ˈɛmpti/	The bottle is almost empty.	boş
+full	adjective	/fʊl/	The bus was full of people.	dolu
+quiet	adjective	/ˈkwaɪət/	The library is very quiet.	sessiz
+loud	adjective	/laʊd/	The music was too loud.	gürültülü / yüksek sesli
+dark	adjective	/dɑrk/	It was dark when we got home.	karanlık
+bright	adjective	/braɪt/	The room is bright and sunny.	parlak / aydınlık
+clear	adjective	/klɪr/	The sky is clear today.	açık / net
+dirty	adjective	/ˈdɜrti/	My shoes are dirty from the rain.	kirli
+dry	adjective	/draɪ/	The towels are dry now.	kuru
+wet	adjective	/wɛt/	My clothes got wet in the rain.	ıslak
+fresh	adjective	/frɛʃ/	I like fresh bread in the morning.	taze
+warm	adjective	/wɔrm/	It is warm and sunny today.	ılık / sıcak
+cool	adjective	/kul/	The evening air is cool.	serin
+deep	adjective	/dip/	The lake is very deep here.	derin
+wide	adjective	/waɪd/	The river is very wide.	geniş
+narrow	adjective	/ˈnæroʊ/	The street is too narrow for cars.	dar
+flat	adjective	/flæt/	The land here is flat.	düz
+round	adjective	/raʊnd/	The table has a round top.	yuvarlak
+sharp	adjective	/ʃɑrp/	Be careful, the knife is sharp.	keskin
+soft	adjective	/sɔft/	The pillow is very soft.	yumuşak
+sweet	adjective	/swit/	This cake is too sweet for me.	tatlı
+expensive	adjective	/ɪkˈspɛnsɪv/	That car is very expensive.	pahalı
+cheap	adjective	/tʃip/	The tickets were quite cheap.	ucuz
+rich	adjective	/rɪtʃ/	He became rich from his business.	zengin
+poor	adjective	/pʊr/	The family was very poor.	fakir / zavallı
+safe	adjective	/seɪf/	This neighborhood is safe at night.	güvenli
+dangerous	adjective	/ˈdeɪndʒərəs/	Driving fast is dangerous.	tehlikeli
+careful	adjective	/ˈkɛrfəl/	Be careful on the wet floor.	dikkatli
+afraid	adjective	/əˈfreɪd/	She is afraid of the dark.	korkmuş / korkan
+angry	adjective	/ˈæŋɡri/	He was angry about the delay.	kızgın / öfkeli
+tired	adjective	/ˈtaɪərd/	I am tired after the long day.	yorgun
+sick	adjective	/sɪk/	She stayed home because she was sick.	hasta
+hungry	adjective	/ˈhʌŋɡri/	The children are hungry now.	aç
+thirsty	adjective	/ˈθɜrsti/	I am thirsty after the run.	susamış
+busy	adjective	/ˈbɪzi/	I am too busy to talk now.	meşgul
+lonely	adjective	/ˈloʊnli/	He felt lonely in the new city.	yalnız
+proud	adjective	/praʊd/	She is proud of her work.	gururlu
+glad	adjective	/ɡlæd/	I am glad you could come.	memnun / sevinçli
+surprised	adjective	/sərˈpraɪzd/	I was surprised by the gift.	şaşkın / şaşırmış
+worried	adjective	/ˈwɜrid/	She looked worried about the test.	endişeli
+serious	adjective	/ˈsɪriəs/	This is a serious problem.	ciddi
+strange	adjective	/streɪndʒ/	I heard a strange noise.	tuhaf / garip
+similar	adjective	/ˈsɪmələr/	Our cars are very similar.	benzer
+real	adjective	/ril/	Is this a real diamond?	gerçek
+true	adjective	/tru/	The story is completely true.	doğru / gerçek
+false	adjective	/fɔls/	That information is false.	yanlış / sahte
+common	adjective	/ˈkɑmən/	This is a common mistake.	yaygın / ortak
+special	adjective	/ˈspɛʃəl/	Today is a special day for us.	özel
+modern	adjective	/ˈmɑdərn/	They live in a modern house.	modern
+ancient	adjective	/ˈeɪnʃənt/	We visited an ancient temple.	antik / kadim
+local	adjective	/ˈloʊkəl/	We ate at a local restaurant.	yerel
+foreign	adjective	/ˈfɔrən/	She speaks three foreign languages.	yabancı (ülke)
+public	adjective	/ˈpʌblɪk/	The park is a public place.	halka açık / kamu
+private	adjective	/ˈpraɪvət/	This is a private conversation.	özel / kişisel
+main	adjective	/meɪn/	The main reason is the cost.	ana / asıl
+whole	adjective	/hoʊl/	We spent the whole day at home.	bütün / tüm
+several	determiner	/ˈsɛvrəl/	I called you several times.	birkaç
+enough	determiner	/ɪˈnʌf/	We have enough food for everyone.	yeterli
+both	determiner	/boʊθ/	Both answers are correct.	her ikisi
+each	determiner	/itʃ/	Each student got a book.	her biri
+other	determiner	/ˈʌðər/	I'll come on the other day.	diğer
+another	determiner	/əˈnʌðər/	Would you like another cup of tea?	bir başka / bir tane daha
+few	determiner	/fju/	Only a few people came to the party.	birkaç / az
+little	determiner	/ˈlɪtəl/	There is little water left.	az / küçük
+#
+# ---- Time, days, ordinals ----
+afternoon	noun	/ˌæftərˈnun/	I have a meeting this afternoon.	öğleden sonra
+evening	noun	/ˈivnɪŋ/	We watch a movie in the evening.	akşam
+midnight	noun	/ˈmɪdnaɪt/	The party ended at midnight.	gece yarısı
+weekend	noun	/ˈwikɛnd/	We relax at home on the weekend.	hafta sonu
+birthday	noun	/ˈbɜrθdeɪ/	Happy birthday to you!	doğum günü
+date	noun	/deɪt/	What is the date today?	tarih
+Tuesday	noun	/ˈtuzdeɪ/	The dentist appointment is on Tuesday.	Salı
+Wednesday	noun	/ˈwɛnzdeɪ/	We have a test on Wednesday.	Çarşamba
+Thursday	noun	/ˈθɜrzdeɪ/	The store is closed on Thursday.	Perşembe
+Saturday	noun	/ˈsætərdeɪ/	We go shopping on Saturday.	Cumartesi
+Sunday	noun	/ˈsʌndeɪ/	I sleep late on Sunday.	Pazar
+spring	noun	/sprɪŋ/	The flowers bloom in spring.	ilkbahar
+summer	noun	/ˈsʌmər/	We go to the beach every summer.	yaz
+autumn	noun	/ˈɔtəm/	The leaves fall in autumn.	sonbahar
+winter	noun	/ˈwɪntər/	It snows a lot in winter.	kış
+first	number	/fɜrst/	She finished in first place.	birinci
+second	number	/ˈsɛkənd/	This is my second cup of coffee.	ikinci
+third	number	/θɜrd/	He lives on the third floor.	üçüncü
+twenty	number	/ˈtwɛnti/	There are twenty students in the class.	yirmi
+thirty	number	/ˈθɜrti/	She is about thirty years old.	otuz
+forty	number	/ˈfɔrti/	The hike takes about forty minutes.	kırk
+fifty	number	/ˈfɪfti/	There are about fifty seats in the room.	elli
+thousand	number	/ˈθaʊzənd/	The car costs ten thousand dollars.	bin
+million	number	/ˈmɪljən/	The city has two million people.	milyon
+#
+# ---- Phrasal-ish & extra useful verbs ----
+wake	verb	/weɪk/	I wake up at six every morning.	uyanmak
+sell	verb	/sɛl/	They sell fresh fish at the market.	satmak
+rent	verb	/rɛnt/	We rent a small apartment downtown.	kiralamak
+fill	verb	/fɪl/	Please fill the glass with water.	doldurmak
+add	verb	/æd/	Add a little salt to the soup.	eklemek
+remove	verb	/rɪˈmuv/	Please remove your shoes inside.	çıkarmak / kaldırmak
+check	verb	/tʃɛk/	Let me check the schedule.	kontrol etmek
+search	verb	/sɜrtʃ/	I will search for it online.	aramak (araştırmak)
+contain	verb	/kənˈteɪn/	This box contains old photos.	içermek
+include	verb	/ɪnˈklud/	The price includes breakfast.	dahil etmek
+cover	verb	/ˈkʌvər/	Snow covered the whole town.	örtmek / kaplamak
+protect	verb	/prəˈtɛkt/	A hat protects you from the sun.	korumak
+avoid	verb	/əˈvɔɪd/	Try to avoid the busy roads.	kaçınmak / sakınmak
+escape	verb	/ɪˈskeɪp/	The bird escaped from its cage.	kaçmak
+hide	verb	/haɪd/	The cat likes to hide under the bed.	saklanmak / saklamak
+discover	verb	/dɪˈskʌvər/	Scientists discovered a new planet.	keşfetmek
+solve	verb	/sɑlv/	Can you solve this puzzle?	çözmek
+create	verb	/kriˈeɪt/	She wants to create her own brand.	yaratmak / oluşturmak
+produce	verb	/prəˈdus/	This factory produces cars.	üretmek
+provide	verb	/prəˈvaɪd/	The school provides free lunch.	sağlamak / temin etmek
+support	verb	/səˈpɔrt/	My family supports my decision.	desteklemek
+manage	verb	/ˈmænɪdʒ/	She manages a small team.	yönetmek / başa çıkmak
+control	verb	/kənˈtroʊl/	He couldn't control his anger.	kontrol etmek
+develop	verb	/dɪˈvɛləp/	They develop apps for phones.	geliştirmek
+increase	verb	/ɪnˈkris/	Prices increase every year.	artmak / artırmak
+reduce	verb	/rɪˈdus/	We need to reduce our spending.	azaltmak
+compare	verb	/kəmˈpɛr/	Let's compare the two phones.	karşılaştırmak
+measure	verb	/ˈmɛʒər/	Please measure the window first.	ölçmek
+weigh	verb	/weɪ/	The baby weighs four kilos.	tartmak / ağırlığında olmak
+count	verb	/kaʊnt/	The child can count to twenty.	saymak
+divide	verb	/dɪˈvaɪd/	Divide the cake into eight pieces.	bölmek
+mix	verb	/mɪks/	Mix the flour with the eggs.	karıştırmak
+pour	verb	/pɔr/	She poured milk into the bowl.	dökmek
+heat	verb	/hit/	Heat the soup before serving.	ısıtmak
+freeze	verb	/friz/	Water will freeze at zero degrees.	donmak / dondurmak
+melt	verb	/mɛlt/	The snow melts in spring.	erimek
+shine	verb	/ʃaɪn/	The sun shines all day in summer.	parlamak
+ring	verb	/rɪŋ/	The phone keeps ringing.	çalmak (zil)
+knock	verb	/nɑk/	Someone is knocking at the door.	vurmak (kapı)
+press	verb	/prɛs/	Press this button to begin.	basmak
+lift	verb	/lɪft/	He can lift heavy boxes easily.	kaldırmak
+hang	verb	/hæŋ/	Hang your coat on the hook.	asmak
+tie	verb	/taɪ/	Tie your shoes before you run.	bağlamak
+roll	verb	/roʊl/	The ball rolled down the hill.	yuvarlanmak
+spread	verb	/sprɛd/	Spread the butter on the bread.	yaymak / sürmek
+shake	verb	/ʃeɪk/	Shake the bottle before you open it.	sallamak / sarsmak
+bend	verb	/bɛnd/	Bend your knees when you lift.	bükmek / eğilmek
+kick	verb	/kɪk/	He kicked the ball into the net.	tekmelemek
+hit	verb	/hɪt/	The ball hit the window.	vurmak / çarpmak
+miss	verb	/mɪs/	I miss my family when I travel.	özlemek / kaçırmak
+wonder	verb	/ˈwʌndər/	I wonder where she is now.	merak etmek
+guess	verb	/ɡɛs/	Can you guess my age?	tahmin etmek
+mind	verb	/maɪnd/	Do you mind if I open the window?	sakıncası olmak
+fit	verb	/fɪt/	These shoes don't fit me.	uymak (beden)
+suit	verb	/sut/	That color suits you well.	yakışmak / uygun olmak

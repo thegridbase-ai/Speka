@@ -1,0 +1,319 @@
+# SPEKA A1 word source — American English headwords (NGSL / high-frequency basis)
+# Creative content (phonetic, exampleEN, tr) is original, authored for SPEKA. License-clean.
+# Format (TAB-separated): headword <TAB> pos <TAB> phonetic <TAB> exampleEN <TAB> tr
+# Lines starting with # are comments. Blank lines ignored.
+# pos vocabulary: noun, verb, adjective, adverb, pronoun, preposition,
+#                 conjunction, determiner, number, interjection, modal, auxiliary
+#
+# ---- Pronouns ----
+I	pronoun	/aɪ/	I live in a small town.	ben
+you	pronoun	/ju/	You are my best friend.	sen
+he	pronoun	/hi/	He works at a hospital.	o (erkek)
+she	pronoun	/ʃi/	She reads a book every night.	o (kadın)
+it	pronoun	/ɪt/	It is a beautiful day.	o (cansız)
+we	pronoun	/wi/	We play soccer on Saturdays.	biz
+they	pronoun	/ðeɪ/	They live next door.	onlar
+me	pronoun	/mi/	Can you help me, please?	beni / bana
+him	pronoun	/hɪm/	I saw him at the store.	onu (erkek)
+her	pronoun	/hɜr/	I gave her a gift.	onu / ona (kadın)
+us	pronoun	/ʌs/	Please come with us.	bizi / bize
+them	pronoun	/ðɛm/	I called them this morning.	onları / onlara
+this	determiner	/ðɪs/	This phone is mine.	bu
+that	determiner	/ðæt/	That car is very fast.	şu / o
+these	determiner	/ðiz/	These shoes are new.	bunlar
+those	determiner	/ðoʊz/	Those houses are old.	şunlar / onlar
+my	determiner	/maɪ/	My name is Anna.	benim
+your	determiner	/jʊr/	Is this your bag?	senin
+his	determiner	/hɪz/	His office is on the third floor.	onun (erkek)
+our	determiner	/aʊr/	Our team won the game.	bizim
+their	determiner	/ðɛr/	Their dog is very friendly.	onların
+#
+# ---- Question words ----
+what	pronoun	/wʌt/	What is your name?	ne
+who	pronoun	/hu/	Who is at the door?	kim
+where	adverb	/wɛr/	Where do you live?	nerede
+when	adverb	/wɛn/	When does the movie start?	ne zaman
+why	adverb	/waɪ/	Why are you late?	neden
+how	adverb	/haʊ/	How are you today?	nasıl
+which	determiner	/wɪtʃ/	Which color do you like?	hangi
+#
+# ---- Articles & determiners ----
+a	determiner	/ə/	I have a question.	bir
+an	determiner	/ən/	She is an artist.	bir
+the	determiner	/ðə/	The sun is bright.	(belirli artikel)
+some	determiner	/sʌm/	I need some water.	biraz / bazı
+any	determiner	/ˈɛni/	Do you have any money?	hiç / herhangi
+all	determiner	/ɔl/	All the seats are taken.	hepsi / bütün
+many	determiner	/ˈmɛni/	There are many people here.	çok (sayılabilir)
+much	determiner	/mʌtʃ/	How much does it cost?	çok (sayılamaz)
+more	determiner	/mɔr/	I want more coffee.	daha fazla
+no	determiner	/noʊ/	There is no time left.	hiç / hayır
+every	determiner	/ˈɛvri/	I go to school every day.	her
+#
+# ---- Be / have / do ----
+be	verb	/bi/	I want to be a teacher.	olmak
+am	auxiliary	/æm/	I am very happy.	-im (ben)
+is	auxiliary	/ɪz/	She is at home.	-dir (o)
+are	auxiliary	/ɑr/	They are ready.	-siniz / -ler
+was	auxiliary	/wʌz/	I was tired yesterday.	-di (tekil geçmiş)
+were	auxiliary	/wɜr/	We were at the park.	-diler (çoğul geçmiş)
+have	verb	/hæv/	I have two brothers.	sahip olmak
+has	verb	/hæz/	She has a new car.	sahip (o)
+do	verb	/du/	I do my homework after dinner.	yapmak
+does	auxiliary	/dʌz/	Does he speak English?	yapar (o)
+did	auxiliary	/dɪd/	Did you call her?	yaptı (geçmiş)
+#
+# ---- Modal verbs ----
+can	modal	/kæn/	I can swim very well.	-ebilmek
+could	modal	/kʊd/	Could you open the window?	-ebilirdi (kibar rica)
+will	modal	/wɪl/	I will see you tomorrow.	-ecek (gelecek)
+would	modal	/wʊd/	I would like a coffee.	-erdi / isterdim
+should	modal	/ʃʊd/	You should rest now.	-meli
+must	modal	/mʌst/	You must wear a seatbelt.	-meli / zorunda
+may	modal	/meɪ/	May I come in?	-ebilir (izin)
+#
+# ---- Core verbs ----
+go	verb	/ɡoʊ/	I go to work by bus.	gitmek
+come	verb	/kʌm/	Please come to my party.	gelmek
+get	verb	/ɡɛt/	I get up at seven.	almak / olmak
+make	verb	/meɪk/	She can make a great cake.	yapmak
+take	verb	/teɪk/	Take an umbrella with you.	almak / götürmek
+see	verb	/si/	I can see the ocean.	görmek
+know	verb	/noʊ/	I know the answer.	bilmek
+think	verb	/θɪŋk/	I think you are right.	düşünmek
+want	verb	/wɑnt/	I want a glass of water.	istemek
+need	verb	/nid/	I need your help.	ihtiyaç duymak
+like	verb	/laɪk/	I like cold weather.	hoşlanmak / sevmek
+love	verb	/lʌv/	I love my family.	sevmek
+say	verb	/seɪ/	Say it one more time.	söylemek
+tell	verb	/tɛl/	Tell me the truth.	anlatmak / söylemek
+ask	verb	/æsk/	I want to ask a question.	sormak
+work	verb	/wɜrk/	I work in an office.	çalışmak
+play	verb	/pleɪ/	The kids play in the yard.	oynamak
+eat	verb	/it/	We eat dinner at eight.	yemek (yemek yemek)
+drink	verb	/drɪŋk/	I drink coffee every morning.	içmek
+sleep	verb	/slip/	I sleep eight hours a night.	uyumak
+read	verb	/rid/	I read the news online.	okumak
+write	verb	/raɪt/	Please write your name here.	yazmak
+speak	verb	/spik/	Do you speak English?	konuşmak
+listen	verb	/ˈlɪsən/	Listen to this song.	dinlemek
+look	verb	/lʊk/	Look at the sky.	bakmak
+find	verb	/faɪnd/	I can't find my keys.	bulmak
+give	verb	/ɡɪv/	Give me a minute.	vermek
+buy	verb	/baɪ/	I want to buy a new phone.	satın almak
+open	verb	/ˈoʊpən/	Please open the door.	açmak
+close	verb	/kloʊz/	Close the window, please.	kapatmak
+start	verb	/stɑrt/	The class starts at nine.	başlamak
+stop	verb	/stɑp/	The bus stops here.	durmak
+help	verb	/hɛlp/	Can you help me?	yardım etmek
+live	verb	/lɪv/	I live in a big city.	yaşamak
+walk	verb	/wɔk/	I walk to school.	yürümek
+run	verb	/rʌn/	I run in the park.	koşmak
+sit	verb	/sɪt/	Please sit down.	oturmak
+stand	verb	/stænd/	Stand up, please.	ayakta durmak
+wait	verb	/weɪt/	Please wait here.	beklemek
+call	verb	/kɔl/	Call me tonight.	aramak / seslenmek
+use	verb	/juz/	I use my phone a lot.	kullanmak
+put	verb	/pʊt/	Put the book on the table.	koymak
+turn	verb	/tɜrn/	Turn left at the corner.	dönmek
+learn	verb	/lɜrn/	I want to learn English.	öğrenmek
+study	verb	/ˈstʌdi/	I study every evening.	çalışmak (ders)
+understand	verb	/ˌʌndərˈstænd/	I understand the lesson.	anlamak
+remember	verb	/rɪˈmɛmbər/	I remember your name.	hatırlamak
+feel	verb	/fil/	I feel happy today.	hissetmek
+meet	verb	/mit/	Nice to meet you.	tanışmak / buluşmak
+#
+# ---- Common nouns: people ----
+man	noun	/mæn/	The man is reading a newspaper.	adam
+woman	noun	/ˈwʊmən/	The woman is a doctor.	kadın
+child	noun	/tʃaɪld/	The child is playing.	çocuk
+boy	noun	/bɔɪ/	The boy is six years old.	erkek çocuk
+girl	noun	/ɡɜrl/	The girl likes to draw.	kız çocuk
+people	noun	/ˈpipəl/	Many people live in this city.	insanlar
+friend	noun	/frɛnd/	She is my best friend.	arkadaş
+family	noun	/ˈfæməli/	I love my family.	aile
+mother	noun	/ˈmʌðər/	My mother cooks very well.	anne
+father	noun	/ˈfɑðər/	My father drives a truck.	baba
+baby	noun	/ˈbeɪbi/	The baby is sleeping.	bebek
+teacher	noun	/ˈtitʃər/	Our teacher is very kind.	öğretmen
+student	noun	/ˈstudənt/	She is a good student.	öğrenci
+#
+# ---- Common nouns: places & things ----
+house	noun	/haʊs/	Their house is near the river.	ev
+home	noun	/hoʊm/	I am at home now.	ev / yuva
+school	noun	/skul/	The school is closed today.	okul
+city	noun	/ˈsɪti/	New York is a big city.	şehir
+country	noun	/ˈkʌntri/	Spain is a beautiful country.	ülke
+room	noun	/rum/	My room is very small.	oda
+door	noun	/dɔr/	Please close the door.	kapı
+window	noun	/ˈwɪndoʊ/	Open the window for some air.	pencere
+table	noun	/ˈteɪbəl/	The food is on the table.	masa
+chair	noun	/tʃɛr/	Take a chair and sit down.	sandalye
+bed	noun	/bɛd/	The cat is on the bed.	yatak
+car	noun	/kɑr/	My car is red.	araba
+bus	noun	/bʌs/	I take the bus to work.	otobüs
+street	noun	/strit/	The street is very busy.	sokak / cadde
+store	noun	/stɔr/	The store opens at nine.	mağaza / dükkan
+food	noun	/fud/	The food here is delicious.	yemek / yiyecek
+water	noun	/ˈwɔtər/	I drink a lot of water.	su
+coffee	noun	/ˈkɔfi/	I need a cup of coffee.	kahve
+bread	noun	/brɛd/	I buy fresh bread every day.	ekmek
+book	noun	/bʊk/	This book is very interesting.	kitap
+phone	noun	/foʊn/	My phone is on the desk.	telefon
+money	noun	/ˈmʌni/	I don't have any money.	para
+job	noun	/dʒɑb/	She has a new job.	iş
+work	noun	/wɜrk/	I have a lot of work today.	iş / çalışma
+name	noun	/neɪm/	What is your name?	isim / ad
+word	noun	/wɜrd/	I learn ten words a day.	kelime
+question	noun	/ˈkwɛstʃən/	I have a question for you.	soru
+day	noun	/deɪ/	Have a nice day.	gün
+night	noun	/naɪt/	Good night and sleep well.	gece
+week	noun	/wik/	I work five days a week.	hafta
+month	noun	/mʌnθ/	There are twelve months in a year.	ay
+year	noun	/jɪr/	I will travel next year.	yıl
+time	noun	/taɪm/	What time is it?	zaman / saat
+hour	noun	/ˈaʊər/	The trip takes one hour.	saat (süre)
+minute	noun	/ˈmɪnɪt/	Wait a minute, please.	dakika
+morning	noun	/ˈmɔrnɪŋ/	I drink tea in the morning.	sabah
+#
+# ---- Adjectives ----
+good	adjective	/ɡʊd/	This is a good idea.	iyi
+bad	adjective	/bæd/	The weather is bad today.	kötü
+big	adjective	/bɪɡ/	They have a big dog.	büyük
+small	adjective	/smɔl/	I live in a small apartment.	küçük
+new	adjective	/nu/	I bought a new car.	yeni
+old	adjective	/oʊld/	This is an old house.	eski / yaşlı
+hot	adjective	/hɑt/	The coffee is very hot.	sıcak
+cold	adjective	/koʊld/	The water is cold.	soğuk
+happy	adjective	/ˈhæpi/	I am happy to see you.	mutlu
+sad	adjective	/sæd/	She looks sad today.	üzgün
+easy	adjective	/ˈizi/	This test is easy.	kolay
+hard	adjective	/hɑrd/	The work is very hard.	zor / sert
+fast	adjective	/fæst/	This is a fast train.	hızlı
+slow	adjective	/sloʊ/	The internet is slow today.	yavaş
+long	adjective	/lɔŋ/	It was a long day.	uzun
+short	adjective	/ʃɔrt/	The movie is short.	kısa
+high	adjective	/haɪ/	The mountain is very high.	yüksek
+low	adjective	/loʊ/	The prices are low here.	alçak / düşük
+right	adjective	/raɪt/	You gave the right answer.	doğru / sağ
+wrong	adjective	/rɔŋ/	I think this is the wrong street.	yanlış
+beautiful	adjective	/ˈbjutəfəl/	The garden is beautiful.	güzel
+nice	adjective	/naɪs/	He is a nice person.	hoş / iyi
+young	adjective	/jʌŋ/	She is a young doctor.	genç
+ready	adjective	/ˈrɛdi/	Are you ready to go?	hazır
+clean	adjective	/klin/	The kitchen is clean.	temiz
+free	adjective	/fri/	Are you free tonight?	özgür / boş
+same	adjective	/seɪm/	We have the same phone.	aynı
+different	adjective	/ˈdɪfərənt/	Our ideas are different.	farklı
+#
+# ---- Adverbs ----
+now	adverb	/naʊ/	I have to leave now.	şimdi
+here	adverb	/hɪr/	Please sit here.	burada
+there	adverb	/ðɛr/	The keys are over there.	orada
+today	adverb	/təˈdeɪ/	I am very busy today.	bugün
+tomorrow	adverb	/təˈmɑroʊ/	See you tomorrow.	yarın
+yesterday	adverb	/ˈjɛstərdeɪ/	I called you yesterday.	dün
+very	adverb	/ˈvɛri/	The soup is very hot.	çok
+too	adverb	/tu/	This bag is too heavy.	çok / de/da
+also	adverb	/ˈɔlsoʊ/	I also speak French.	ayrıca / de
+always	adverb	/ˈɔlweɪz/	I always wake up early.	her zaman
+never	adverb	/ˈnɛvər/	I never drink soda.	asla
+often	adverb	/ˈɔfən/	We often go to the beach.	sık sık
+sometimes	adverb	/ˈsʌmtaɪmz/	I sometimes work late.	bazen
+again	adverb	/əˈɡɛn/	Please say that again.	tekrar
+well	adverb	/wɛl/	She sings very well.	iyi (şekilde)
+just	adverb	/dʒʌst/	I just arrived home.	az önce / sadece
+only	adverb	/ˈoʊnli/	I have only one dollar.	sadece
+maybe	adverb	/ˈmeɪbi/	Maybe we can meet later.	belki
+together	adverb	/təˈɡɛðər/	We work better together.	birlikte
+#
+# ---- Prepositions ----
+in	preposition	/ɪn/	The cat is in the box.	içinde / -de
+on	preposition	/ɑn/	The book is on the shelf.	üstünde / -de
+at	preposition	/æt/	I am at the office.	-de / -da (nokta)
+to	preposition	/tu/	I am going to the store.	-e / -a
+from	preposition	/frʌm/	I am from Turkey.	-den / -dan
+with	preposition	/wɪð/	Come with me.	ile / -le
+for	preposition	/fɔr/	This gift is for you.	için
+of	preposition	/ʌv/	A cup of tea, please.	-in / -nın
+about	preposition	/əˈbaʊt/	We talked about the trip.	hakkında
+by	preposition	/baɪ/	I travel by train.	ile / yanında
+under	preposition	/ˈʌndər/	The shoes are under the bed.	altında
+over	preposition	/ˈoʊvər/	The plane flew over the city.	üstünde / üzerinden
+near	preposition	/nɪr/	The bank is near the park.	yakınında
+between	preposition	/bɪˈtwin/	The store is between two banks.	arasında
+#
+# ---- Conjunctions ----
+and	conjunction	/ænd/	I like tea and coffee.	ve
+but	conjunction	/bʌt/	I am tired, but happy.	ama / fakat
+or	conjunction	/ɔr/	Do you want tea or coffee?	veya / ya da
+because	conjunction	/bɪˈkɔz/	I stayed home because I was sick.	çünkü
+so	conjunction	/soʊ/	It was raining, so we stayed in.	bu yüzden / öyle
+if	conjunction	/ɪf/	Call me if you need help.	eğer
+#
+# ---- Numbers ----
+one	number	/wʌn/	I have one sister.	bir
+two	number	/tu/	There are two cats.	iki
+three	number	/θri/	I read three books last month.	üç
+four	number	/fɔr/	The table has four legs.	dört
+five	number	/faɪv/	I work five days a week.	beş
+six	number	/sɪks/	The meeting is at six.	altı
+seven	number	/ˈsɛvən/	There are seven days in a week.	yedi
+eight	number	/eɪt/	I sleep eight hours.	sekiz
+nine	number	/naɪn/	The store opens at nine.	dokuz
+ten	number	/tɛn/	I have ten dollars.	on
+hundred	number	/ˈhʌndrəd/	The book has a hundred pages.	yüz
+#
+# ---- Days & basics ----
+Monday	noun	/ˈmʌndeɪ/	The class is on Monday.	Pazartesi
+Friday	noun	/ˈfraɪdeɪ/	We leave on Friday.	Cuma
+#
+# ---- Interjections & social ----
+yes	interjection	/jɛs/	Yes, I agree with you.	evet
+hello	interjection	/həˈloʊ/	Hello, how are you?	merhaba
+goodbye	interjection	/ɡʊdˈbaɪ/	Goodbye, see you soon.	hoşça kal
+please	interjection	/pliz/	Please sit down.	lütfen
+thanks	interjection	/θæŋks/	Thanks for your help.	teşekkürler
+sorry	interjection	/ˈsɑri/	Sorry, I am late.	üzgünüm / pardon
+okay	interjection	/oʊˈkeɪ/	Okay, let's go.	tamam
+#
+# ---- Extra everyday nouns ----
+weather	noun	/ˈwɛðər/	The weather is nice today.	hava (durumu)
+music	noun	/ˈmjuzɪk/	I listen to music every day.	müzik
+movie	noun	/ˈmuvi/	We watched a movie last night.	film
+game	noun	/ɡeɪm/	The game starts at noon.	oyun / maç
+class	noun	/klæs/	The English class is fun.	sınıf / ders
+office	noun	/ˈɔfɪs/	My office is downtown.	ofis
+hospital	noun	/ˈhɑspɪtəl/	The hospital is very large.	hastane
+restaurant	noun	/ˈrɛstərɑnt/	This restaurant is famous.	restoran
+airport	noun	/ˈɛrpɔrt/	The airport is far from here.	havalimanı
+train	noun	/treɪn/	The train is late again.	tren
+ticket	noun	/ˈtɪkɪt/	I bought a ticket online.	bilet
+key	noun	/ki/	I lost my house key.	anahtar
+bag	noun	/bæɡ/	My bag is very heavy.	çanta
+clothes	noun	/kloʊz/	I need to wash my clothes.	giysiler
+shoe	noun	/ʃu/	My left shoe is wet.	ayakkabı
+hand	noun	/hænd/	Raise your hand to ask.	el
+eye	noun	/aɪ/	She has blue eyes.	göz
+head	noun	/hɛd/	My head hurts a little.	kafa / baş
+#
+# ---- Extra core verbs ----
+drive	verb	/draɪv/	I drive to work every day.	sürmek (araba)
+travel	verb	/ˈtrævəl/	I love to travel in summer.	seyahat etmek
+cook	verb	/kʊk/	I cook dinner for my family.	yemek pişirmek
+watch	verb	/wɑtʃ/	We watch TV after dinner.	izlemek
+wash	verb	/wɑʃ/	Please wash your hands.	yıkamak
+clean	verb	/klin/	I clean my room on Sundays.	temizlemek
+pay	verb	/peɪ/	I will pay by card.	ödemek
+bring	verb	/brɪŋ/	Please bring your book.	getirmek
+send	verb	/sɛnd/	I will send you an email.	göndermek
+show	verb	/ʃoʊ/	Show me your new phone.	göstermek
+keep	verb	/kip/	Keep your ticket safe.	saklamak / tutmak
+leave	verb	/liv/	We leave at six tomorrow.	ayrılmak / bırakmak
+arrive	verb	/əˈraɪv/	We arrive at noon.	varmak
+visit	verb	/ˈvɪzɪt/	I visit my parents on weekends.	ziyaret etmek
+change	verb	/tʃeɪndʒ/	I want to change my seat.	değiştirmek
+try	verb	/traɪ/	Try this new coffee.	denemek
+believe	verb	/bɪˈliv/	I believe you.	inanmak
+hope	verb	/hoʊp/	I hope you feel better.	ummak
+mean	verb	/min/	What does this word mean?	anlamına gelmek

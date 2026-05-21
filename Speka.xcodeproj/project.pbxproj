@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04293020276EB3D85E0FC238 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75948B6A4A6A461DD575209 /* Haptics.swift */; };
+		119780BCD1E9F1899A2708BD /* words_a1.json in Resources */ = {isa = PBXBuildFile; fileRef = 405AF1B0BF08A8465182C49B /* words_a1.json */; };
+		12EAE1395449D67D4EE3800D /* SpekaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 44A34E6D5D950CBE73D73260 /* SpekaUI */; };
+		18A98D20661DC8E5C098E53D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A6BC6F87F526E6DACED028 /* AppRouter.swift */; };
+		2606830F7F6D2D6755585CF9 /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972B81EE042A4531BA28C6F /* OnboardingFlow.swift */; };
+		31DFC6C6AED104D29812785F /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD15B077770FF54B6FF2990 /* FlashcardView.swift */; };
+		45AD9FBEE5B518FEE77FA31E /* DemoDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CFA838F23ABAA576096AA /* DemoDriver.swift */; };
+		496C1E34EAC5844FBFE15690 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6571507DDEB30DF3D8665A /* HomeView.swift */; };
+		4E0B6984154A3CA9A033504B /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB54D6E6AAC48E028817EA /* Catalog.swift */; };
+		60AB15CB7B223F5706DFD29D /* GridBaseUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C85B237466D0ABD14E418B5 /* GridBaseUIKit */; };
+		684258D8F77262170F3A87C2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0606258B929C6E304E26E0E /* SettingsView.swift */; };
+		6C2C81A23D2D36F72D4E687D /* VocabularyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3C0FFD98D81EB372C6CFF4AB /* VocabularyKit */; };
+		7A1FE4D0F729D0F6730EB4B7 /* StatsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41ECDE76BD72019115D4595 /* StatsStore.swift */; };
+		7E1D744DA66641091EAFAF71 /* words_a2.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1CB53D0C0D1148CF87B8 /* words_a2.json */; };
+		983A50F2BDF066C0A19A684C /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3454B77E76DD44F4AE10B51E /* WordStore.swift */; };
+		A44B9785D8AD2A5200FD9007 /* SpekaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5094410F59E42F59C4777B76 /* SpekaTheme.swift */; };
+		AC04563EC3453314CDAE811E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D3204532EA4F793759C5C9 /* Assets.xcassets */; };
+		AE92DD960A9B0798A4B770FB /* SpekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D026EAE252981E6822488 /* SpekaApp.swift */; };
+		B01AAA5C23A95EF114F08745 /* TypeTranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */; };
+		B0719321556C2643A81B2995 /* MultipleChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6801C75EF6B5FACD2AFABEE /* MultipleChoiceView.swift */; };
+		B3BB54AF10F0D3C4328997D0 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8F4693937115F8F412010 /* Speaker.swift */; };
+		C6A53A2380792111239D8D86 /* LevelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A4C3DE48E614F9D84BB /* LevelPickerView.swift */; };
+		D580238596071D625BD9ED04 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857E9C676672BC93EF7F6D1B /* ProfileStore.swift */; };
+		D60440A58AD9B1A7E9FD3761 /* SessionSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57B18F6832795CDCC8D01 /* SessionSummaryView.swift */; };
+		D7308E4D5007FF9BA39EA1F3 /* StudySessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE167A600C7D335B3D6D7D5 /* StudySessionView.swift */; };
+		DCDB24DEF5CCE102D3C991A6 /* SeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43633A408CBF965CDB3A78 /* SeedLoader.swift */; };
+		E5B96EB797A7FCA762A7F8B8 /* SourceLanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333288B6F95E2F05CCEF4794 /* SourceLanguagePickerView.swift */; };
+		ECB3103B454C6E231CB54DB5 /* ListenAndSpellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B596D026C9E9E491A7F8A6 /* ListenAndSpellView.swift */; };
+		EFC9F253E8EA5E28557465FD /* StudyMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF43F60BD122D0071179D51 /* StudyMode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTranslationView.swift; sourceTree = "<group>"; };
+		13F57B18F6832795CDCC8D01 /* SessionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryView.swift; sourceTree = "<group>"; };
+		15B8F4693937115F8F412010 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		2FD15B077770FF54B6FF2990 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		317D026EAE252981E6822488 /* SpekaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpekaApp.swift; sourceTree = "<group>"; };
+		333288B6F95E2F05CCEF4794 /* SourceLanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLanguagePickerView.swift; sourceTree = "<group>"; };
+		3454B77E76DD44F4AE10B51E /* WordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
+		405AF1B0BF08A8465182C49B /* words_a1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words_a1.json; sourceTree = "<group>"; };
+		4ABB54D6E6AAC48E028817EA /* Catalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		5094410F59E42F59C4777B76 /* SpekaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpekaTheme.swift; sourceTree = "<group>"; };
+		50A6BC6F87F526E6DACED028 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		58D3204532EA4F793759C5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B6571507DDEB30DF3D8665A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7972B81EE042A4531BA28C6F /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
+		79A53A4C3DE48E614F9D84BB /* LevelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelPickerView.swift; sourceTree = "<group>"; };
+		83C0985B87581E0AD86E83E3 /* VocabularyKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VocabularyKit; path = Packages/VocabularyKit; sourceTree = SOURCE_ROOT; };
+		857E9C676672BC93EF7F6D1B /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		A75948B6A4A6A461DD575209 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		B0606258B929C6E304E26E0E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B6801C75EF6B5FACD2AFABEE /* MultipleChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceView.swift; sourceTree = "<group>"; };
+		B977837E1F9F4C8BE90839D3 /* Speka.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Speka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB43633A408CBF965CDB3A78 /* SeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedLoader.swift; sourceTree = "<group>"; };
+		BC1F1CB53D0C0D1148CF87B8 /* words_a2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words_a2.json; sourceTree = "<group>"; };
+		C4B596D026C9E9E491A7F8A6 /* ListenAndSpellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenAndSpellView.swift; sourceTree = "<group>"; };
+		CE1CFA838F23ABAA576096AA /* DemoDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDriver.swift; sourceTree = "<group>"; };
+		E41ECDE76BD72019115D4595 /* StatsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStore.swift; sourceTree = "<group>"; };
+		EE89B7CFBBEE35E196EF14AB /* GridBaseUIKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GridBaseUIKit; path = Packages/GridBaseUIKit; sourceTree = SOURCE_ROOT; };
+		F78F1D6D6BE19B74BBE8B5A4 /* SpekaUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SpekaUI; path = Packages/SpekaUI; sourceTree = SOURCE_ROOT; };
+		FAE167A600C7D335B3D6D7D5 /* StudySessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySessionView.swift; sourceTree = "<group>"; };
+		FCF43F60BD122D0071179D51 /* StudyMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DEA3DD1ADC8967046D13F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2C81A23D2D36F72D4E687D /* VocabularyKit in Frameworks */,
+				60AB15CB7B223F5706DFD29D /* GridBaseUIKit in Frameworks */,
+				12EAE1395449D67D4EE3800D /* SpekaUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6AE9BF7D2540FD48F14985 /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+				405AF1B0BF08A8465182C49B /* words_a1.json */,
+				BC1F1CB53D0C0D1148CF87B8 /* words_a2.json */,
+			);
+			path = Seed;
+			sourceTree = "<group>";
+		};
+		1A6D89937E1C6BC36CE7A958 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5B6571507DDEB30DF3D8665A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		40C44B37BE8286E7158B32B5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D89937E1C6BC36CE7A958 /* Home */,
+				F6C5174F529C6D5ADEA6D520 /* Onboarding */,
+				F2236EB481723E3957213410 /* Settings */,
+				BAE9718E81F763592314014A /* Study */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		43663E09A36DBF6E561FB09E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				EE89B7CFBBEE35E196EF14AB /* GridBaseUIKit */,
+				F78F1D6D6BE19B74BBE8B5A4 /* SpekaUI */,
+				83C0985B87581E0AD86E83E3 /* VocabularyKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		59244C32741416B53081250A = {
+			isa = PBXGroup;
+			children = (
+				43663E09A36DBF6E561FB09E /* Packages */,
+				69550627B8788DD40224E1A0 /* Speka */,
+				B3DFDE2CD9D46E9AD7570DC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69550627B8788DD40224E1A0 /* Speka */ = {
+			isa = PBXGroup;
+			children = (
+				7A153D51A82A332ADF3D4083 /* App */,
+				821F9FA810FBAF37E7182296 /* Data */,
+				40C44B37BE8286E7158B32B5 /* Features */,
+				EDE88D6DDA881A962F378203 /* Resources */,
+				ADE226DFF8656A2AD74AAB9D /* Support */,
+			);
+			path = Speka;
+			sourceTree = "<group>";
+		};
+		7A153D51A82A332ADF3D4083 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				50A6BC6F87F526E6DACED028 /* AppRouter.swift */,
+				317D026EAE252981E6822488 /* SpekaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		821F9FA810FBAF37E7182296 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4ABB54D6E6AAC48E028817EA /* Catalog.swift */,
+				857E9C676672BC93EF7F6D1B /* ProfileStore.swift */,
+				BB43633A408CBF965CDB3A78 /* SeedLoader.swift */,
+				E41ECDE76BD72019115D4595 /* StatsStore.swift */,
+				3454B77E76DD44F4AE10B51E /* WordStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ADE226DFF8656A2AD74AAB9D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A75948B6A4A6A461DD575209 /* Haptics.swift */,
+				15B8F4693937115F8F412010 /* Speaker.swift */,
+				5094410F59E42F59C4777B76 /* SpekaTheme.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B3DFDE2CD9D46E9AD7570DC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B977837E1F9F4C8BE90839D3 /* Speka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAE9718E81F763592314014A /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CFA838F23ABAA576096AA /* DemoDriver.swift */,
+				2FD15B077770FF54B6FF2990 /* FlashcardView.swift */,
+				C4B596D026C9E9E491A7F8A6 /* ListenAndSpellView.swift */,
+				B6801C75EF6B5FACD2AFABEE /* MultipleChoiceView.swift */,
+				13F57B18F6832795CDCC8D01 /* SessionSummaryView.swift */,
+				FCF43F60BD122D0071179D51 /* StudyMode.swift */,
+				FAE167A600C7D335B3D6D7D5 /* StudySessionView.swift */,
+				040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		EDE88D6DDA881A962F378203 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58D3204532EA4F793759C5C9 /* Assets.xcassets */,
+				0D6AE9BF7D2540FD48F14985 /* Seed */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F2236EB481723E3957213410 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B0606258B929C6E304E26E0E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F6C5174F529C6D5ADEA6D520 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				79A53A4C3DE48E614F9D84BB /* LevelPickerView.swift */,
+				7972B81EE042A4531BA28C6F /* OnboardingFlow.swift */,
+				333288B6F95E2F05CCEF4794 /* SourceLanguagePickerView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDD002AEE9695EDD58123D27 /* Speka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C177DE00CD94CF01D1AD711D /* Build configuration list for PBXNativeTarget "Speka" */;
+			buildPhases = (
+				F585E2B9F1A8C98673DFEC26 /* Sources */,
+				78630FCC76FDF126CED4E133 /* Resources */,
+				5DEA3DD1ADC8967046D13F7C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Speka;
+			packageProductDependencies = (
+				3C0FFD98D81EB372C6CFF4AB /* VocabularyKit */,
+				2C85B237466D0ABD14E418B5 /* GridBaseUIKit */,
+				44A34E6D5D950CBE73D73260 /* SpekaUI */,
+			);
+			productName = Speka;
+			productReference = B977837E1F9F4C8BE90839D3 /* Speka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4859B995350300DD01F867C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = F8A15E96C702F3700A98ACC7 /* Build configuration list for PBXProject "Speka" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 59244C32741416B53081250A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0C2360CD6EEEF4C436DA2674 /* XCLocalSwiftPackageReference "Packages/GridBaseUIKit" */,
+				45398B268A560299D828B2A9 /* XCLocalSwiftPackageReference "Packages/SpekaUI" */,
+				0529720C8A98D0FB65500EE9 /* XCLocalSwiftPackageReference "Packages/VocabularyKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B3DFDE2CD9D46E9AD7570DC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDD002AEE9695EDD58123D27 /* Speka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78630FCC76FDF126CED4E133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC04563EC3453314CDAE811E /* Assets.xcassets in Resources */,
+				119780BCD1E9F1899A2708BD /* words_a1.json in Resources */,
+				7E1D744DA66641091EAFAF71 /* words_a2.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F585E2B9F1A8C98673DFEC26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A98D20661DC8E5C098E53D /* AppRouter.swift in Sources */,
+				4E0B6984154A3CA9A033504B /* Catalog.swift in Sources */,
+				45AD9FBEE5B518FEE77FA31E /* DemoDriver.swift in Sources */,
+				31DFC6C6AED104D29812785F /* FlashcardView.swift in Sources */,
+				04293020276EB3D85E0FC238 /* Haptics.swift in Sources */,
+				496C1E34EAC5844FBFE15690 /* HomeView.swift in Sources */,
+				C6A53A2380792111239D8D86 /* LevelPickerView.swift in Sources */,
+				ECB3103B454C6E231CB54DB5 /* ListenAndSpellView.swift in Sources */,
+				B0719321556C2643A81B2995 /* MultipleChoiceView.swift in Sources */,
+				2606830F7F6D2D6755585CF9 /* OnboardingFlow.swift in Sources */,
+				D580238596071D625BD9ED04 /* ProfileStore.swift in Sources */,
+				DCDB24DEF5CCE102D3C991A6 /* SeedLoader.swift in Sources */,
+				D60440A58AD9B1A7E9FD3761 /* SessionSummaryView.swift in Sources */,
+				684258D8F77262170F3A87C2 /* SettingsView.swift in Sources */,
+				E5B96EB797A7FCA762A7F8B8 /* SourceLanguagePickerView.swift in Sources */,
+				B3BB54AF10F0D3C4328997D0 /* Speaker.swift in Sources */,
+				AE92DD960A9B0798A4B770FB /* SpekaApp.swift in Sources */,
+				A44B9785D8AD2A5200FD9007 /* SpekaTheme.swift in Sources */,
+				7A1FE4D0F729D0F6730EB4B7 /* StatsStore.swift in Sources */,
+				EFC9F253E8EA5E28557465FD /* StudyMode.swift in Sources */,
+				D7308E4D5007FF9BA39EA1F3 /* StudySessionView.swift in Sources */,
+				B01AAA5C23A95EF114F08745 /* TypeTranslationView.swift in Sources */,
+				983A50F2BDF066C0A19A684C /* WordStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82547695026313C66B552724 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A3A1BF43C1734B43AE575E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		F5E92822F964A2337AA2EBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_CFBundleDisplayName = Speka;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thegridbase.speka;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF25E2F06F0D98FDAA8A2521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_CFBundleDisplayName = Speka;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thegridbase.speka;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C177DE00CD94CF01D1AD711D /* Build configuration list for PBXNativeTarget "Speka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF25E2F06F0D98FDAA8A2521 /* Debug */,
+				F5E92822F964A2337AA2EBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F8A15E96C702F3700A98ACC7 /* Build configuration list for PBXProject "Speka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82547695026313C66B552724 /* Debug */,
+				A3A1BF43C1734B43AE575E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0529720C8A98D0FB65500EE9 /* XCLocalSwiftPackageReference "Packages/VocabularyKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/VocabularyKit;
+		};
+		0C2360CD6EEEF4C436DA2674 /* XCLocalSwiftPackageReference "Packages/GridBaseUIKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/GridBaseUIKit;
+		};
+		45398B268A560299D828B2A9 /* XCLocalSwiftPackageReference "Packages/SpekaUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SpekaUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C85B237466D0ABD14E418B5 /* GridBaseUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GridBaseUIKit;
+		};
+		3C0FFD98D81EB372C6CFF4AB /* VocabularyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VocabularyKit;
+		};
+		44A34E6D5D950CBE73D73260 /* SpekaUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpekaUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B4859B995350300DD01F867C /* Project object */;
+}
