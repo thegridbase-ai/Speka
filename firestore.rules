@@ -1,8 +1,21 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /users/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+
+    // NOTE: this Firebase project (futurelex-80a87) is SHARED with another app.
+    // These rules mirror the live production rules — deploying this file is a
+    // no-op and will NOT change access for the other app. SPEKA writes only to
+    // its own `spekaProgress/{uid}` collection (covered by the catch-all below),
+    // never to `lego-sets` or the shared `users` collection.
+
+    // Lego app — public collection (pre-existing).
+    match /lego-sets/{setCode} {
+      allow read, write: if true;
+    }
+
+    // Everything else, including SPEKA's spekaProgress/{uid} — any signed-in user.
+    match /{document=**} {
+      allow read, write: if request.auth != null;
     }
   }
 }

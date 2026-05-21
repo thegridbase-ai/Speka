@@ -14,7 +14,9 @@ import FirebaseFirestore
 /// Optional, **local-first** Firestore sync of the learner's progress.
 ///
 /// SwiftData remains the on-device source of truth; sync only mirrors it to a
-/// single Firestore document per user at `users/{uid}`. Signed-out = no sync and
+/// single Firestore document per user at `spekaProgress/{uid}`. (This Firebase
+/// project is shared with another app, so SPEKA uses its own `spekaProgress`
+/// collection rather than the shared `users` collection.) Signed-out = no sync and
 /// the app is fully usable. The UI never blocks on the network — `pull`/`push`
 /// run in detached tasks and Firestore's built-in offline persistence absorbs
 /// connectivity gaps.
@@ -90,14 +92,14 @@ final class SyncService: ObservableObject {
 
     // MARK: - Pull
 
-    /// Read `users/{uid}`; if it exists and is newer than our last-sync marker,
+    /// Read `spekaProgress/{uid}`; if it exists and is newer than our last-sync marker,
     /// apply remote → local. If the remote doc is missing, do nothing (the
     /// follow-up `push` seeds it from local).
     func pull(uid: String) async {
         #if canImport(FirebaseFirestore)
         guard isSyncAvailable else { return }
         do {
-            let snapshot = try await Firestore.firestore().collection("users").document(uid).getDocument()
+            let snapshot = try await Firestore.firestore().collection("spekaProgress").document(uid).getDocument()
             guard snapshot.exists, let data = snapshot.data() else { return }
 
             // Doc-level last-write-wins: only apply if remote is strictly newer
@@ -117,14 +119,14 @@ final class SyncService: ObservableObject {
 
     // MARK: - Push
 
-    /// Serialize local state → write `users/{uid}` with a server timestamp, then
+    /// Serialize local state → write `spekaProgress/{uid}` with a server timestamp, then
     /// record the local last-sync marker (read back from the written doc).
     func push(uid: String) async {
         #if canImport(FirebaseFirestore)
         guard isSyncAvailable else { return }
         let payload = serializeLocal()
         do {
-            let ref = Firestore.firestore().collection("users").document(uid)
+            let ref = Firestore.firestore().collection("spekaProgress").document(uid)
             var doc = payload
             doc["updatedAt"] = FieldValue.serverTimestamp()
             try await ref.setData(doc, merge: true)
