@@ -42,6 +42,7 @@
 		DCDB24DEF5CCE102D3C991A6 /* SeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43633A408CBF965CDB3A78 /* SeedLoader.swift */; };
 		E5B96EB797A7FCA762A7F8B8 /* SourceLanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333288B6F95E2F05CCEF4794 /* SourceLanguagePickerView.swift */; };
 		ECB3103B454C6E231CB54DB5 /* ListenAndSpellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B596D026C9E9E491A7F8A6 /* ListenAndSpellView.swift */; };
+		EE16D007083EFAD2C31F77F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 550CAE1DBCC1E8AA16500541 /* GoogleService-Info.plist */; };
 		EFC9F253E8EA5E28557465FD /* StudyMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF43F60BD122D0071179D51 /* StudyMode.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		50663BB2AB56C4968B4F56AC /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
 		5094410F59E42F59C4777B76 /* SpekaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpekaTheme.swift; sourceTree = "<group>"; };
 		50A6BC6F87F526E6DACED028 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		550CAE1DBCC1E8AA16500541 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58D3204532EA4F793759C5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B6571507DDEB30DF3D8665A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5F74410EA377B57789382439 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		69550627B8788DD40224E1A0 /* Speka */ = {
 			isa = PBXGroup;
 			children = (
+				550CAE1DBCC1E8AA16500541 /* GoogleService-Info.plist */,
 				7A153D51A82A332ADF3D4083 /* App */,
 				821F9FA810FBAF37E7182296 /* Data */,
 				40C44B37BE8286E7158B32B5 /* Features */,
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC04563EC3453314CDAE811E /* Assets.xcassets in Resources */,
+				EE16D007083EFAD2C31F77F0 /* GoogleService-Info.plist in Resources */,
 				119780BCD1E9F1899A2708BD /* words_a1.json in Resources */,
 				7E1D744DA66641091EAFAF71 /* words_a2.json in Resources */,
 			);
