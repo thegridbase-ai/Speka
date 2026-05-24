@@ -26,13 +26,13 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 26) {
+                levelSelector
+
                 streakRow
 
                 progressRingCard
 
                 todayCard
-
-                modePicker
 
                 startButton
 
@@ -241,68 +241,63 @@ struct HomeView: View {
         }
     }
 
-    private var modePicker: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Practice mode")
-                .font(SpekaFont.font(.label))
-                .textCase(.uppercase)
-                .foregroundStyle(SpekaColor.textTertiary)
-                .padding(.leading, 4)
-
-            LazyVGrid(
-                columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)],
-                spacing: 12
-            ) {
-                ForEach(StudyMode.allCases) { mode in
-                    modeTile(mode)
-                }
+    /// Compact CEFR level selector. Seeded levels (A1, A2) are selectable; the
+    /// rest show locked / "coming soon". Choosing a level persists + syncs it via
+    /// `profileStore.setLevel` and the whole screen re-reads against it.
+    private var levelSelector: some View {
+        HStack(spacing: 8) {
+            ForEach(CEFRLevel.allCases, id: \.self) { lvl in
+                levelPill(lvl)
             }
         }
     }
 
-    private func modeTile(_ mode: StudyMode) -> some View {
-        let isSelected = selectedMode == mode
-        let accent = mode.spekaAccent
+    private func levelPill(_ lvl: CEFRLevel) -> some View {
+        let available = Catalog.isAvailable(lvl)
+        let isSelected = level == lvl
         return Button {
-            withAnimation(.spring(response: 0.25, dampingFraction: 0.7)) { selectedMode = mode }
+            guard available, !isSelected else { return }
+            withAnimation(.spring(response: 0.25, dampingFraction: 0.8)) {
+                profileStore.setLevel(lvl)
+            }
+            syncService.schedulePush()
+            refresh()
             UISelection.tap()
         } label: {
-            VStack(alignment: .leading, spacing: 8) {
-                Image(systemName: mode.systemImage)
-                    .font(.system(size: 18, weight: .bold))
-                    .foregroundStyle(SpekaColor.onColor)
-                    .frame(width: 44, height: 44)
-                    .background {
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(accent.gradient)
-                    }
-                    .shadow(color: accent.base.opacity(0.35), radius: 8, x: 0, y: 4)
-                Text(mode.title)
-                    .spekaFont(.headline)
-                    .foregroundStyle(SpekaColor.textPrimary)
-                Text(mode.subtitle)
-                    .spekaFont(.caption)
-                    .foregroundStyle(SpekaColor.textTertiary)
-                    .lineLimit(2)
-                    .multilineTextAlignment(.leading)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+            VStack(spacing: 2) {
+                Text(lvl.displayName)
+                    .font(SpekaFont.font(.callout))
+                    .fontWeight(.bold)
+                if !available {
+                    Image(systemName: "lock.fill")
+                        .font(.system(size: 9, weight: .bold))
+                }
             }
-            .padding(16)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .foregroundStyle(
+                isSelected ? SpekaColor.onColor
+                    : (available ? SpekaColor.textSecondary : SpekaColor.textTertiary)
+            )
+            .frame(maxWidth: .infinity)
+            .frame(height: 44)
             .background {
-                RoundedRectangle(cornerRadius: 18, style: .continuous)
-                    .fill(isSelected ? accent.soft : SpekaColor.surface)
+                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                    .fill(isSelected ? AnyShapeStyle(SpekaColor.brandGradient)
+                                     : AnyShapeStyle(SpekaColor.surface))
             }
             .overlay {
-                RoundedRectangle(cornerRadius: 18, style: .continuous)
-                    .strokeBorder(
-                        isSelected ? accent.base : SpekaColor.border,
-                        lineWidth: isSelected ? 2 : 1
-                    )
+                if !isSelected {
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .strokeBorder(SpekaColor.border, lineWidth: 1)
+                }
             }
-            .shadow(color: SpekaColor.textPrimary.opacity(0.05), radius: 10, y: 4)
+            .shadow(
+                color: isSelected ? SpekaColor.primary.base.opacity(0.3) : .clear,
+                radius: isSelected ? 10 : 0, y: isSelected ? 5 : 0
+            )
         }
         .buttonStyle(.plain)
+        .opacity(available ? 1 : 0.55)
+        .disabled(!available || isSelected)
     }
 
     private var startButton: some View {

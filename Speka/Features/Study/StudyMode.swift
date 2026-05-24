@@ -2,43 +2,24 @@ import Foundation
 import SwiftUI
 import SpekaUI
 
-/// The four practice modes that share the same session queue + SM-2 grading
-/// pipeline. Each value names a render strategy for a single card; the host
+/// The practice mode for a study session. SPEKA is flashcard-only: the user
+/// found the other modes unhelpful, so this enum has a single case. The host
 /// (`StudySessionView`) owns the queue, advance, persistence and summary.
 enum StudyMode: String, CaseIterable, Identifiable {
     case flashcard
-    case type
-    case listen
-    case multipleChoice
 
     var id: String { rawValue }
 
-    /// Short label for the Home-screen mode picker.
+    /// Short label shown in the session top bar.
     var title: String {
         switch self {
         case .flashcard: return "Flashcard"
-        case .type: return "Type"
-        case .listen: return "Listen"
-        case .multipleChoice: return "Choice"
-        }
-    }
-
-    /// One-line description shown under the picker.
-    var subtitle: String {
-        switch self {
-        case .flashcard: return "Flip the card, grade your recall"
-        case .type: return "Type the Turkish translation"
-        case .listen: return "Hear it, spell the English word"
-        case .multipleChoice: return "Pick the right translation"
         }
     }
 
     var systemImage: String {
         switch self {
         case .flashcard: return "rectangle.on.rectangle.angled"
-        case .type: return "keyboard"
-        case .listen: return "ear.fill"
-        case .multipleChoice: return "checklist"
         }
     }
 
@@ -46,8 +27,7 @@ enum StudyMode: String, CaseIterable, Identifiable {
     /// full base/soft/edge ramp used by SpekaUI components).
     var accent: Color { spekaAccent.base }
 
-    /// Launch-arg token used by the `-speka-autostudy` DEBUG affordance to
-    /// deterministically reach a given mode headlessly.
+    /// Launch-arg token used by the `-speka-autostudy` DEBUG affordance.
     var launchToken: String { rawValue }
 
     init?(launchToken: String) {

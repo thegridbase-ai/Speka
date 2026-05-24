@@ -28,25 +28,10 @@ struct StudySessionView: View {
     @State private var endedAt: Date?
     @State private var didRecord = false
 
-    /// Celebration state: bumped on a correct grade to fire confetti + Pip.
-    @State private var celebrateTrigger = 0
-    @State private var showConfetti = false
-
-    /// Per-card feedback overlay: Pip cheers a correct grade or gently
-    /// encourages after a miss (which also shakes the card). `shakeTrigger`
-    /// bumps on a wrong grade to drive the `KeyframeAnimator` wobble.
-    @State private var feedback: GradeFeedback?
+    /// Wrong-answer feedback: `shakeTrigger` bumps on a miss to drive the card's
+    /// `KeyframeAnimator` wobble. (No per-answer confetti or Pip — celebration is
+    /// reserved for the end-of-session summary.)
     @State private var shakeTrigger = 0
-
-    /// A short-lived reaction shown over the card after grading.
-    private enum GradeFeedback: Equatable {
-        case correct
-        case wrong
-
-        var pip: SpekaMascot.PipState { self == .correct ? .cheer : .kind }
-        var accent: SpekaAccent { self == .correct ? .mint : .coral }
-        var message: String { self == .correct ? "Nice!" : "Keep going" }
-    }
 
     #if DEBUG
     /// DEBUG-only scripted auto-demo. Non-`nil` only when the `-speka-demo`
@@ -74,16 +59,7 @@ struct StudySessionView: View {
             } else {
                 sessionContent
             }
-
-            // Correct-answer celebration overlay (cheap, GPU emitter).
-            SpekaConfetti(isActive: showConfetti)
-                .allowsHitTesting(false)
-
-            // Per-card Pip reaction (cheer / kind) over the card.
-            feedbackOverlay
-                .allowsHitTesting(false)
         }
-        .sensoryFeedback(.success, trigger: celebrateTrigger)
         .onAppear(perform: loadQueue)
         #if DEBUG
         .onAppear {
@@ -110,32 +86,19 @@ struct StudySessionView: View {
         #endif
     }
 
-    /// The transient Pip reaction shown after a grade. Pops in, lingers, fades.
-    @ViewBuilder
-    private var feedbackOverlay: some View {
-        if let feedback, !didFinish {
-            VStack(spacing: 8) {
-                SpekaMascot(state: feedback.pip, idle: false)
-                    .frame(width: 132, height: 132)
-                    .popIn()
-                Text(feedback.message)
-                    .font(SpekaFont.font(.headline))
-                    .foregroundStyle(feedback.accent.edge)
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(Capsule().fill(feedback.accent.soft))
-            }
-            .transition(.scale(scale: 0.85).combined(with: .opacity))
-            .id(feedback)
-        }
-    }
-
     // MARK: - Loading
+
+    /// Maximum cards per session — keeps each session short and focused.
+    private static let maxSessionCards = 25
 
     private func loadQueue() {
         guard queue.isEmpty, !didFinish else { return }
         startedAt = Date()
-        var built = WordStore.dailyQueue(at: level, now: Date(), in: modelContext)
+        // Cap the session at 25 cards (or fewer if that's all that's available).
+        var built = Array(
+            WordStore.dailyQueue(at: level, now: Date(), in: modelContext)
+                .prefix(Self.maxSessionCards)
+        )
         #if DEBUG
         // Auto-demo: cap the queue so the full arc (flip → correct → wrong →
         // summary) fits inside a short screen recording. DEBUG + arg only.
@@ -191,31 +154,7 @@ struct StudySessionView: View {
     @ViewBuilder
     private var cardArea: some View {
         if let word = currentWord {
-            switch mode {
-            case .flashcard:
-                flashcardArea(word)
-            case .type:
-                TypeTranslationView(
-                    word: word,
-                    language: language,
-                    onGrade: { applyGrade($0, to: word) }
-                )
-                .id(word.id)
-            case .listen:
-                ListenAndSpellView(
-                    word: word,
-                    onGrade: { applyGrade($0, to: word) }
-                )
-                .id(word.id)
-            case .multipleChoice:
-                MultipleChoiceView(
-                    word: word,
-                    language: language,
-                    options: options(for: word),
-                    onGrade: { applyGrade($0, to: word) }
-                )
-                .id(word.id)
-            }
+            flashcardArea(word)
         }
     }
 
@@ -304,42 +243,6 @@ struct StudySessionView: View {
         .buttonStyle(SpekaButtonStyle(variant: .filled(accent), depth: 4, cornerRadius: 14, fullWidth: true))
     }
 
-    // MARK: - Multiple-choice options
-
-    /// Build four Turkish options for a word: the correct translation plus three
-    /// distractors sampled from the same level, preferring the same part of
-    /// speech, then shuffled.
-    private func options(for word: Word) -> [String] {
-        let correct = word.translation(for: language)?.text ?? "—"
-        let correctKey = AnswerMatch.normalize(correct)
-
-        // Candidate pool: every other word at this level that has a translation.
-        let pool = queue + WordStore.words(at: level, in: modelContext)
-        var seen = Set<String>([correctKey])
-        var samePOS: [String] = []
-        var others: [String] = []
-
-        for candidate in pool where candidate.id != word.id {
-            guard let text = candidate.translation(for: language)?.text else { continue }
-            let key = AnswerMatch.normalize(text)
-            guard !key.isEmpty, !seen.contains(key) else { continue }
-            seen.insert(key)
-            if candidate.partOfSpeech == word.partOfSpeech, word.partOfSpeech != nil {
-                samePOS.append(text)
-            } else {
-                others.append(text)
-            }
-        }
-
-        var distractors = samePOS.shuffled()
-        if distractors.count < 3 {
-            distractors += others.shuffled()
-        }
-        let chosen = Array(distractors.prefix(3))
-
-        return ([correct] + chosen).shuffled()
-    }
-
     // MARK: - Grading
 
     private func applyGrade(_ grade: ReviewGrade, to word: Word?) {
@@ -364,38 +267,13 @@ struct StudySessionView: View {
         let wasCorrect = grade.quality >= ReviewGrade.good.quality
         if wasCorrect { correctCount += 1 }
 
+        // Subtle per-answer haptic only; a wrong answer nudges the card.
+        // No confetti / Pip per answer — celebration fires at session end.
         playGradeHaptic(grade)
-        if wasCorrect {
-            celebrate()
-        } else {
-            commiserate()
+        if !wasCorrect {
+            shakeTrigger += 1
         }
         advance()
-    }
-
-    /// Fire the confetti burst + bump the success sensory-feedback trigger, and
-    /// pop a cheering Pip over the card.
-    private func celebrate() {
-        celebrateTrigger += 1
-        showConfetti = true
-        showFeedback(.correct)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
-            showConfetti = false
-        }
-    }
-
-    /// Wrong answer: shake the card and show a kind, encouraging Pip.
-    private func commiserate() {
-        shakeTrigger += 1
-        showFeedback(.wrong)
-    }
-
-    /// Show a transient Pip reaction, then clear it after a short beat.
-    private func showFeedback(_ kind: GradeFeedback) {
-        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) { feedback = kind }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
-            withAnimation(.easeOut(duration: 0.25)) { feedback = nil }
-        }
     }
 
     private func playGradeHaptic(_ grade: ReviewGrade) {
@@ -411,12 +289,6 @@ struct StudySessionView: View {
         let next = index + 1
         if next >= queue.count {
             recordSessionIfNeeded()
-            // Clear any transient per-card reaction (Pip + "Keep going"/"Nice!")
-            // and the card's confetti so they don't linger ON TOP of the summary,
-            // then switch instantly — a cross-fade would show the card through the
-            // summary's opaque background.
-            feedback = nil
-            showConfetti = false
             endedAt = Date()
             didFinish = true
         } else {

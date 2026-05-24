@@ -32,8 +32,6 @@
 		AC04563EC3453314CDAE811E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D3204532EA4F793759C5C9 /* Assets.xcassets */; };
 		AE92DD960A9B0798A4B770FB /* SpekaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D026EAE252981E6822488 /* SpekaApp.swift */; };
 		AFF38F60DDCAE4F36DF84A13 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 94C70D78233AED25D987DDBD /* GoogleSignIn */; };
-		B01AAA5C23A95EF114F08745 /* TypeTranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */; };
-		B0719321556C2643A81B2995 /* MultipleChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6801C75EF6B5FACD2AFABEE /* MultipleChoiceView.swift */; };
 		B21DA1D044A0DC4A610A7BEE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEDB782332E73B7E6211CD7 /* FirebaseAuth */; };
 		B3BB54AF10F0D3C4328997D0 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8F4693937115F8F412010 /* Speaker.swift */; };
 		C6A53A2380792111239D8D86 /* LevelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A4C3DE48E614F9D84BB /* LevelPickerView.swift */; };
@@ -42,13 +40,11 @@
 		D7308E4D5007FF9BA39EA1F3 /* StudySessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE167A600C7D335B3D6D7D5 /* StudySessionView.swift */; };
 		DCDB24DEF5CCE102D3C991A6 /* SeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43633A408CBF965CDB3A78 /* SeedLoader.swift */; };
 		E5B96EB797A7FCA762A7F8B8 /* SourceLanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333288B6F95E2F05CCEF4794 /* SourceLanguagePickerView.swift */; };
-		ECB3103B454C6E231CB54DB5 /* ListenAndSpellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B596D026C9E9E491A7F8A6 /* ListenAndSpellView.swift */; };
 		EE16D007083EFAD2C31F77F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 550CAE1DBCC1E8AA16500541 /* GoogleService-Info.plist */; };
 		EFC9F253E8EA5E28557465FD /* StudyMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF43F60BD122D0071179D51 /* StudyMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTranslationView.swift; sourceTree = "<group>"; };
 		13F57B18F6832795CDCC8D01 /* SessionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryView.swift; sourceTree = "<group>"; };
 		15B8F4693937115F8F412010 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		1ADD0B608F99DE62CCE9454D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -73,11 +69,9 @@
 		ACA02AF405166B29277166AF /* ProgressStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStatsView.swift; sourceTree = "<group>"; };
 		B048D09A566C69F799462A6D /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
 		B0606258B929C6E304E26E0E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		B6801C75EF6B5FACD2AFABEE /* MultipleChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceView.swift; sourceTree = "<group>"; };
 		B977837E1F9F4C8BE90839D3 /* Speka.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Speka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB43633A408CBF965CDB3A78 /* SeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedLoader.swift; sourceTree = "<group>"; };
 		BC1F1CB53D0C0D1148CF87B8 /* words_a2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words_a2.json; sourceTree = "<group>"; };
-		C4B596D026C9E9E491A7F8A6 /* ListenAndSpellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenAndSpellView.swift; sourceTree = "<group>"; };
 		CE1CFA838F23ABAA576096AA /* DemoDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDriver.swift; sourceTree = "<group>"; };
 		E41ECDE76BD72019115D4595 /* StatsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStore.swift; sourceTree = "<group>"; };
 		EE89B7CFBBEE35E196EF14AB /* GridBaseUIKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GridBaseUIKit; path = Packages/GridBaseUIKit; sourceTree = SOURCE_ROOT; };
@@ -221,12 +215,9 @@
 			children = (
 				CE1CFA838F23ABAA576096AA /* DemoDriver.swift */,
 				2FD15B077770FF54B6FF2990 /* FlashcardView.swift */,
-				C4B596D026C9E9E491A7F8A6 /* ListenAndSpellView.swift */,
-				B6801C75EF6B5FACD2AFABEE /* MultipleChoiceView.swift */,
 				13F57B18F6832795CDCC8D01 /* SessionSummaryView.swift */,
 				FCF43F60BD122D0071179D51 /* StudyMode.swift */,
 				FAE167A600C7D335B3D6D7D5 /* StudySessionView.swift */,
-				040D751B279FF3D6A0D76B41 /* TypeTranslationView.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -359,8 +350,6 @@
 				04293020276EB3D85E0FC238 /* Haptics.swift in Sources */,
 				496C1E34EAC5844FBFE15690 /* HomeView.swift in Sources */,
 				C6A53A2380792111239D8D86 /* LevelPickerView.swift in Sources */,
-				ECB3103B454C6E231CB54DB5 /* ListenAndSpellView.swift in Sources */,
-				B0719321556C2643A81B2995 /* MultipleChoiceView.swift in Sources */,
 				2606830F7F6D2D6755585CF9 /* OnboardingFlow.swift in Sources */,
 				D580238596071D625BD9ED04 /* ProfileStore.swift in Sources */,
 				8F5D3B9E07ACBC9E61DA4A2A /* ProgressStatsView.swift in Sources */,
@@ -376,7 +365,6 @@
 				EFC9F253E8EA5E28557465FD /* StudyMode.swift in Sources */,
 				D7308E4D5007FF9BA39EA1F3 /* StudySessionView.swift in Sources */,
 				15FC8C00359BD131C158F36B /* SyncService.swift in Sources */,
-				B01AAA5C23A95EF114F08745 /* TypeTranslationView.swift in Sources */,
 				983A50F2BDF066C0A19A684C /* WordStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

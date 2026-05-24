@@ -176,6 +176,11 @@ final class SyncService: ObservableObject {
             "goal": summary.goal
         ]
 
+        // completed sessions — so streak, daily goal and the weekly chart survive
+        // a reinstall / restore on a new device (the streak is derived from these).
+        let sessions = (try? modelContext.fetch(FetchDescriptor<StudySession>())) ?? []
+        doc["sessions"] = sessions.map { Self.encode(session: $0) }
+
         return doc
     }
 
@@ -192,6 +197,21 @@ final class SyncService: ObservableObject {
         if let last = rs.lastReviewed {
             dict["lastReviewed"] = last.timeIntervalSince1970
         }
+        return dict
+    }
+
+    /// Encode a completed `StudySession` to a Firestore-friendly dictionary.
+    static func encode(session s: StudySession) -> [String: Any] {
+        var dict: [String: Any] = [
+            "id": s.id,
+            "languageRaw": s.languageRaw,
+            "startedAt": s.startedAt.timeIntervalSince1970,
+            "cardsReviewed": s.cardsReviewed,
+            "correctCount": s.correctCount,
+            "newWordsIntroduced": s.newWordsIntroduced,
+            "updatedAt": s.updatedAt.timeIntervalSince1970
+        ]
+        if let ended = s.endedAt { dict["endedAt"] = ended.timeIntervalSince1970 }
         return dict
     }
 
@@ -221,6 +241,31 @@ final class SyncService: ObservableObject {
             for (wordID, value) in remoteStates {
                 guard let dict = value as? [String: Any], let word = byID[wordID] else { continue }
                 Self.merge(dict: dict, into: word, in: modelContext)
+            }
+            try? modelContext.save()
+        }
+
+        // sessions → insert any the local store lacks (dedup by unique id), so the
+        // streak / daily goal / weekly stats survive reinstall + cross-device.
+        if let remoteSessions = data["sessions"] as? [[String: Any]] {
+            let existing = (try? modelContext.fetch(FetchDescriptor<StudySession>())) ?? []
+            let existingIDs = Set(existing.map { $0.id })
+            for sdict in remoteSessions {
+                guard let id = sdict["id"] as? String, !existingIDs.contains(id),
+                      let startedTS = sdict["startedAt"] as? TimeInterval else { continue }
+                let langRaw = sdict["languageRaw"] as? String ?? SourceLanguage.tr.rawValue
+                let session = StudySession(
+                    id: id,
+                    language: SourceLanguage(rawValue: langRaw) ?? .tr,
+                    startedAt: Date(timeIntervalSince1970: startedTS),
+                    endedAt: (sdict["endedAt"] as? TimeInterval).map { Date(timeIntervalSince1970: $0) },
+                    cardsReviewed: sdict["cardsReviewed"] as? Int ?? 0,
+                    correctCount: sdict["correctCount"] as? Int ?? 0,
+                    newWordsIntroduced: sdict["newWordsIntroduced"] as? Int ?? 0,
+                    updatedAt: Date(timeIntervalSince1970: sdict["updatedAt"] as? TimeInterval ?? startedTS),
+                    dirty: false
+                )
+                modelContext.insert(session)
             }
             try? modelContext.save()
         }

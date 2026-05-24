@@ -18,15 +18,10 @@ extension CEFRLevel {
 }
 
 extension StudyMode {
-    /// Per-mode accent driving the in-session chrome and Home mode-card chips.
-    /// Aligned to Palette C: flashcard=coral/red, type=sky/blue,
-    /// listen=lavender/purple, multipleChoice=mint/green.
+    /// Per-mode accent driving the in-session chrome (Palette C: flashcard=coral/red).
     var spekaAccent: SpekaAccent {
         switch self {
         case .flashcard: return .coral
-        case .type: return .sky
-        case .listen: return .lavender
-        case .multipleChoice: return .mint
         }
     }
 }

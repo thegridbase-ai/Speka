@@ -9,7 +9,7 @@ public struct QueueConfig: Equatable, Codable, Sendable {
     /// is woven in. e.g. `4` → roughly 4 reviews then 1 new, repeating.
     public var reviewPerNew: Int
 
-    public init(newPerDay: Int = 20, reviewPerNew: Int = 4) {
+    public init(newPerDay: Int = 25, reviewPerNew: Int = 4) {
         self.newPerDay = max(0, newPerDay)
         self.reviewPerNew = max(1, reviewPerNew)
     }
