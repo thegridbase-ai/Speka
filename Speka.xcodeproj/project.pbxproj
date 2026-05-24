@@ -69,7 +69,7 @@
 		ACA02AF405166B29277166AF /* ProgressStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStatsView.swift; sourceTree = "<group>"; };
 		B048D09A566C69F799462A6D /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
 		B0606258B929C6E304E26E0E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		B977837E1F9F4C8BE90839D3 /* Speka.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Speka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B977837E1F9F4C8BE90839D3 /* Speka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB43633A408CBF965CDB3A78 /* SeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedLoader.swift; sourceTree = "<group>"; };
 		BC1F1CB53D0C0D1148CF87B8 /* words_a2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words_a2.json; sourceTree = "<group>"; };
 		CE1CFA838F23ABAA576096AA /* DemoDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDriver.swift; sourceTree = "<group>"; };
@@ -294,8 +294,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = F8A15E96C702F3700A98ACC7 /* Build configuration list for PBXProject "Speka" */;
 			developmentRegion = en;
@@ -506,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6K94XY4EX3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Speka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -524,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6K94XY4EX3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Speka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
