@@ -9,7 +9,7 @@ import UIKit
 /// rather than a full CoreHaptics engine — the flashcard loop only needs short,
 /// discrete taps on grade and selection. No-ops on platforms without UIKit.
 enum UISelection {
-    static func tap() {
+    @MainActor static func tap() {
         #if canImport(UIKit)
         let generator = UISelectionFeedbackGenerator()
         generator.selectionChanged()
@@ -23,7 +23,7 @@ enum GradeHaptics {
         case light, medium, heavy, success
     }
 
-    static func play(_ strength: Strength) {
+    @MainActor static func play(_ strength: Strength) {
         #if canImport(UIKit)
         switch strength {
         case .light:

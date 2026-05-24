@@ -24,26 +24,33 @@ struct HomeView: View {
     private var hasWork: Bool { stats.dueToday + stats.newToday > 0 }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 26) {
-                levelSelector
+        GeometryReader { geo in
+            ScrollView {
+                VStack(spacing: 18) {
+                    levelSelector
 
-                streakRow
+                    streakRow
 
-                progressRingCard
+                    Spacer(minLength: 12)
 
-                todayCard
+                    progressRingCard
 
-                startButton
+                    todayCard
 
-                Spacer(minLength: 12)
+                    Spacer(minLength: 12)
+
+                    startButton
+                }
+                .padding(.horizontal, 24)
+                .padding(.top, 12)
+                .padding(.bottom, 24)
+                // Fill the viewport so the spacers distribute the content (ring
+                // centered, CTA at the bottom) instead of bunching at the top.
+                .frame(minHeight: geo.size.height - 72, alignment: .top)
             }
-            .padding(.horizontal, 24)
-            .padding(.top, 12)
-            .padding(.bottom, 40)
+            .scrollIndicators(.hidden)
+            .safeAreaInset(edge: .top, spacing: 0) { topBar }
         }
-        .scrollIndicators(.hidden)
-        .safeAreaInset(edge: .top, spacing: 0) { topBar }
         .onAppear {
             refresh()
             #if DEBUG
