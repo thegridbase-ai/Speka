@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/icon.png" width="132" alt="SPEKA app icon">
+<img src="docs/icon-pip.png" width="132" alt="SPEKA app icon">
 
 # SPEKA
 
